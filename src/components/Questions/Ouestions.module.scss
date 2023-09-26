@@ -1,0 +1,34 @@
+.title{
+    text-align: center;
+    font-size: 48px;
+}
+.questions {
+    margin: 30px 140px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--gray-color);
+  border-radius: 15px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.svg{
+    width: 23px;
+    padding: 5px;
+}
+.answer{
+    height: 0px;
+    overflow: hidden;
+    color: var(--gray-color);
+    font-size: 20px;
+}
+.open{
+    height: auto;
+}
+.q_open{
+    background-color: var(--root-color);
+    border: var(--root-color);
+    color: #ffffff;
+}
