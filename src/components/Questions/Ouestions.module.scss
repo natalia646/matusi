@@ -1,9 +1,9 @@
-.title{
-    text-align: center;
-    font-size: 48px;
+.title {
+  text-align: center;
+  font-size: 48px;
 }
 .questions {
-    margin: 30px 140px;
+  margin: 30px 140px;
 }
 .question {
   display: flex;
@@ -13,22 +13,26 @@
   padding: 8px 18px;
   cursor: pointer;
   font-size: 20px;
+  margin-bottom: 20px;
 }
-.svg{
-    width: 23px;
-    padding: 5px;
+.svg {
+  width: 23px;
+  padding: 5px;
 }
-.answer{
-    height: 0px;
-    overflow: hidden;
-    color: var(--gray-color);
-    font-size: 20px;
+.answer {
+  height: 0px;
+  overflow: hidden;
 }
-.open{
-    height: auto;
+.a_open {
+  height: auto;
+  color: var(--gray-color);
+  padding: 1px 7px 30px 20px;
+  transition: max-hight 1.4s ease;
+
+  // font-size: 20px;
 }
-.q_open{
-    background-color: var(--root-color);
-    border: var(--root-color);
-    color: #ffffff;
+.q_open {
+  background-color: var(--root-color);
+  border: var(--root-color);
+  color: #ffffff;
 }
