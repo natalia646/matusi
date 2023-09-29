@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap");
 
 :root {
   --root-color: #6b4eff;
   --gray-color: #4f5665;
   font-family: "Nunito Sans", sans-serif;
-
 }
-.footer{
-    background-color: var(--root-color);
-    border-radius: 70px 0px 0px 0px;
-    color:white;
+.footer {
+  background-color: var(--root-color);
+  border-radius: 70px 0px 0px 0px;
+  color: white;
 }

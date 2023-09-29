@@ -4,7 +4,7 @@ import more from "../assets/more.svg";
 import less from "../assets/less.svg";
 
 const Item = ({ id, item }) => {
-  const refItem = useRef(null)
+  const refItem = useRef(null);
   const [active, setActeve] = useState(null);
 
   const clickQuestion = (id) => {
@@ -17,7 +17,7 @@ const Item = ({ id, item }) => {
 
   return (
     <div>
-      <li
+      <div
         key={id}
         className={`${style.question} ${id === active ? style.q_open : ""}`}
         onClick={() => clickQuestion(id)}
@@ -25,15 +25,15 @@ const Item = ({ id, item }) => {
         <p>{item.q}</p>
         <img
           className={style.svg}
-          src={id === active ? less : more}
+          src={more}
           alt="more"
         ></img>
-      </li>
-      <div >
-        <div  className={`${style.answer} ${id === active ? style.a_open : ""}`}>{item.a}</div>
+      </div>
+      <div className={`${style.answer} ${id === active ? style.a_open : ""}`}>
+        {item.a}
       </div>
     </div>
-  ); 
+  );
 };
 
 export default Item;
