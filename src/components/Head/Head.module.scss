@@ -1,0 +1,54 @@
+.head_container {
+  background-image: url("../assets/background-top.svg");
+//   background-origin: border-box;
+//   background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.images img {
+  width: 256px;
+  position: absolute;
+}
+.desc {
+  margin: 25px 10px 10px 100px;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+.buttons button {
+  margin: 37px 24px 186px 0px;
+  width: 260px;
+  height: 60.088px;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-family: Nunito Sans;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.download {
+  border: none;
+  background: var(--orange-color);
+  color: white;
+}
+.more {
+  border: 2px solid var(--orange-color);
+  background: white;
+  color: var(--orange-color);
+}
+
+.phone1 {
+  right: 305px;
+  top: 124px;
+}
+.phone2 {
+  right: 100px;
+  top: 156px;
+}

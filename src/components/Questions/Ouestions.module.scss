@@ -1,9 +1,10 @@
+
 .title {
   text-align: center;
   font-size: 48px;
 }
 .questions {
-  margin: 30px 140px;
+  margin: 25px 100px;
 
   .question {
     display: flex;
@@ -36,8 +37,9 @@
 
 .q_open {
   background-color: var(--root-color);
-  border: var(--root-color);
+  border: 1px solid var(--root-color);
   color: #ffffff;
+
   .svg {
     transform: rotate(180deg);
   }

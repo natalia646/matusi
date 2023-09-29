@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap");
 
 :root {
+  box-sizing: border-box;
   --root-color: #6b4eff;
   --gray-color: #4f5665;
+  --orange-color: #F89500;
   font-family: "Nunito Sans", sans-serif;
 }
 .footer {
