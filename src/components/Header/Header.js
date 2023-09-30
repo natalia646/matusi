@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import style from './Header.module.scss'
+import Download from '../ButtonDownload/Download';
 
 
 const Header = () => {
@@ -14,7 +15,8 @@ const Header = () => {
           <Link className={style.link} to = "/">Відгуки</Link>
           <Link className={style.link} to = "/">Умови користування</Link>
           <Link className={style.link} to = "/">Контакти</Link>
-          <Link className={style.button_download} to = "/">Завантажити</Link>
+          <Download className={style.button_download}/>
+      
       </div>
     </div>
   )

@@ -1,7 +1,8 @@
 import React from "react";
 import phone1 from '../assets/phone1.png'
 import phone2 from '../assets/phone2.png'
-import style from './Head.module.scss'
+import style from './Main.module.scss'
+import Download from "../ButtonDownload/Download";
 
 const Head = () => {
   return (
@@ -17,7 +18,7 @@ const Head = () => {
           по черзі у вільний час.
         </p>
         <div className={style.buttons}>
-          <button className={style.download}>Завантажити</button>
+          <Download/>
           <button className={style.more}>Дивитися більше</button>
         </div>
       </div>

@@ -4,14 +4,16 @@ import Footer from "./components/Footer/Footer";
 import Questions from "./components/Questions/Questions";
 import { Route, Routes } from "react-router-dom";
 import About from "./components/AboutApp/About";
-import Head from "./components/Head/Head";
+import Main from "./components/MainPart/Main";
+import Details from "./components/AboutApp/Details";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Head />
+      <Main/>
       <About/>
+      <Details/>
 
       <Questions />
       <footer className="footer">
