@@ -7,6 +7,7 @@ import About from "./components/AboutApp/About";
 import Main from "./components/MainPart/Main";
 import Details from "./components/AboutApp/Details";
 import Reviews from "./components/Reviews/Reviews";
+import Corousal from "./components/Corousal/Corousal";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Main/>
       <About/>
       <Details/>
+      <Corousal/>
       <Reviews/>
 
       <Questions />
