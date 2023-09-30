@@ -23,8 +23,8 @@ const Head = () => {
         </div>
       </div>
       <div className={style.images}>
-        <img className={style.phone1} src={phone1}></img>
-        <img className={style.phone2} src={phone2}></img>
+        <img className={style.phone1} src={phone1} alt="phone"></img>
+        <img className={style.phone2} src={phone2} alt ='phone'></img>
       </div>
     </div>
   );

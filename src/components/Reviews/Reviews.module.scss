@@ -1,0 +1,50 @@
+.container {
+  background-color: var(--root-color);
+  h2 {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+}
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  
+.fix{
+  margin-bottom: 4rem;
+}
+
+  article {
+    background-color: var(--white-color);
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      width: 80px;
+      height: 79.81px;
+      margin: 2.24rem 1.5rem 4.7rem 1.5rem;
+    }
+    .text {
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0rem;
+      }
+      p {
+        font-size: 1.25rem;
+        color: var(--gray-color);
+        font-weight: 400;
+        margin-top: 2px;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
