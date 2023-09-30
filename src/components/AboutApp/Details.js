@@ -1,5 +1,5 @@
 import React from "react";
-import phone3 from "../assets/phone3.png";
+import phone3 from "../assets/phones/phone3.png";
 import Download from "../ButtonDownload/Download";
 import style from "./Details.module.scss";
 

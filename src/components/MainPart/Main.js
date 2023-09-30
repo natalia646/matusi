@@ -1,6 +1,6 @@
 import React from "react";
-import phone1 from '../assets/phone1.png'
-import phone2 from '../assets/phone2.png'
+import phone1 from '../assets/phones/phone1.png'
+import phone2 from '../assets/phones/phone2.png'
 import style from './Main.module.scss'
 import Download from "../ButtonDownload/Download";
 
