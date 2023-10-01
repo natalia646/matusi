@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
 import Download from "../ButtonDownload/Download";
+import line from "../assets/line.svg";
 
 const Header = () => {
   const links = ["/", "/", "/", "/contact"];
@@ -26,7 +27,12 @@ const Header = () => {
               } `}
               to={item}
             >
-              {nameLink[i]}
+              <img
+                src={line}
+                alt="line"
+                className={i === activeLink ? style.line : style.not_line}
+                ></img>
+                {nameLink[i]}
             </Link>
           );
         })}

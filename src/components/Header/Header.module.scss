@@ -4,17 +4,24 @@
   align-items: center;
   justify-content: space-between;
 
-
   .links {
     .link {
       padding: 20px 32px;
       text-decoration: none;
       font-size: 1.25rem;
     }
-    
   }
 }
-
-.active{
+.active {
   font-weight: 700;
+}
+
+.line {
+  width: 2rem;
+  position: relative;
+  top: 1.5rem;
+  left: 1.8rem;
+}
+.not_line {
+  display: none;
 }
