@@ -8,8 +8,4 @@
   --white-color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
 }
-.footer {
-  background-color: var(--root-color);
-  border-radius: 70px 0px 0px 0px;
-  color: white;
-}
+

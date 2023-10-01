@@ -3,7 +3,7 @@ import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <>
+    <footer className={style.footer}>
       <div className={style.first_block}>
         <div className={style.desc}>
           Уся інформація в нашому мобільному додатку надається добросовісно,
@@ -34,7 +34,7 @@ const Footer = () => {
       <p>@2023 Baza Nrainee. Всі права захищені</p>
       <p>Політика конфіденційності</p>
       </div>
-    </>
+    </footer>
   );
 };
 

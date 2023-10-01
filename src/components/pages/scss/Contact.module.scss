@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin-left: 100px;
+  justify-content: space-between;
+
+  .text {
+    max-width: 27rem;
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--gray-color);
+    }
+  }
+  img{
+    margin-top: -3.4rem;
+    margin-bottom: 5rem;
+  }
+}
