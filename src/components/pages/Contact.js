@@ -1,6 +1,7 @@
 import React from "react";
 import contact from "../assets/contact.svg";
 import style from "./scss/Contact.module.scss";
+import { Form } from "../Form/Form";
 
 const Contact = () => {
   return (
@@ -12,8 +13,7 @@ const Contact = () => {
           Baza Trainee Ukraine. Ти можеш зв'язатись із розробниками сайту та
           додатку (app.mama.ne.vdoma@gmail.com). <b>Якщо у тебе залишились питання - пиши:</b>
         </p>
-        <form></form>
-        <button>Надіслати</button>
+       <Form/>
       </div>
       <img src={contact} alt="contact"></img>
     </div>

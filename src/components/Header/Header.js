@@ -6,7 +6,7 @@ import Download from "../ButtonDownload/Download";
 import line from "../assets/line.svg";
 
 const Header = () => {
-  const links = ["/", "/", "/", "/contact"];
+  const links = ["/", "/#reviews", "/", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
   const [activeLink, setActiveLink] = useState(0);

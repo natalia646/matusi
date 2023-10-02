@@ -27,8 +27,8 @@ const Corousal = () => {
   ];
 
   return (
-    <div className={style.container}>
-      <h2>Відгуки користувачів</h2>
+    <div id="reviews" className={style.container} >
+      <h2  >Відгуки користувачів</h2>
       <div className={style.reviews}>
         {people.map((item, i) => {
           return (
