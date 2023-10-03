@@ -7,6 +7,7 @@ import Reviews from "../Reviews/Reviews";
 import Corousal from "../Corousal/Corousal"
 
 const Home = () => {
+
   return (
     <main>
       <Main/>

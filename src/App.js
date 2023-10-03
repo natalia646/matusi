@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/pages/Home";
 import Error from "./components/pages/Error";
 import Contacts from "./components/pages/Contact";
+import TermsUse from "./components/pages/TermsUse";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<Error />} />
         <Route path="/contact" element={<Contacts />} />
+        <Route path="/terms" element={<TermsUse />} />
       </Routes>
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import person1 from "../assets/persone/person1.png";
 import person2 from "../assets/persone/person2.png";
 import person3 from "../assets/persone/person3.png";
@@ -7,7 +7,9 @@ import person5 from "../assets/persone/person5.png";
 import person6 from "../assets/persone/person6.png";
 import style from "./Reviews.module.scss";
 
-const Corousal = () => {
+import { useSelector } from "react-redux";
+
+const Reviews = () => {
   const people = [person1, person3, person2, person4, person5, person6];
   const h3 = [
     "Інна Денисюк",
@@ -26,9 +28,17 @@ const Corousal = () => {
     "Завдяки цьому додатку я швидко знаходжу допомогу для дітей. Він відкрив нові можливості спілкування для матерів.",
   ];
 
+  const { activeIndex } = useSelector((state) => state.activeIndex);
+  const reviewsRef = useRef();
+  useEffect(() => {
+    if (activeIndex === 1) {
+      reviewsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeIndex]);
+
   return (
-    <div id="reviews" className={style.container} >
-      <h2  >Відгуки користувачів</h2>
+    <div ref={reviewsRef} className={style.container}>
+      <h2>Відгуки користувачів</h2>
       <div className={style.reviews}>
         {people.map((item, i) => {
           return (
@@ -47,4 +57,4 @@ const Corousal = () => {
   );
 };
 
-export default Corousal;
+export default Reviews;

@@ -2,8 +2,7 @@ import React from "react";
 import error from "../assets/error.svg";
 
 const style = {
-  width: "52.84581rem",
-  height: "31.375rem",
+  height: "31.4rem",
   display: 'block',
   margin: '4.5rem auto ',
   width: '50%',

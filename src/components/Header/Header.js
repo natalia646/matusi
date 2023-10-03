@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
 import Download from "../ButtonDownload/Download";
 import line from "../assets/line.svg";
-
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveIndex } from "../redux/slices/activeSlice";
 
+
 const Header = () => {
-  const links = ["/", "/#reviews", "/", "/contact"];
+  const links = ["/", "/", "/terms", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
   const dispatch = useDispatch()
