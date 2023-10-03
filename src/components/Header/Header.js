@@ -7,22 +7,21 @@ import style from "./Header.module.scss";
 import Download from "../ButtonDownload/Download";
 import line from "../assets/line.svg";
 
-
 const Header = () => {
+
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const { activeIndex } = useSelector((state) => state.activeIndex);
+
+  useEffect(() => {
+    if (location.pathname) {
+      const url = links.find((link) => link === location.pathname);
+      dispatch(setActiveIndex(links.indexOf(url)));
+    }
+  });
+
   const links = ["/", "/#reviews", "/terms", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
-  const dispatch = useDispatch()
-  const {activeIndex} = useSelector((state) => state.activeIndex);
-
-  const location = useLocation();
-  console.log(location.pathname)
-
-
-  useEffect(()=>{
-    if(location.pathname){
-      links.find(link => link === location.pathname);
-    }
-  })
 
   return (
     <header className={style.header_container}>
@@ -36,12 +35,16 @@ const Header = () => {
               to={item}
               key={i}
               onClick={() => dispatch(setActiveIndex(i))}
-              className={`${style.link} ${i === activeIndex ? style.active : "" } `}>
+              className={`${style.link} ${
+                i === activeIndex ? style.active : ""
+              } `}
+            >
               <img
                 src={line}
                 alt="line"
-                className={i === activeIndex ? style.line : style.not_line}></img>
-                {nameLink[i]}
+                className={i === activeIndex ? style.line : style.not_line}
+              ></img>
+              {nameLink[i]}
             </Link>
           );
         })}
