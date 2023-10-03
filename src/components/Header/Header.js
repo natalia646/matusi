@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
 import Download from "../ButtonDownload/Download";
 import line from "../assets/line.svg";
 
+import { useDispatch, useSelector } from "react-redux";
+import { setActiveIndex } from "../redux/slices/activeSlice";
+
 const Header = () => {
   const links = ["/", "/#reviews", "/", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
-  const [activeLink, setActiveLink] = useState(0);
+  const dispatch = useDispatch()
+  const {activeIndex} = useSelector((state) => state.activeIndex)
 
   return (
     <header className={style.header_container}>
@@ -20,18 +24,14 @@ const Header = () => {
         {links.map((item, i) => {
           return (
             <Link
-              key={i}
-              onClick={() => setActiveLink(i)}
-              className={`${style.link} ${
-                i === activeLink ? style.active : ""
-              } `}
               to={item}
-            >
+              key={i}
+              onClick={() => dispatch(setActiveIndex(i))}
+              className={`${style.link} ${i === activeIndex ? style.active : "" } `}>
               <img
                 src={line}
                 alt="line"
-                className={i === activeLink ? style.line : style.not_line}
-                ></img>
+                className={i === activeIndex ? style.line : style.not_line}></img>
                 {nameLink[i]}
             </Link>
           );
