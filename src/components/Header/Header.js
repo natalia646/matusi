@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setActiveIndex } from "../redux/slices/activeSlice";
 import logo from "../assets/logo.svg";
-import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
 import Download from "../ButtonDownload/Download";
 import line from "../assets/line.svg";
-import { useDispatch, useSelector } from "react-redux";
-import { setActiveIndex } from "../redux/slices/activeSlice";
 
 
 const Header = () => {
-  const links = ["/", "/", "/terms", "/contact"];
+  const links = ["/", "/#reviews", "/terms", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
-
   const dispatch = useDispatch()
-  const {activeIndex} = useSelector((state) => state.activeIndex)
+  const {activeIndex} = useSelector((state) => state.activeIndex);
+
+  const location = useLocation();
+  console.log(location.pathname)
+
+
+  useEffect(()=>{
+    if(location.pathname){
+      links.find(link => link === location.pathname);
+    }
+  })
 
   return (
     <header className={style.header_container}>

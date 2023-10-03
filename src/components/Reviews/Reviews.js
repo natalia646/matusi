@@ -1,15 +1,24 @@
 import React, { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
+import style from "./Reviews.module.scss";
+
 import person1 from "../assets/persone/person1.png";
 import person2 from "../assets/persone/person2.png";
 import person3 from "../assets/persone/person3.png";
 import person4 from "../assets/persone/person4.png";
 import person5 from "../assets/persone/person5.png";
 import person6 from "../assets/persone/person6.png";
-import style from "./Reviews.module.scss";
 
-import { useSelector } from "react-redux";
 
 const Reviews = () => {
+  const { activeIndex } = useSelector((state) => state.activeIndex);
+  const reviewsRef = useRef();
+  useEffect(() => {
+    if (activeIndex === 1) {
+      reviewsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeIndex]);
+
   const people = [person1, person3, person2, person4, person5, person6];
   const h3 = [
     "Інна Денисюк",
@@ -27,14 +36,6 @@ const Reviews = () => {
     "Маю змогу працювати і знати, що мої діти в надійних руках завдяки цьому додатку. Велика підтримка для активних мам.",
     "Завдяки цьому додатку я швидко знаходжу допомогу для дітей. Він відкрив нові можливості спілкування для матерів.",
   ];
-
-  const { activeIndex } = useSelector((state) => state.activeIndex);
-  const reviewsRef = useRef();
-  useEffect(() => {
-    if (activeIndex === 1) {
-      reviewsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [activeIndex]);
 
   return (
     <div ref={reviewsRef} className={style.container}>

@@ -13,6 +13,7 @@ const activeSlice = createSlice({
         }
     }
 })
+export const selectIndex = (state) => state.index;
 
 export const {setActiveIndex} = activeSlice.actions;
 
