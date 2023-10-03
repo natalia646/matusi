@@ -20,7 +20,7 @@ const Header = () => {
     }
   });
 
-  const links = ["/", "/#reviews", "/terms", "/contact"];
+  const links = ["/", "/", "/terms", "/contact"];
   const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
   return (

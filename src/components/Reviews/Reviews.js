@@ -38,8 +38,8 @@ const Reviews = () => {
   ];
 
   return (
-    <div ref={reviewsRef} className={style.container}>
-      <h2>Відгуки користувачів</h2>
+    <div  className={style.container}>
+      <h2 ref={reviewsRef} >Відгуки користувачів</h2>
       <div className={style.reviews}>
         {people.map((item, i) => {
           return (
