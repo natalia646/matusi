@@ -3,6 +3,7 @@ import phone1 from '../assets/phones/phone1.png'
 import phone2 from '../assets/phones/phone2.png'
 import style from './Main.module.scss'
 import Download from "../ButtonDownload/Download";
+import google from '../assets/google_play.svg'
 
 const Head = () => {
   return (
@@ -23,6 +24,13 @@ const Head = () => {
         </div>
       </div>
       <div className={style.images}>
+        <div className={style.google_play}>
+          <img src={google} alt="Google Play"></img>
+          <div className={style.text}>
+            <p>Get it on</p>
+            <p><b>Google Play</b></p>
+          </div>
+        </div>
         <img className={style.phone1} src={phone1} alt="phone"></img>
         <img className={style.phone2} src={phone2} alt ='phone'></img>
       </div>

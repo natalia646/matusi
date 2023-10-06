@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Footer.module.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,8 +32,8 @@ const Footer = () => {
       </div>
       <hr />
       <div className={style.third_block}>
-      <p>@2023 Baza Nrainee. Всі права захищені</p>
-      <p>Політика конфіденційності</p>
+        <p>@2023 Baza Nrainee. Всі права захищені</p>
+        <Link to='/privacy'>Політика конфіденційності</Link>
       </div>
     </footer>
   );
