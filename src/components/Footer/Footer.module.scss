@@ -9,6 +9,18 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 60px;
   padding: 60px 10px 20px 120px;
+  .about {
+    display: grid;
+  }
+  .contacts{
+    display: grid;
+  }
+  .contact{
+    color: white;
+   margin-top: -4rem;
+   
+   
+  }
 }
 
 .desc {

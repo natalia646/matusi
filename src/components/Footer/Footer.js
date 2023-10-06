@@ -20,20 +20,23 @@ const Footer = () => {
         </div>
 
         <div className={style.second_block}>
-          <div>
+          <div className={style.about}>
             <h3> Про нас</h3>
-            <p> Про додаток</p>
-            <p> Умови користування</p>
+            <Link className={style.contact} to="/privacy">Про додаток</Link>
+            <Link className={style.contact} to="/terms">Умови користування</Link>
           </div>
-          <div>
+          <div className={style.contacts}>
             <h3>Контакти</h3>
+            <Link className={style.contact} to= 'https://baza-trainee.tech/ua'>Baza Trainee</Link>
+            <Link className={style.contact} to= ''>Gmail</Link>
+            <Link className={style.contact} to= 'https://www.linkedin.com/company/baza-trainee-ukraine/'>Linkedin</Link>
           </div>
         </div>
       </div>
       <hr />
       <div className={style.third_block}>
         <p>@2023 Baza Nrainee. Всі права захищені</p>
-        <Link to='/privacy'>Політика конфіденційності</Link>
+        <Link style={{color: '#fff'}} to="/privacy">Політика конфіденційності</Link>
       </div>
     </footer>
   );
