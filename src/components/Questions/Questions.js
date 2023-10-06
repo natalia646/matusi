@@ -63,11 +63,11 @@ const Questions = () => {
   return (
     <section className={style.questions}>
       <h2 className={style.title}>Питання, які часто задають</h2>
-      <div>
+      {/* <div className={style.item}> */}
         {qaList.map((item, id) => {
           return <Item id={id} item={item} key={id} />;
         })}
-      </div>
+      {/* </div> */}
     </section>
   );
 };

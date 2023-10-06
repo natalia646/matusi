@@ -14,7 +14,7 @@ const Item = ({ id, item }) => {
   };
 
   return (
-    <div>
+    <div className={style.item}>
       <div
         key={id}
         className={`${style.question} ${id === active ? style.q_open : ""}`}

@@ -1,6 +1,8 @@
 .title {
   text-align: center;
   font-size: 48px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 .questions {
   margin: 25px 100px;
@@ -45,4 +47,7 @@
   .svg {
     transform: rotate(180deg);
   }
+}
+.item{
+  margin-bottom: 1rem;
 }
