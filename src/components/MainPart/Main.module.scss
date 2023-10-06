@@ -8,27 +8,70 @@
 }
 
 .desc {
-  margin: 25px 10px 10px 100px;
+  margin: 1rem 1rem 11rem 6.25rem;
 
   h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
+    @media (max-width: 1450px) {
+      font-size: 2.7rem;
+    }
+    @media (max-width: 1350px) {
+      font-size: 2.3rem;
+    }
+    @media (max-width: 1250px) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: 1130px) {
+      font-size: 1.9rem;
+    }
   }
+
   p {
     font-size: 20px;
     font-weight: 400;
+    @media (max-width: 1450px) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: 1260px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 1130px) {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
   }
 }
 .buttons button {
-  margin: 37px 24px 186px 0px;
-  width: 260px;
-  height: 60.088px;
-  padding: 14px 20px;
-  font-size: 20px;
+  margin-top: 2.3rem;
+  margin-right: 2rem;
+  width: 16rem;
+  width: 16rem;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
   text-align: center;
   border-radius: 30px;
   font-family: Nunito Sans;
-
+  @media (max-width: 1450px) {
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  @media (max-width: 1350px) {
+    width: 14rem;
+    font-size: 1.1rem;
+  }
+  @media (max-width: 1260px) {
+    width: 13rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 1130px) {
+    width: 25rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
 }
 .more {
   border: 2px solid var(--orange-color);
@@ -39,12 +82,41 @@
 .phone1 {
   right: 305px;
   top: 124px;
-  width: 206px;
+  width: 12.9rem;
   position: absolute;
+  @media (max-width: 1450px) {
+    width: 11.9rem;
+    right: 287px;
+  }
+  @media (max-width: 1350px) {
+    width: 10.9rem;
+    right: 267px;
+  }
+  @media (max-width: 1260px) {
+    width: 9.9rem;
+    right: 249px;
+
+  }
+
 }
 .phone2 {
   right: 101px;
   top: 156px;
-  width: 256px;
+  width: 16rem;
   position: absolute;
+  @media (max-width: 1450px) {
+    width: 15rem;
+    right: 98px;
+  }
+  @media (max-width: 1350px) {
+    width: 14rem;
+    right: 91px;
+  }
+  @media (max-width: 1260px) {
+    width: 13rem;
+    right: 85px;
+  }
+}
+@media screen and (max-width: 1260px)  {
+  
 }

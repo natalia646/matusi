@@ -1,5 +1,5 @@
 .download {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     border-radius: 30px;
     background: var(--orange-color);
@@ -7,4 +7,7 @@
     color: white;
     border: none;
     font-family: Nunito Sans;
+    @media (max-width: 1260px) {
+      font-size: 1rem;
+    }
   }
