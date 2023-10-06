@@ -4,7 +4,8 @@ import style from './Form.module.scss'
 
 export const Form = () => {
   const form = useRef();
-  const [isSend, setIsSend] = useState('')
+  const [isSend, setIsSend] = useState('');
+  const [name, setName] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,7 +20,9 @@ export const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setIsSend('Повідомлення надіслано')
+          setIsSend('Повідомлення надіслано');
+          setName('')
+
         },
         (error) => {
           console.log(error.text);
@@ -30,7 +33,7 @@ export const Form = () => {
 
   return (
     <form className={style.form} ref={form} onSubmit={sendEmail}>
-      <input placeholder="Ім'я" type="text" name="user_name" />
+      <input placeholder="Ім'я" type="text" name="user_name" value={name} onChange={(e)=>{setName(e.target.value)}}/>
       <input placeholder="Email" type="email" name="user_email" />
       <input placeholder="Тема" type="text" name="user_tema" />
       <textarea className={style.textarea} placeholder="Повідомлення" name="message" />
