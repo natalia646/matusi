@@ -1,7 +1,7 @@
 import React from "react";
 import contact from "../assets/contact.svg";
-import style from "./scss/Contact.module.scss";
-import { Form } from "../Form/Form";
+import style from "../../scss/Contact.module.scss";
+import { Form } from "../Form";
 
 const Contact = () => {
   return (

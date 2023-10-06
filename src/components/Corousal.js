@@ -1,6 +1,6 @@
 import React from 'react';
-import first from '../assets/corousal/first.png'
-import style from './Corousal.module.scss'
+import first from '../components/assets/corousal/first.png'
+import style from '../scss/Corousal.module.scss'
 
 const Corousal = () => {
   return (

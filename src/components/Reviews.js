@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import style from "./Reviews.module.scss";
+import style from "../scss/Reviews.module.scss";
 
-import person1 from "../assets/persone/person1.png";
-import person2 from "../assets/persone/person2.png";
-import person3 from "../assets/persone/person3.png";
-import person4 from "../assets/persone/person4.png";
-import person5 from "../assets/persone/person5.png";
-import person6 from "../assets/persone/person6.png";
+import person1 from "../components/assets/persone/person1.png";
+import person2 from "../components/assets/persone/person2.png";
+import person3 from "../components/assets/persone/person3.png";
+import person4 from "../components/assets/persone/person4.png";
+import person5 from "../components/assets/persone/person5.png";
+import person6 from "../components/assets/persone/person6.png";
 
 
 const Reviews = () => {

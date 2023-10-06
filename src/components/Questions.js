@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Ouestions.module.scss";
+import style from "../scss/Ouestions.module.scss";
 import Item from "./Item";
 
 const Questions = () => {

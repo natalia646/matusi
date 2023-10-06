@@ -1,11 +1,11 @@
 import React from "react";
-import phone1 from '../assets/phones/phone1.png'
-import phone2 from '../assets/phones/phone2.png'
-import style from './Main.module.scss'
-import Download from "../ButtonDownload/Download";
-import google from '../assets/google_play.svg'
+import phone1 from '../components/assets/phones/phone1.png'
+import phone2 from '../components/assets/phones/phone2.png'
+import style from '../scss/Main.module.scss'
+import Download from "./Download";
+import google from '../components/assets/google_play.svg'
 
-const Head = () => {
+const MainPart = () => {
   return (
     <div className={style.head_container}>
       <div className={style.desc}>
@@ -38,4 +38,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default MainPart;

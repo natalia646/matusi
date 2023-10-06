@@ -1,10 +1,10 @@
 import React from 'react';
-import Questions from "../Questions/Questions";
-import About from "../AboutApp/About";
-import Main from "../MainPart/Main";
-import Details from "../AboutApp/Details";
-import Reviews from "../Reviews/Reviews";
-import Corousal from "../Corousal/Corousal"
+import Questions from "../Questions";
+import About from "../About";
+import Main from "../Main";
+import Details from "../Details";
+import Reviews from "../Reviews";
+import Corousal from "../Corousal"
 
 const Home = () => {
 

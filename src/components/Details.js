@@ -1,7 +1,7 @@
 import React from "react";
-import phone3 from "../assets/phones/phone3.png";
-import Download from "../ButtonDownload/Download";
-import style from "./Details.module.scss";
+import phone3 from "../components/assets/phones/phone3.png";
+import Download from "./Download";
+import style from "../scss/Details.module.scss";
 
 const Details = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import style from './scss/Terms.module.scss'
+import style from '../../scss/Terms.module.scss'
 
 const TermsUse = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./About.module.scss";
-import location from "../assets/location.svg";
-import group from "../assets/group.svg";
-import purse from "../assets/purse.svg";
+import style from "../scss/About.module.scss";
+import location from "../components/assets/location.svg";
+import group from "../components/assets/group.svg";
+import purse from "../components/assets/purse.svg";
 
 const About = () => {
   const img = [location, group, purse];

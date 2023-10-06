@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveIndex } from "../redux/slices/activeSlice";
-import logo from "../assets/logo.svg";
-import style from "./Header.module.scss";
-import Download from "../ButtonDownload/Download";
-import line from "../assets/line.svg";
+import { setActiveIndex } from "./redux/slices/activeSlice";
+import line from "../components/assets/line.svg";
+import logo from "../components/assets/logo.svg";
+import style from "../scss/Header.module.scss";
+import Download from "./Download";
 
 const Header = () => {
 
