@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../scss/Ouestions.module.scss";
-import Item from "./Item";
+import Question from "./Question";
 
 const Questions = () => {
   const qaList = [
@@ -63,11 +63,9 @@ const Questions = () => {
   return (
     <section className={style.questions}>
       <h2 className={style.title}>Питання, які часто задають</h2>
-      {/* <div className={style.item}> */}
         {qaList.map((item, id) => {
-          return <Item id={id} item={item} key={id} />;
+          return <Question id={id} item={item} key={id} />;
         })}
-      {/* </div> */}
     </section>
   );
 };

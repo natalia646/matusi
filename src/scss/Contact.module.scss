@@ -5,19 +5,18 @@
 
   .text {
     max-width: 27rem;
+    @import "./imortFiles/h2";
+    @import "./imortFiles/_p.scss";
+
     h2 {
-      font-size: 3rem;
-      font-weight: 700;
       margin-bottom: 1rem;
       margin-top: 1.5rem;
     }
     p {
-      font-size: 1.25rem;
-      font-weight: 400;
       color: var(--gray-color);
     }
   }
-  img{
+  img {
     margin-top: -3.4rem;
     margin-bottom: 5rem;
   }

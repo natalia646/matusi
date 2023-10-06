@@ -1,7 +1,6 @@
 .container {
   background-image: url("../components/assets/background-buttom.svg");
   background-repeat: no-repeat;
-  //   background-size: contain;
   background-position: bottom right;
 }
 .details {
@@ -13,19 +12,16 @@
     width: 31rem;
     position: relative;
     bottom: 9rem;
-
     right: 13rem;
   }
 
   .text {
     width: 602px;
-  }
-  h2 {
-    font-size: 48px;
-    font-weight: 700;
+
+    @import "./imortFiles/h2";
   }
   p {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: var(--gray-color);
   }
   button {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "../scss/Ouestions.module.scss";
 import more from "../components/assets/more.svg";
 
-const Item = ({ id, item }) => {
+const Question = ({ id, item }) => {
   const [active, setActeve] = useState(null);
 
   const clickQuestion = (id) => {
@@ -30,4 +30,4 @@ const Item = ({ id, item }) => {
   );
 };
 
-export default Item;
+export default Question;

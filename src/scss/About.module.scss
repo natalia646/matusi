@@ -1,19 +1,16 @@
-.about_container {
+.container {
   background-color: var(--root-color);
-  margin-top: -1rem ;
+  margin-top: -1rem;
 }
+
 .desc {
   text-align: center;
-  color: white;
+  color: var(--white-color);
+  @import "./imortFiles/h2";
+  @import "./imortFiles/p";
+
   h2 {
-    font-size: 48px;
-    font-weight: 700;
     margin-top: 0;
-  }
-  p {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 42px;
   }
 }
 
@@ -21,10 +18,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 3rem 6.25rem;
 
   .box {
+    @import "./imortFiles/h3";
+    @import "./imortFiles/p";
+
     max-width: 350px;
     max-height: 350px;
     border-radius: 30px;
@@ -33,14 +32,10 @@
     text-align: center;
     padding: 1.7rem;
     margin-bottom: 206px;
-    h3 {
-      font-size: 32px;
-      font-weight: 600;
-    }
+
+
     p {
-      font-size: 20px;
       color: var(--gray-color);
-      font-weight: 400;
     }
   }
 }

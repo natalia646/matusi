@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <div className={style.about_container}>
+    <div className={style.container}>
       <div className={style.desc}>
         <h2>Як це працює?</h2>
         <p>
