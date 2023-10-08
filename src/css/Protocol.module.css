@@ -1,0 +1,16 @@
+.container {
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Nunito Sans;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Nunito Sans;
+}

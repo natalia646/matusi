@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  margin-left: 100px;
+  justify-content: space-between;
+}
+.container .text {
+  max-width: 27rem;
+}
+.container .text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Nunito Sans;
+}
+.container .text p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Nunito Sans;
+}
+.container .text h2 {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.container .text p {
+  color: var(--gray-color);
+}
+.container img {
+  margin-top: -3.4rem;
+  margin-bottom: 5rem;
+}
