@@ -1,20 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    activeIndex: 0
-}
+  activeIndex: 0,
+  details: false,
+};
 
 const activeSlice = createSlice({
-    name: 'index',
-    initialState,
-    reducers: {
-        setActiveIndex(state, action){
-            state.activeIndex = action.payload
-        }
-    }
-})
+  name: "index",
+  initialState,
+  reducers: {
+    setActiveIndex(state, action) {
+      state.activeIndex = action.payload;
+    },
+    setDetails(state, action) {
+      state.details = action.payload;
+    },
+  },
+});
 export const selectIndex = (state) => state.index;
 
-export const {setActiveIndex} = activeSlice.actions;
+export const { setActiveIndex, setDetails } = activeSlice.actions;
 
-export default activeSlice.reducer
+export default activeSlice.reducer;

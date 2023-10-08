@@ -7,8 +7,12 @@ import logo from "../components/assets/logo.svg";
 import style from "../scss/Header.module.scss";
 import Download from "./Download";
 
-const Header = () => {
 
+const links = ["/", "/", "/terms", "/contact"];
+const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
+
+
+const Header = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const { activeIndex } = useSelector((state) => state.activeIndex);
@@ -20,8 +24,6 @@ const Header = () => {
     }
   });
 
-  const links = ["/", "/", "/terms", "/contact"];
-  const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
   return (
     <header className={style.header_container}>
