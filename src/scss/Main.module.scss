@@ -6,9 +6,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .desc {
   margin: 1rem 1rem 11rem 6.25rem;
+
 
   h1 {
     font-size: 3rem;
@@ -122,9 +122,10 @@
   width: 10rem;
   background-color: var(--white-color);
   display: flex;
-  position: relative;
-  top: 29.1rem;
-  left: 12rem;
+  // position: relative;
+  position: absolute;
+  top: 35rem;
+  right: 25rem;
   border-radius: 1rem;
   padding-left: 1rem;
   box-shadow: 0px 4px 8px 0px rgba(57, 41, 137, 0.25);

@@ -44,11 +44,11 @@ const Footer = () => {
           <div className={style.desc}>
             <div className={style.about}>
               <h3> Про нас</h3>
-             {about.map(item =><Link className={style.contact} to = {item.link}>{item.label}</Link>)}
+             {about.map((item, i) =><Link key={i} className={style.contact} to = {item.link}>{item.label}</Link>)}
             </div>
             <nav className={style.contacts}>
               <h3>Контакти</h3>
-             {contacts.map(item =><Link className={style.contact} to = {item.link}>{item.label}</Link>)}
+             {contacts.map((item, i) =><Link key={i} className={style.contact} to = {item.link}>{item.label}</Link>)}
             </nav>
           </div>
         </div>

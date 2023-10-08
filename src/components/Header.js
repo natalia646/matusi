@@ -1,21 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveIndex } from "./redux/slices/activeSlice";
 import line from "../components/assets/line.svg";
 import logo from "../components/assets/logo.svg";
+import open from "./assets/open-menu.svg";
+import close from "./assets/close.svg";
 import style from "../scss/Header.module.scss";
 import Download from "./Download";
 
-
 const links = ["/", "/", "/terms", "/contact"];
 const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
-
 
 const Header = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const { activeIndex } = useSelector((state) => state.activeIndex);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
     if (location.pathname) {
@@ -24,12 +25,18 @@ const Header = () => {
     }
   });
 
-
   return (
-    <header className={style.header_container}>
+    <header className={style.container}>
       <Link to="/">
         <img src={logo} alt="logo"></img>
       </Link>
+      <img
+        onClick={() => setIsMobile(!isMobile)}
+        className={style.menu}
+        src={isMobile ? open : close}
+        alt="menu"
+      ></img>
+
       <div className={style.links}>
         {links.map((item, i) => {
           return (
@@ -50,7 +57,8 @@ const Header = () => {
             </Link>
           );
         })}
-        <Download className={style.button_download} />
+        {/* <Download /> */}
+        <span className={style.download}><Download/></span>
       </div>
     </header>
   );

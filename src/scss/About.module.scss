@@ -2,12 +2,13 @@
   background-color: var(--root-color);
   margin-top: -1rem;
 }
+@import "./imortFiles/h2";
+@import "./imortFiles/p";
+
 
 .desc {
   text-align: center;
   color: var(--white-color);
-  @import "./imortFiles/h2";
-  @import "./imortFiles/p";
 
   h2 {
     margin-top: 0;
@@ -21,8 +22,6 @@
   margin: 3rem 6.25rem;
 
   .box {
-    @import "./imortFiles/h3";
-    @import "./imortFiles/p";
 
     max-width: 350px;
     max-height: 350px;
