@@ -26,7 +26,7 @@ const About = () => {
       detailsRef.current.scrollIntoView({ behavior: "smooth" });
       dispatch(setDetails(false));
     }
-  }, [details]);
+  }, []);
 
   return (
     <div className={style.container}>

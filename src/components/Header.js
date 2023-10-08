@@ -57,7 +57,6 @@ const Header = () => {
             </Link>
           );
         })}
-        {/* <Download /> */}
         <span className={style.download}><Download/></span>
       </div>
     </header>

@@ -8,40 +8,13 @@
 }
 .desc {
   margin: 1rem 1rem 11rem 6.25rem;
-
-
   h1 {
     font-size: 3rem;
     font-weight: 700;
-    // @media (max-width: 1450px) {
-    //   font-size: 2.7rem;
-    // }
-    // @media (max-width: 1350px) {
-    //   font-size: 2.3rem;
-    // }
-    // @media (max-width: 1250px) {
-    //   font-size: 2.2rem;
-    // }
-    // @media (max-width: 1130px) {
-    //   font-size: 1.9rem;
-    // }
   }
-
   p {
     font-size: 20px;
     font-weight: 400;
-    // @media (max-width: 1450px) {
-    //   font-size: 1.1rem;
-    // }
-    // @media (max-width: 1260px) {
-    //   font-size: 1rem;
-    // }
-    // @media (max-width: 1130px) {
-    //   font-size: 0.9rem;
-    // }
-    // @media (max-width: 900px) {
-    //   display: none;
-    // }
   }
 }
 .buttons button {
@@ -55,24 +28,6 @@
   border-radius: 30px;
   font-family: Nunito Sans;
   cursor: pointer;
-  // @media (max-width: 1450px) {
-  //   width: 15rem;
-  //   font-size: 1.2rem;
-  // }
-  // @media (max-width: 1350px) {
-  //   width: 14rem;
-  //   font-size: 1.1rem;
-  // }
-  // @media (max-width: 1260px) {
-  //   width: 13rem;
-  //   font-size: 1rem;
-  //   margin-right: 1rem;
-  // }
-  // @media (max-width: 1130px) {
-  //   width: 25rem;
-  //   font-size: 1.25rem;
-  //   margin-top: 1rem;
-  // }
 }
 .more {
   border: 2px solid var(--orange-color);
@@ -85,44 +40,18 @@
   top: 124px;
   width: 12.9rem;
   position: absolute;
-  // @media (max-width: 1450px) {
-  //   width: 11.9rem;
-  //   right: 287px;
-  // }
-  // @media (max-width: 1350px) {
-  //   width: 10.9rem;
-  //   right: 267px;
-  // }
-  // @media (max-width: 1260px) {
-  //   width: 9.9rem;
-  //   right: 249px;
-  // }
 }
 .phone2 {
   right: 101px;
   top: 156px;
   width: 16rem;
   position: absolute;
-  // @media (max-width: 1450px) {
-  //   width: 15rem;
-  //   right: 98px;
-  // }
-  // @media (max-width: 1350px) {
-  //   width: 14rem;
-  //   right: 91px;
-  // }
-  // @media (max-width: 1260px) {
-  //   width: 13rem;
-  //   right: 85px;
-  // }
 }
-
 
 .google_play {
   width: 10rem;
   background-color: var(--white-color);
   display: flex;
-  // position: relative;
   position: absolute;
   top: 35rem;
   right: 25rem;

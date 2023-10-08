@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React from "react";
 import Questions from "../Questions";
 import About from "../About";
 import Main from "../Main";
