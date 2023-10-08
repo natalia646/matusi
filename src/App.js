@@ -8,6 +8,7 @@ import Error from "./components/pages/Error";
 import Contacts from "./components/pages/Contact";
 import TermsUse from "./components/pages/TermsUse";
 import Privacy from "./components/pages/Privacy";
+import Refusal from "./components/pages/Refusal";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contacts />} />
         <Route path="/terms" element={<TermsUse />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/refusal" element={<Refusal />} />
       </Routes>
       <Footer />
     </div>
