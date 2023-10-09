@@ -1,4 +1,4 @@
-@import './imortFiles/variable';
+@import "./imortFiles/variable";
 .head_container {
   background-image: url("../components/assets/background-top.svg");
   background-repeat: no-repeat;
@@ -6,15 +6,25 @@
   background-position: bottom;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  hr {
+    display: none;
+  }
 }
 .desc {
-  margin: 1rem 1rem 11rem 6.25rem;
+  margin: 1rem 0rem 11rem 6.25rem;
   h1 {
     font-size: 3rem;
     font-weight: 700;
   }
+  h5 {
+    display: none;
+  }
+  h4{
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
   p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
   }
 }
@@ -57,11 +67,288 @@
   right: 25rem;
   border-radius: 1rem;
   padding-left: 1rem;
-  box-shadow: 0px 4px 8px 0px rgba(57, 41, 137, 0.25);
+  box-shadow: 2px 8px 13px 2px rgba(0, 0, 0, 0.282);
+  z-index: 1;
   .text {
     margin: 0.4rem;
     p {
       margin: 0rem;
+    }
+  }
+}
+@include max-desctop {
+  .desc {
+    h1 {
+      font-size: 2.6rem;
+    }
+    h4{
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  .buttons button {
+    margin-right: 1rem;
+    width: 14rem;
+    font-size: 1.1rem;
+    padding: 1rem 1.6rem;
+  }
+
+  .google_play {
+    width: 9rem;
+    top: 33rem;
+    right: 23rem;
+    .text {
+      margin: 0.4rem;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .phone1 {
+    right: 279px;
+    width: 11.9rem;
+  }
+  .phone2 {
+    right: 90px;
+    width: 15rem;
+  }
+}
+
+@include desctop {
+  .desc {
+    margin: 1rem 0rem 11rem 5rem;
+    h1 {
+      font-size: 2rem;
+    }
+    h4{
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .buttons button {
+    margin-top: 1rem;
+    width: 11rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+
+  .google_play {
+    width: 8rem;
+    top: 31rem;
+    right: 19.5rem;
+    .text {
+      margin: 0.4rem;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .phone1 {
+    right: 248px;
+    width: 10.9rem;
+  }
+  .phone2 {
+    right: 84px;
+    width: 13rem;
+  }
+}
+
+@include leptop {
+  .desc {
+    margin: 1rem 0rem 11rem 4rem;
+    h1 {
+      font-size: 2rem;
+    }
+    h4{
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    button {
+      align-self: center;
+      width: 23rem;
+      font-size: 1rem;
+    }
+  }
+
+  .google_play {
+    right: 16rem;
+  }
+}
+@include table {
+  .desc {
+    h1 {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  .phone1 {
+    right: 237px;
+    width: 8.9rem;
+  }
+  .phone2 {
+    right: 94px;
+    width: 11rem;
+  }
+  .google_play {
+    top: 26.5rem;
+    right: 14.5rem;
+  }
+}
+
+@include mobile {
+  .head_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: none;
+    .back_mobile {
+      background-image: url("../components/assets/background-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      margin-bottom: -1rem;
+    }
+  }
+  .images {
+    background-color: var(--root-color);
+  }
+  .desc {
+    text-align: center;
+    h5 {
+      font-size: 0.8rem;
+      color: var(--gray-color);
+      font-weight: 400;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h4 {
+      color: var(--gray-color);
+    }
+    p {
+      display: none;
+    }
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    button {
+      align-self: center;
+      justify-self: center;
+      width: 26rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: 3px solid var(--orange-color);
+      padding: 1rem 2rem;
+    }
+  }
+
+  .phone1 {
+    right: 30.5rem;
+    top: 38rem;
+    width: 14.9rem;
+  }
+  .phone2 {
+    right: 16.5rem;
+    top: 41rem;
+    width: 18rem;
+  }
+  .google_play {
+    top: 70rem;
+    right: 31rem;
+    width: 13rem;
+    .text {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@include min_mobile {
+  .head_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: none;
+    .back_mobile {
+      background-image: url("../components/assets/background-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      margin-bottom: -1rem;
+    }
+  }
+  .images {
+    background-color: var(--root-color);
+  }
+  .desc {
+    text-align: center;
+    h5 {
+      font-size: 0.8rem;
+      color: var(--gray-color);
+      font-weight: 400;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    h4 {
+      color: var(--gray-color);
+    }
+    p {
+      display: none;
+    }
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    button {
+      align-self: center;
+      justify-self: center;
+      width: 26rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border: 3px solid var(--orange-color);
+      padding: 1rem 2rem;
+    }
+  }
+
+  .phone1 {
+    right: 30.5rem;
+    top: 42rem;
+    width: 14.9rem;
+  }
+  .phone2 {
+    right: 16.5rem;
+    top: 45rem;
+    width: 18rem;
+  }
+  .google_play {
+    top: 75rem;
+    right: 31rem;
+    width: 13rem;
+    .text {
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 }
