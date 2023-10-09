@@ -1,30 +1,24 @@
-@import './imortFiles/variable';
+@import "./imortFiles/variable";
+@import "./imortFiles/h2";
+@import "./imortFiles/p";
 
 .container {
   background-color: var(--root-color);
   margin-top: -1rem;
 }
-@import "./imortFiles/h2";
-@import "./imortFiles/p";
-
-
 .desc {
   text-align: center;
   color: var(--white-color);
-
   h2 {
     margin-top: 0;
   }
 }
-
 .boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 100px;
+  grid-column-gap: 6.25rem;
   margin: 3rem 6.25rem;
-
   .box {
-
     max-width: 350px;
     max-height: 350px;
     border-radius: 30px;
@@ -33,20 +27,145 @@
     text-align: center;
     padding: 1.7rem;
     margin-bottom: 206px;
-
-
     p {
       color: var(--gray-color);
     }
   }
 }
-@include mobile{
-  .box{
-    background-color: aqua !important;
+
+@include max-desctop {
+  .box {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0rem;
+      margin-top: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
   }
 }
-@include table{
-  .box{
-    background-color: red !important;
+@include desctop {
+  .desc {
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .boxes {
+    grid-column-gap: 3rem;
+  }
+}
+@include leptop {
+  .box {
+    img {
+      width: 3.4rem;
+    }
+  }
+  .box {
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .desc {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+@include table {
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .box {
+      margin-bottom: 0rem;
+      max-width: 550px;
+      max-height: 350px;
+      align-items: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 3.4rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .desc {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+@include mobile{
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .box {
+      margin-bottom: 0rem;
+      max-width: 550px;
+      max-height: 350px;
+      align-items: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 4rem;
+    }
+    h3 {
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .desc {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+@include min_mobile{
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .box {
+      margin-bottom: 0rem;
+      max-width: 550px;
+      max-height: 350px;
+      align-items: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 4rem;
+    }
+    h3 {
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .desc {
+    h2{
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
   }
 }

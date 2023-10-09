@@ -115,7 +115,6 @@
     width: 15rem;
   }
 }
-
 @include desctop {
   .desc {
     margin: 1rem 0rem 11rem 5rem;
@@ -157,7 +156,6 @@
     width: 13rem;
   }
 }
-
 @include leptop {
   .desc {
     margin: 1rem 0rem 11rem 4rem;
@@ -211,7 +209,6 @@
     right: 14.5rem;
   }
 }
-
 @include mobile {
   .head_container {
     grid-template-columns: 1fr;
