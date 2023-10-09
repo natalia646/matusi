@@ -1,3 +1,5 @@
+@import './imortFiles/variable';
+
 .container {
   background-color: var(--root-color);
   margin-top: -1rem;
@@ -36,5 +38,15 @@
     p {
       color: var(--gray-color);
     }
+  }
+}
+@include mobile{
+  .box{
+    background-color: aqua !important;
+  }
+}
+@include table{
+  .box{
+    background-color: red !important;
   }
 }
