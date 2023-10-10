@@ -72,12 +72,12 @@
      width: 2.5rem;
    }
 }
-@include min_mobile{
-  .links{
-    display: none;
-   }
-   .menu{
-     display: block;
-     width: 2.5rem;
-   }
-}
+// @include min_mobile{
+//   .links{
+//     display: none;
+//    }
+//    .menu{
+//      display: block;
+//      width: 2.5rem;
+//    }
+// }
