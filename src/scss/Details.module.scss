@@ -1,3 +1,4 @@
+@import "./imortFiles/variable";
 .container {
   background-image: url("../components/assets/background-buttom.svg");
   background-repeat: no-repeat;
@@ -9,19 +10,18 @@
   justify-content: flex-end;
 
   img {
-    width: 31rem;
+    width: 30rem;
     position: relative;
     bottom: 9rem;
-    right: 13rem;
+    right: 12rem;
   }
 
   .text {
     width: 602px;
-
     @import "./imortFiles/h2";
   }
   p {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     color: var(--gray-color);
   }
   button {
@@ -30,4 +30,39 @@
     padding: 14px 20px;
     margin: 45.55px 0px 9rem 0px;
   }
+}
+@include max-desctop {
+  .details {
+  margin: 6rem 70px -15px 100px;
+    img {
+      width: 30rem;
+      right: 6rem;
+    }
+    .text {
+      width: 580px;
+      h2 {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}
+@include desctop{
+  .details {
+    margin: 6rem 70px -15px 100px;
+      img {
+        width: 29rem;
+        right: 6rem;
+      }
+      .text {
+        width: 500px;
+        h2 {
+          font-size: 2.7rem;
+        }
+     
+        button{
+    margin: 45.55px 0px 0rem 0px;
+
+        }
+      }
+    }
 }
