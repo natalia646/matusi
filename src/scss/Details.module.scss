@@ -33,7 +33,7 @@
 }
 @include max-desctop {
   .details {
-  margin: 6rem 70px -15px 100px;
+    margin: 6rem 70px -15px 100px;
     img {
       width: 30rem;
       right: 6rem;
@@ -46,23 +46,44 @@
     }
   }
 }
-@include desctop{
+@include desctop {
   .details {
-    margin: 6rem 70px -15px 100px;
-      img {
-        width: 29rem;
-        right: 6rem;
+    margin: 6rem 60px -15px 100px;
+    img {
+      width: 29rem;
+      right: 4.5rem;
+    }
+    .text {
+      width: 560px;
+      h2 {
+        font-size: 2.5rem;
       }
-      .text {
-        width: 500px;
-        h2 {
-          font-size: 2.7rem;
-        }
-     
-        button{
-    margin: 45.55px 0px 0rem 0px;
 
-        }
+      button {
+        margin: 45.55px 0px 0rem 0px;
       }
     }
+  }
+}
+@include leptop{
+  .details {
+    margin: 6rem 40px -15px 100px;
+    img {
+      width: 25rem;
+      right: 2rem;
+    }
+    .text {
+      width: 500px;
+      h2 {
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.25rem;
+      }
+
+      button {
+        margin: 45.55px 0px 0rem 0px;
+      }
+    }
+  }
 }
