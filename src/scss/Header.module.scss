@@ -33,13 +33,13 @@
   display: none;
 }
 
-@include desctop {                             // 1200
+@include desctop {                             
   .link {
     font-size: 1rem !important;
     padding: 20px 25px !important;
   }
 }
-@include leptop {                              // 1024
+@include leptop {                              
   .link {
     font-size: 1rem !important;
     padding: 20px 25px !important;
@@ -72,12 +72,12 @@
      width: 2.5rem;
    }
 }
-// @include min_mobile{
-//   .links{
-//     display: none;
-//    }
-//    .menu{
-//      display: block;
-//      width: 2.5rem;
-//    }
-// }
+@include min_mobile{
+  .links{
+    display: none;
+   }
+   .menu{
+     display: block;
+     width: 2.5rem;
+   }
+}

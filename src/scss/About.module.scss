@@ -108,7 +108,7 @@
     }
   }
 }
-@include mobile{
+@include mobile {
   .boxes {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -122,53 +122,57 @@
     }
 
     img {
-      width: 4rem;
+      width: 5rem;
     }
     h3 {
-      font-size: 1.7rem
+      font-size: 2rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
   .desc {
-    // h2{
-    //   padding-top: 2rem;
-    // }
+    margin-left: 6rem;
+    margin-right: 6rem;
+    h2 {
+      font-size: 2.5rem;
+    }
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 }
-// @include min_mobile{
-//   .boxes {
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(3, 1fr);
-//     .box {
-//       margin-bottom: 0rem;
-//       max-width: 550px;
-//       max-height: 350px;
-//       align-items: center;
-//       justify-self: center;
-//       margin-bottom: 2rem;
-//     }
+@include min_mobile {
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    .box {
+      margin-bottom: 0rem;
+      max-width: 450px;
+      max-height: 250px;
+      align-items: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+    }
 
-//     img {
-//       width: 4rem;
-//     }
-//     h3 {
-//       font-size: 1.7rem;
-//     }
-//     p {
-//       font-size: 1rem;
-//     }
-//   }
-//   .desc {
-//     h2{
-//       font-size: 1.5rem;
-//     }
-//     p {
-//       font-size: 0.5rem;
-//     }
-//   }
-// }
+    img {
+      width: 5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .desc {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}

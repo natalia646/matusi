@@ -26,15 +26,15 @@
 @mixin mobile{
     @media screen 
     and (max-device-width: 579px) 
-    // and (min-device-width: 480px) 
+    and (min-device-width: 380px) 
     and (-webkit-min-device-pixel-ratio: 1) {
     @content;
   }
 }
-// @mixin min_mobile{
-//     @media screen 
-//     and (max-device-width: 480px) 
-//     and (-webkit-min-device-pixel-ratio: 1) {
-//     @content;
-//   }
-// }
+@mixin min_mobile{
+    @media screen 
+    and (max-device-width: 410px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
