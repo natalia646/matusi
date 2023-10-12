@@ -1,3 +1,4 @@
+@import './imortFiles/variable';
 .container {
   background-color: var(--root-color);
   @import "./imortFiles/h2";
@@ -45,4 +46,8 @@
       }
     }
   }
+}
+@include leptop{
+
+
 }

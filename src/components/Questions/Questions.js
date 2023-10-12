@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../scss/Ouestions.module.scss";
+import style from "../../scss/Ouestions.module.scss";
 import Question from "./Question";
 
 const Questions = () => {
