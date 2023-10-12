@@ -38,7 +38,7 @@ const Header = () => {
         alt="menu"
       ></img>
 
-      <div className={style.links}>
+      <div className={`${style.links} ${isMobile? style.open: style.close}`}>
         {links.map((item, i) => {
           return (
             <Link

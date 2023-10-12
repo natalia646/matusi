@@ -17,7 +17,6 @@
       text-decoration: none;
       font-size: 1.25rem;
     }
-    
   }
 }
 .active {
@@ -33,51 +32,71 @@
   display: none;
 }
 
-@include desctop {                             
+@include desctop {
   .link {
-    font-size: 1rem !important;
+    font-size: 1rem;
     padding: 20px 25px !important;
   }
 }
-@include leptop {                              
+@include leptop {
   .link {
-    font-size: 1rem !important;
+    font-size: 1rem;
     padding: 20px 25px !important;
   }
-  .download{
+  .download {
     display: none;
   }
 }
-@include table{
-  .links{
-   display: none;
+
+@include table {
+  .close {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    background-color: #6c4eff89;
+    left: 0;
+    top: 80px;
+    transition: all 0.1s;
+    width: 100%;
+    .link {
+      text-align: center;
+      color: aliceblue;
+      width: 100%;
+      padding: 32px;
+      transition: all 0.3s ease;
+      font-size: 5rem;
+      font-weight: 700;
+    }
+    .line {
+      display: none;
+    }
   }
-  .menu{
+
+  .open {
+    display: none;
+  }
+
+  .menu {
     display: block;
     width: 2.5rem;
   }
-
-
-
-
-
-
 }
-@include mobile{
-  .links{
-    display: none;
-   }
-   .menu{
-     display: block;
-     width: 2.5rem;
-   }
+@include mobile {
+  // .links {
+  //   display: none;
+  // }
+  .menu {
+    display: block;
+    width: 2.5rem;
+  }
 }
-@include min_mobile{
-  .links{
-    display: none;
-   }
-   .menu{
-     display: block;
-     width: 2.5rem;
-   }
+@include min_mobile {
+  // .links {
+  //   display: none;
+  // }
+  .menu {
+    display: block;
+    width: 2.5rem;
+  }
 }
