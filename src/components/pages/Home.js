@@ -4,7 +4,7 @@ import About from "../About";
 import Main from "../Main";
 import Details from "../Details";
 import Reviews from "../Reviews/Reviews";
-import Corousal from "../Corousal";
+import Slider from "../Slider";
 
 const Home = () => {
 
@@ -13,7 +13,7 @@ const Home = () => {
       <Main />
       <About />
       <Details />
-      <Corousal />
+      <Slider />
       <Reviews />
       <Questions />
     </main>

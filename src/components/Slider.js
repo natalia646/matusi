@@ -2,7 +2,7 @@ import React from 'react';
 
 import style from '../scss/Corousal.module.scss'
 
-const Corousal = () => {
+const Slider = () => {
   return (
     <div className={style.container}>
 
@@ -10,4 +10,4 @@ const Corousal = () => {
   )
 }
 
-export default Corousal
+export default Slider

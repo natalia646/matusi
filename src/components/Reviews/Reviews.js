@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import style from "../../scss/Reviews.module.scss";
 import Review from "./Review";
@@ -15,6 +15,9 @@ const people = [person1, person3, person2, person4, person5, person6];
 const Reviews = () => {
   const reviewsRef = useRef();
   const { activeIndex } = useSelector((state) => state.activeIndex);
+  const [activeId, setActiveId] = useState(0);
+  const [activeRight, setRight] = useState(activeId + 1);
+  const [activeLeft, setLeft] = useState(activeId - 1);
 
   useEffect(() => {
     if (activeIndex === 1) {
@@ -25,11 +28,34 @@ const Reviews = () => {
   return (
     <div className={style.container}>
       <h2 ref={reviewsRef}>Відгуки користувачів</h2>
+
       <div className={style.reviews}>
         {people.map((item, i) => {
-          return <Review item={item} i={i} />;
+          return (
+            <Review
+              key={i}
+              item={item}
+              i={i}
+              activeId={activeId}
+              right={activeRight}
+              left={activeLeft}
+            />
+          );
         })}
-        <p className={style.fix}></p>
+      </div>
+
+      <div className={style.circle_buttons}>
+        {people.map((_, idx) => {
+          return (
+            <button
+              key={idx}
+              onClick={() => setActiveId(idx)}
+              className={`${style.circle} ${
+                activeId === idx ? style.circle_active : ""
+              }`}
+            ></button>
+          );
+        })}
       </div>
     </div>
   );

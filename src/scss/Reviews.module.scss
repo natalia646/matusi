@@ -1,14 +1,15 @@
-@import './imortFiles/variable';
+@import "./imortFiles/variable";
 .container {
+  margin-top: -4rem;
   background-color: var(--root-color);
   @import "./imortFiles/h2";
   h2 {
     color: var(--white-color);
     text-align: center;
     margin-bottom: 4rem;
-    margin-top: -1rem;
   }
 }
+
 .reviews {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -17,10 +18,10 @@
   grid-row-gap: 16px;
   margin-left: 6.25rem;
   margin-right: 6.25rem;
-  
-.fix{
-  margin-bottom: 4rem;
-}
+
+  .fix {
+    margin-bottom: 4rem;
+  }
 
   article {
     background-color: var(--white-color);
@@ -34,8 +35,8 @@
       margin: 2.24rem 1.5rem 4.7rem 1.5rem;
     }
     .text {
-      @import './imortFiles/h3';
-      @import './imortFiles/p';
+      @import "./imortFiles/h3";
+      @import "./imortFiles/p";
       h3 {
         margin-bottom: 0rem;
       }
@@ -47,7 +48,53 @@
     }
   }
 }
-@include leptop{
+.circle_buttons {
+  display: none;
+}
 
+@include leptop {
+  .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle_buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    border: none;
+    margin: 3rem 2rem;
+  }
+  .circle_active {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 
+  .slider {
+    max-width: 30rem;
+    max-height: 30rem;
+    display: block;
+  }
+
+  .left {
+    max-width: 30rem;
+    max-height: 30rem;
+    display: block;
+
+  }
+
+  .slider_hiden {
+    width: 0px;
+    img {
+      display: none;
+    }
+    .text {
+      display: none;
+    }
+  }
 }
