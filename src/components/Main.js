@@ -4,7 +4,7 @@ import { setDetails } from "./redux/slices/activeSlice";
 import Download from "./Download";
 import phone1 from "../components/assets/phones/phone1.png";
 import phone2 from "../components/assets/phones/phone2.png";
-import google from "../components/assets/google_play.svg";
+import google from "../components/assets/icons/google_play.svg";
 import style from "../scss/Main.module.scss";
 
 const MainPart = () => {

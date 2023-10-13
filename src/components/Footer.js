@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../scss/Footer.module.scss";
 import { Link } from "react-router-dom";
-import baza from "./assets/baza-logo.svg";
+import baza from "./assets/logo/baza-logo.svg";
 
 const about = [
   {

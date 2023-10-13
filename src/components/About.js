@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import style from "../scss/About.module.scss";
-import location from "../components/assets/location.svg";
-import group from "../components/assets/group.svg";
-import purse from "../components/assets/purse.svg";
+import location from "../components/assets/about_icons/location.svg";
+import group from "../components/assets/about_icons/group.svg";
+import purse from "../components/assets/about_icons/purse.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { setDetails } from "./redux/slices/activeSlice";
 

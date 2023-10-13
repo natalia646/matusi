@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveIndex } from "./redux/slices/activeSlice";
-import line from "../components/assets/line.svg";
-import logo from "../components/assets/logo.svg";
-import open from "./assets/open-menu.svg";
-import close from "./assets/close.svg";
+import line from "../components/assets/icons/line.svg";
+import logo from "../components/assets/logo/logo.svg";
+import open from "./assets/icons/open-menu.svg";
+import close from "./assets/icons/close.svg";
 import style from "../scss/Header.module.scss";
 import Download from "./Download";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../assets/contact.svg";
+import contact from "../assets/pages/contact.svg";
 import style from "../../scss/Contact.module.scss";
 import { Form } from "../Form";
 

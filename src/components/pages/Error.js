@@ -1,5 +1,5 @@
 import React from "react";
-import error from "../assets/error.svg";
+import error from "../assets/pages/error.svg";
 
 const style = {
   height: "31.4rem",

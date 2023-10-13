@@ -1,10 +1,18 @@
 import React from 'react';
+import style from '../scss/Slider.module.scss';
+import back from './assets/corousal/back.svg'
+import next from './assets/corousal/next.svg';
 
-import style from '../scss/Corousal.module.scss'
+
 
 const Slider = () => {
   return (
-    <div className={style.container}>
+    <div className={`${style.slide} ${style.hi_slide}`}>
+      <img src={back} alt='arrow' className={style.arrow}></img>
+      <img src={next} alt='arrow' className={style.arrow}></img>
+      <ul>
+
+      </ul>
 
     </div>
   )

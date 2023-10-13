@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "../../scss/Ouestions.module.scss";
-import more from "../assets/more.svg";
+import more from "../assets/icons/more.svg";
 
 const Question = ({ id, item }) => {
   const [active, setActeve] = useState(null);
