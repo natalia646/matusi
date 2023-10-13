@@ -11,13 +11,12 @@
 };
 @mixin leptop(){
     @media (max-width: 1024px){
-        @content
+        @content 
     }
 };
 @mixin table() {
     @media only screen 
     and (max-device-width: 768px) 
-    // and (min-device-width: 579px) 
     and (-webkit-min-device-pixel-ratio: 1) {
     @content;
   }
@@ -26,7 +25,6 @@
 @mixin mobile{
     @media screen 
     and (max-device-width: 579px) 
-    // and (min-device-width: 380px) 
     and (-webkit-min-device-pixel-ratio: 1) {
     @content;
   }

@@ -1,3 +1,4 @@
+@import './imortFiles/variable';
 .container {
   display: flex;
   margin-left: 100px;
@@ -16,8 +17,23 @@
       color: var(--gray-color);
     }
   }
-  img {
-    margin-top: -3.4rem;
+  .img {
+    margin-top: -2.4rem;
     margin-bottom: 5rem;
+    max-width: 50rem;
+  }
+}
+@include max-desctop {
+  .text{
+    .img{
+      max-width: 25rem;
+    }
+  }
+}
+@include desctop{
+  .text{
+    img{
+      width: 700px;
+    }
   }
 }

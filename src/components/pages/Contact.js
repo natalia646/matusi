@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={style.container}>
       <div className={style.text}>
-        <h2>Контакти</h2>
+        <h2>Контакти</h2> 
         <p>
           Цей проект було створено за організаційної та фінансової підтримки
           Baza Trainee Ukraine. Ти можеш зв'язатись із розробниками сайту та
@@ -15,7 +15,7 @@ const Contact = () => {
         </p>
        <Form/>
       </div>
-      <img src={contact} alt="contact"></img>
+      <img src={contact} alt="contact" className={style.img}></img>
     </div>
   );
 };
