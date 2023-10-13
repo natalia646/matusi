@@ -2,3 +2,13 @@
 @import "./imortFiles/container";
 @import './imortFiles/h3';
 @import './imortFiles/p';
+@import './imortFiles/variable';
+
+@include table {
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+}
