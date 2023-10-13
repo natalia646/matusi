@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "../../scss/Ouestions.module.scss";
+import style from "../../scss/Questions.module.scss";
 import more from "../assets/icons/more.svg";
 
 const Question = ({ id, item }) => {

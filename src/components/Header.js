@@ -25,6 +25,7 @@ const Header = () => {
       dispatch(setActiveIndex(links.indexOf(url)));
     }
   });
+  
 
   return (
     <header className={style.container}>

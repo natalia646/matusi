@@ -22,7 +22,7 @@ const Slider = () => {
         <ul>
           {images.map((image, i) => (
             <li>
-              <Slide key={i} image={image} i={i} />
+              {/* <Slide key={i} image={image} i={i} /> */}
             </li>
           ))}
         </ul>

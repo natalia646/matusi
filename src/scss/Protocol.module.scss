@@ -1,14 +1,24 @@
-
 @import "./imortFiles/container";
-@import './imortFiles/h3';
-@import './imortFiles/p';
-@import './imortFiles/variable';
+@import "./imortFiles/variable";
+
+.container {
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
 
 @include table {
-    h3{
-        font-size: 1rem;
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    h3 {
+      font-size: 1rem;
     }
-    p{
-        font-size: 0.7rem;
+    p {
+      font-size: 0.7rem;
     }
+  }
 }

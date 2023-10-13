@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div className={style.container}>
       <div className={style.text}>
-        <h2>Контакти</h2> 
-        <p>
+        <h2 className={style.h2}>Контакти</h2> 
+        <p className={style.p}>
           Цей проект було створено за організаційної та фінансової підтримки
           Baza Trainee Ukraine. Ти можеш зв'язатись із розробниками сайту та
           додатку (app.mama.ne.vdoma@gmail.com). <b>Якщо у тебе залишились питання - пиши:</b>

@@ -10,15 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .links {
-    .link {
-      padding: 20px 32px;
-      text-decoration: none;
-      font-size: 1.25rem;
-    }
-  }
 }
+.link {
+  padding: 20px 32px;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
 .active {
   font-weight: 700;
 }
@@ -35,14 +33,10 @@
 @include desctop {
   .link {
     font-size: 1rem;
-    padding: 20px 25px !important;
+    padding: 20px 25px;
   }
 }
 @include leptop {
-  .link {
-    font-size: 1rem;
-    padding: 20px 25px !important;
-  }
   .download {
     display: none;
   }
@@ -54,15 +48,16 @@
     flex-direction: column;
     position: absolute;
     list-style: none;
-    background-color: #6c4eff89;
+    background-color: #6c4eff;
     left: 0;
     top: 80px;
     transition: all 0.1s;
     width: 100%;
+
     .link {
       text-align: center;
       color: aliceblue;
-      width: 100%;
+      width: 90%;
       padding: 32px;
       transition: all 0.3s ease;
       font-size: 5rem;
@@ -82,21 +77,12 @@
     width: 2.5rem;
   }
 }
-@include mobile {
-  // .links {
-  //   display: none;
-  // }
-  .menu {
-    display: block;
-    width: 2.5rem;
-  }
-}
-@include min_mobile {
-  // .links {
-  //   display: none;
-  // }
-  .menu {
-    display: block;
-    width: 2.5rem;
-  }
-}
+
+// @include mobile {
+//   .menu {
+//     display: block;
+//     width: 2.5rem;
+//   }
+// }
+// @include min_mobile {
+// }

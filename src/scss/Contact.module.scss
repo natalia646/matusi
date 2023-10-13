@@ -1,4 +1,4 @@
-@import './imortFiles/variable';
+@import "./imortFiles/variable";
 .container {
   display: flex;
   margin-left: 100px;
@@ -6,34 +6,38 @@
 
   .text {
     max-width: 27rem;
-    @import "./imortFiles/h2";
-    @import "./imortFiles/_p.scss";
+  }
+  .h2 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+  .p {
+    color: var(--gray-color);
+    font-size: 1.25rem;
+  }
+}
+.img {
+  margin-top: -2.4rem;
+  margin-bottom: 5rem;
+  max-width: 50rem;
+}
 
-    h2 {
-      margin-bottom: 1rem;
-      margin-top: 1.5rem;
-    }
-    p {
-      color: var(--gray-color);
-    }
-  }
-  .img {
-    margin-top: -2.4rem;
-    margin-bottom: 5rem;
-    max-width: 50rem;
-  }
-}
 @include max-desctop {
-  .text{
-    .img{
-      max-width: 25rem;
-    }
+  .img {
+    max-width: 43rem;
   }
 }
-@include desctop{
-  .text{
-    img{
-      width: 700px;
+@include desctop {
+  .img {
+    max-width: 33rem;
+  }
+  .container {
+    .h2 {
+      font-size: 2rem;
+    }
+    .p {
+      font-size: 1rem;
     }
   }
 }
