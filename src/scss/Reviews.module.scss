@@ -6,8 +6,14 @@
   h2 {
     color: var(--white-color);
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
+}
+
+.fix {
+  margin-bottom: 4rem;
+  background-color: var(--root-color);
+  color: var(--root-color);
 }
 
 .reviews {
@@ -18,10 +24,6 @@
   grid-row-gap: 16px;
   margin-left: 6.25rem;
   margin-right: 6.25rem;
-
-  .fix {
-    margin-bottom: 4rem;
-  }
 
   article {
     background-color: var(--white-color);
@@ -51,28 +53,21 @@
 .circle_buttons {
   display: none;
 }
+.arrow {
+  display: none;
+}
 
 @include leptop {
   .reviews {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .circle_buttons {
     display: flex;
     justify-content: center;
-  }
-  .circle {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: var(--orange-color);
-    border: none;
-    margin: 3rem 2rem;
-  }
-  .circle_active {
-    width: 1.4rem;
-    height: 1.4rem;
   }
 
   .slider {
@@ -80,21 +75,28 @@
     max-height: 30rem;
     display: block;
   }
-
-  .left {
-    max-width: 30rem;
-    max-height: 30rem;
+  .arrow {
     display: block;
-
+    width: 2rem;
+    box-shadow: 2px 8px 13px 2px rgba(255, 255, 255, 0.399);
+    border-radius: 50%;
+    margin: 0px 1rem;
   }
 
   .slider_hiden {
-    width: 0px;
+    width: 1rem;
+    height: 1rem;
+
     img {
       display: none;
     }
     .text {
       display: none;
     }
+  }
+}
+@include min_mobile{
+  h2{
+    font-size: 1rem ;
   }
 }

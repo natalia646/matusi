@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import style from "../../scss/Reviews.module.scss";
 import Review from "./Review";
 
+import back from "../assets/corousal/back.svg";
+import next from "../assets/corousal/next.svg";
 import person1 from "../assets/persone/person1.png";
 import person2 from "../assets/persone/person2.png";
 import person3 from "../assets/persone/person3.png";
@@ -16,8 +18,6 @@ const Reviews = () => {
   const reviewsRef = useRef();
   const { activeIndex } = useSelector((state) => state.activeIndex);
   const [activeId, setActiveId] = useState(0);
-  const [activeRight, setRight] = useState(activeId + 1);
-  const [activeLeft, setLeft] = useState(activeId - 1);
 
   useEffect(() => {
     if (activeIndex === 1) {
@@ -30,6 +30,12 @@ const Reviews = () => {
       <h2 ref={reviewsRef}>Відгуки користувачів</h2>
 
       <div className={style.reviews}>
+
+        <img
+          className={style.arrow}
+          onClick={() => setActiveId(activeId === 0 ? 5 : activeId - 1)}
+          src={back}
+        ></img>
         {people.map((item, i) => {
           return (
             <Review
@@ -37,26 +43,20 @@ const Reviews = () => {
               item={item}
               i={i}
               activeId={activeId}
-              right={activeRight}
-              left={activeLeft}
+              clickIdx={setActiveId}
             />
           );
         })}
-      </div>
+        <img
+          className={style.arrow}
+          src={next}
+          onClick={() => setActiveId(activeId === 5 ? 0 : activeId + 1)}
+        ></img>
+        {/* <p className={style.fix}></p> */}
 
-      <div className={style.circle_buttons}>
-        {people.map((_, idx) => {
-          return (
-            <button
-              key={idx}
-              onClick={() => setActiveId(idx)}
-              className={`${style.circle} ${
-                activeId === idx ? style.circle_active : ""
-              }`}
-            ></button>
-          );
-        })}
       </div>
+      <p className={style.fix}>dd</p>
+
     </div>
   );
 };
