@@ -4,7 +4,7 @@ import About from "../About";
 import Main from "../Main";
 import Details from "../Details";
 import Reviews from "../Reviews/Reviews";
-import Slider from "../Slider";
+import Slider from "../Slider/Slider";
 
 const Home = () => {
 

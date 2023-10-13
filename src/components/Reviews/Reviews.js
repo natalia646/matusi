@@ -52,7 +52,6 @@ const Reviews = () => {
           src={next}
           onClick={() => setActiveId(activeId === 5 ? 0 : activeId + 1)}
         ></img>
-        {/* <p className={style.fix}></p> */}
 
       </div>
       <p className={style.fix}>dd</p>

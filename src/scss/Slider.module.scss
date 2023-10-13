@@ -1,0 +1,31 @@
+.arrow {
+  width: 2rem;
+}
+.image {
+  width: 700px;
+}
+.container {
+  background-color: var(--root-color);
+}
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+
+  ul {
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 1000px;
+    z-index: 0;
+    // scroll-snap-type: x mandatory;
+
+    li {
+      overflow: hidden;
+    }
+  }
+}

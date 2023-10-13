@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../scss/Reviews.module.scss";
-import { click } from "@testing-library/user-event/dist/click";
+
 
 const h3 = [
   "Інна Денисюк",
