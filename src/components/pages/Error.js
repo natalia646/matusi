@@ -1,15 +1,17 @@
 import React from "react";
 import error from "../assets/pages/error.svg";
-
-const style = {
-  height: "31.4rem",
-  display: 'block',
-  margin: '4.5rem auto ',
-  width: '50%',
-};
+import style from "../../scss/Error.module.scss";
+import { Link } from "react-router-dom";
 
 const Error = () => {
-  return <img style={style} src={error} alt="error"></img>;
+  return (
+    <main className={style.error}>
+      <img src={error} alt="error"></img>
+      <Link to="/">
+        <button>Головна</button>
+      </Link>
+    </main>
+  );
 };
 
 export default Error;

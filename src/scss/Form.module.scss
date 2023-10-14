@@ -1,4 +1,4 @@
-@import "./imortFiles//variable";
+@import "./imortFiles/variable";
 .form {
   input,
   textarea {
@@ -11,7 +11,13 @@
     font-family: Nunito Sans;
     font-size: 1rem;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.282);
+    // &:focus {
+    //   background-color: rgb(254, 254, 254);
+    //   box-shadow: 2px 5px 8px 2px rgba(0, 0, 0, 0.282);
+    //   border: none;
+    // };
   }
+
   .textarea {
     height: 4rem;
   }
@@ -53,9 +59,9 @@
     textarea {
       width: 23rem;
     }
-    .sending{
-      h6{
-        margin:1rem 0rem ;
+    .sending {
+      h6 {
+        margin: 1rem 0rem;
       }
       margin-bottom: 2rem;
     }
@@ -68,23 +74,21 @@
       width: 38rem;
       font-size: 1.25rem;
       margin-bottom: 1rem;
-     
     }
-     .textarea {
-        height: 5rem;
-      }
+    .textarea {
+      height: 5rem;
+    }
     .button {
       width: 35rem;
       font-size: 1.5rem;
       padding: 0.5rem;
       border-radius: 2.1rem;
       margin-bottom: 3rem;
-
     }
     .sending {
       flex-direction: column;
-      h6{
-        margin:0.4rem 1rem;
+      h6 {
+        margin: 0.4rem 1rem;
         font-size: 1.25rem;
       }
     }
