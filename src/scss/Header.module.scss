@@ -44,7 +44,6 @@
     display: none;
   }
 }
-
 @include table {
   .close {
     display: flex;
@@ -57,12 +56,14 @@
     transition: all 0.1s;
     width: 100%;
     z-index: 2;
-
+    // border-radius: 0px 0px  0px  100%;
+    
     .link {
+      // text-align:end;
       text-align: center;
       color: aliceblue;
       width: 90%;
-      padding: 32px;
+      padding: 3rem;
       transition: all 0.3s ease;
       font-size: 2rem;
       font-weight: 700;
@@ -71,7 +72,7 @@
       display: none;
     }
   }
-
+  
   .open {
     display: none;
   }
