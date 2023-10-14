@@ -23,6 +23,7 @@ function App() {
         <Route path="/refusal" element={<Refusal />} />
       </Routes>
       <Footer />
+      
     </div>
   );
 }
