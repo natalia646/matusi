@@ -25,7 +25,11 @@ const Header = () => {
       dispatch(setActiveIndex(links.indexOf(url)));
     }
   });
-  
+
+  const getActiveID = (i) => {
+    setIsMobile(true)
+    dispatch(setActiveIndex(i));
+  }
 
   return (
     <header className={style.container}>
@@ -45,7 +49,7 @@ const Header = () => {
             <Link
               to={item}
               key={i}
-              onClick={() => dispatch(setActiveIndex(i))}
+              onClick={() => getActiveID(i)}
               className={`${style.link} ${
                 i === activeIndex ? style.active : ""
               } `}
