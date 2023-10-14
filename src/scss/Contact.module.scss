@@ -1,7 +1,7 @@
 @import "./imortFiles/variable";
 .container {
   display: flex;
-  margin-left: 100px;
+  margin-left: 6.25rem;
   justify-content: space-between;
 
   .text {
@@ -30,9 +30,22 @@
 }
 @include desctop {
   .img {
-    max-width: 33rem;
+    max-width: 36rem;
   }
   .container {
+    margin-left: 3rem;
+    .h2 {
+      font-size: 2.4rem;
+    }
+    .p {
+      font-size: 1.1rem;
+    }
+  }
+}
+@include leptop {
+  .container {
+    margin-left: 2rem;
+
     .h2 {
       font-size: 2rem;
     }
@@ -40,4 +53,8 @@
       font-size: 1rem;
     }
   }
+.img {
+    max-width: 34rem;
+  }
 }
+

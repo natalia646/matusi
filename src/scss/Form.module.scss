@@ -1,3 +1,4 @@
+@import "./imortFiles//variable";
 .form {
   input,
   textarea {
@@ -26,10 +27,20 @@
     margin-bottom: 0rem;
   }
   h6 {
-  color: var(--orange-color);
-  font-size: 1rem;
-  align-items: flex-end;
- 
-}
+    color: var(--orange-color);
+    font-size: 1rem;
+    align-items: flex-end;
+  }
 }
 
+@include desctop {
+  .form {
+    input,
+    textarea {
+      width: 23rem;
+    }
+    .button{
+      left: 12rem;
+    }
+  }
+}
