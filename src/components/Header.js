@@ -9,7 +9,6 @@ import close from "./assets/icons/close.svg";
 import style from "../scss/Header.module.scss";
 import Download from "./Download";
 
-
 const links = ["/", "/", "/terms", "/contact"];
 const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
 
@@ -27,43 +26,49 @@ const Header = () => {
   });
 
   const getActiveID = (i) => {
-    setIsMobile(true)
+    setIsMobile(true);
     dispatch(setActiveIndex(i));
-  }
+  };
 
   return (
-    <header className={style.container}>
-      <Link to="/">
-        <img src={logo} alt="logo"></img>
-      </Link>
-      <img
-        onClick={() => setIsMobile(!isMobile)}
-        className={style.menu}
-        src={isMobile ? open : close}
-        alt="menu"
-      ></img>
+    <header>
+      <div className={style.container}>
+        <Link to="/">
+          <img src={logo} alt="logo"></img>
+        </Link>
+        <img
+          onClick={() => setIsMobile(!isMobile)}
+          className={style.menu}
+          src={isMobile ? open : close}
+          alt="menu"
+        ></img>
 
-      <div className={`${style.links} ${isMobile? style.open: style.close}`}>
-        {links.map((item, i) => {
-          return (
-            <Link
-              to={item}
-              key={i}
-              onClick={() => getActiveID(i)}
-              className={`${style.link} ${
-                i === activeIndex ? style.active : ""
-              } `}
-            >
-              <img
-                src={line}
-                alt="line"
-                className={i === activeIndex ? style.line : style.not_line}
-              ></img>
-              {nameLink[i]}
-            </Link>
-          );
-        })}
-        <span className={style.download}><Download/></span>
+        <div
+          className={`${style.links} ${isMobile ? style.open : style.close}`}
+        >
+          {links.map((item, i) => {
+            return (
+              <Link
+                to={item}
+                key={i}
+                onClick={() => getActiveID(i)}
+                className={`${style.link} ${
+                  i === activeIndex ? style.active : ""
+                } `}
+              >
+                <img
+                  src={line}
+                  alt="line"
+                  className={i === activeIndex ? style.line : style.not_line}
+                ></img>
+                {nameLink[i]}
+              </Link>
+            );
+          })}
+          <span className={style.download}>
+            <Download />
+          </span>
+        </div>
       </div>
     </header>
   );

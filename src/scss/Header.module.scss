@@ -4,6 +4,9 @@
 .menu {
   display: none;
 }
+.top_hr {
+  display: none;
+}
 .container {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -53,6 +56,7 @@
     top: 80px;
     transition: all 0.1s;
     width: 100%;
+    z-index: 2;
 
     .link {
       text-align: center;
@@ -60,7 +64,7 @@
       width: 90%;
       padding: 32px;
       transition: all 0.3s ease;
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: 700;
     }
     .line {
@@ -78,11 +82,14 @@
   }
 }
 
-// @include mobile {
-//   .menu {
-//     display: block;
-//     width: 2.5rem;
-//   }
-// }
-// @include min_mobile {
-// }
+@include mobile {
+  .container {
+    border-width: 0.5rem;
+    border-block-end: solid;
+    // border-width: 0 4px 8px 12px;
+    // writing-mode: horizontal-tb;
+    border-color: rgba(224, 223, 223, 0.377);
+    padding-bottom: 5px;
+
+  }
+}
