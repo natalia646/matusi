@@ -8,4 +8,6 @@
   --white-color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
 }
-
+.App{
+  min-width: 100%;
+}

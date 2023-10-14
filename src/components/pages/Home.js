@@ -9,14 +9,14 @@ import Slider from "../Slider/Slider";
 const Home = () => {
 
   return (
-    <main>
+    <div>
       <Main />
       <About />
       <Details />
       <Slider />
       <Reviews />
       <Questions />
-    </main>
+    </div>
   );
 };
 
