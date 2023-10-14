@@ -10,26 +10,32 @@
     border: none;
     font-family: Nunito Sans;
     font-size: 1rem;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.282);
   }
   .textarea {
     height: 4rem;
+  }
+  .sending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h6 {
+      color: var(--orange-color);
+      font-size: 1rem;
+      align-items: flex-end;
+    }
   }
   .button {
     width: 13rem;
     border-radius: 1rem;
     border: 3px solid var(--orange-color);
     position: relative;
-    left: 15rem;
-    background-color: var(--white-color);
-    color: var(--orange-color);
+    background-color: var(--orange-color);
+    color: var(--white-color);
     padding: 0.3rem;
     font-weight: 700;
     margin-bottom: 0rem;
-  }
-  h6 {
-    color: var(--orange-color);
-    font-size: 1rem;
-    align-items: flex-end;
   }
 }
 
@@ -39,8 +45,48 @@
     textarea {
       width: 23rem;
     }
-    .button{
-      left: 12rem;
+  }
+}
+@include leptop {
+  .form {
+    input,
+    textarea {
+      width: 23rem;
+    }
+    .sending{
+      h6{
+        margin:1rem 0rem ;
+      }
+      margin-bottom: 2rem;
+    }
+  }
+}
+@include table {
+  .form {
+    input,
+    textarea {
+      width: 38rem;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+     
+    }
+     .textarea {
+        height: 5rem;
+      }
+    .button {
+      width: 35rem;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 2.1rem;
+      margin-bottom: 3rem;
+
+    }
+    .sending {
+      flex-direction: column;
+      h6{
+        margin:0.4rem 1rem;
+        font-size: 1.25rem;
+      }
     }
   }
 }

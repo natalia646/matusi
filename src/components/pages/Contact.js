@@ -5,7 +5,7 @@ import { Form } from "../Form";
 
 const Contact = () => {
   return (
-    <div className={style.container}>
+    <main className={style.container}>
       <div className={style.text}>
         <h2 className={style.h2}>Контакти</h2> 
         <p className={style.p}>
@@ -16,7 +16,7 @@ const Contact = () => {
        <Form/>
       </div>
       <img src={contact} alt="contact" className={style.img}></img>
-    </div>
+    </main>
   );
 };
 
