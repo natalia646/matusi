@@ -10,15 +10,28 @@
   }
 }
 
+@include desctop{
+  .container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
 @include table {
   .container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     h3 {
       font-size: 1rem;
     }
     p {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
 }
