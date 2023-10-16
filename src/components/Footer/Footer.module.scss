@@ -45,3 +45,31 @@
   align-items: center;
 }
 
+@include mobile {
+  .footer {
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      img {
+        width: 10rem;
+      }
+      .desc {
+        display: grid;
+        h3 {
+          font-size: 1.5rem;
+        }
+        .contact {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .terms{
+      p{
+        font-size: 1.5rem;
+      }
+      .contact{
+        display: none;
+      }
+    }
+  }
+}
