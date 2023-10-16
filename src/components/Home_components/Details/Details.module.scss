@@ -41,6 +41,7 @@
     height: 60.088px;
     padding: 14px 20px;
     margin: 45.55px 0px 7rem 0px;
+    font-size: 1.6rem;
   }
 }
 @include max-desctop {
@@ -95,19 +96,18 @@
         left: 12rem;
       }
     }
-
     .text {
       width: 400px;
       h2 {
         font-size: 2.3rem;
       }
       p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
     }
   }
 }
-@include table {
+@include mobile {
   .details {
     .desctop {
       display: none;
@@ -117,11 +117,16 @@
       background-color: var(--root-color);
       margin: -2rem -2rem 0rem -2rem;
       button {
-        margin: 0rem;
+        margin-top: 3rem;
         position: relative;
-        font-size: 1.6rem;
-        left: 28%;
-        width: 28rem;
+        font-size: 2.6rem;
+        left: 22%;
+        width: 35rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
       }
     }
     grid-template-columns: 1fr;
@@ -129,35 +134,26 @@
 
     .photos {
       .photo1 {
-        width: 20rem;
-        bottom: 12rem;
-        left: 11rem;
+        width: 30rem;
+        bottom: 17rem;
+        left: 4rem;
       }
       .photo2 {
-        width: 22rem;
-        left: 25rem;
+        width: 31rem;
+        left: 23rem;
       }
     }
 
     .text {
-      width:90%;
-      margin: 2rem;
+      width: 90%;
+      margin: 2rem 3rem 3rem 1rem;
       text-align: center;
       h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
       p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--gray-color);
-      }
-    }
-  }
-}
-@include mobile{
-  .details{
-    .text{
-      h2{
-        
       }
     }
   }
