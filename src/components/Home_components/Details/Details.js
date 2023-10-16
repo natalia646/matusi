@@ -8,6 +8,9 @@ const Details = () => {
   return (
     <div className={style.container}>
       <div className={style.details}>
+        <span className={style.mobile}>
+          <Download />
+        </span>
         <div className={style.photos}>
           <img src={phone4} alt="phone" className={style.photo1}></img>
           <img src={phone3} alt="phone" className={style.photo2}></img>
@@ -23,7 +26,9 @@ const Details = () => {
             дасть змогу мамам піти на роботу та заробити грошей на проживання
             сім’ї в ці складні часи.
           </p>
-          <Download />
+          <span className={style.desctop}>
+            <Download />
+          </span>
         </div>
       </div>
     </div>

@@ -5,32 +5,31 @@
   background-position: bottom right;
 }
 .details {
-  margin: 3rem 6rem -15px 6rem;
-  display: flex;
-  justify-content: flex-end;
+  .mobile {
+    display: none;
+  }
+  margin: 1rem 6rem -1rem 6rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
 
   .photos {
-    img {
-      position: relative;
-      bottom: 9rem;
-      right: 12rem;
-    }
     .photo1 {
-       width: 21rem;
-       right: 1rem;
-       bottom: 8rem;
-      }
-      .photo2 {
-        width: 20rem;
-        right: 9rem;
-        top: 1rem
+      position: relative;
+      width: 21rem;
+      bottom: 8rem;
+    }
+    .photo2 {
+      position: absolute;
+      width: 20rem;
+      left: 18rem;
     }
   }
 
   .text {
     width: 602px;
     h2 {
-      font-size:  3rem;
+      font-size: 3rem;
     }
     p {
       font-size: 2rem;
@@ -41,61 +40,124 @@
     width: 260px;
     height: 60.088px;
     padding: 14px 20px;
-    margin: 45.55px 0px 9rem 0px;
+    margin: 45.55px 0px 7rem 0px;
   }
 }
 @include max-desctop {
   .details {
-    margin: 6rem 70px -15px 100px;
-    img {
-      width: 30rem;
-      right: 6rem;
+    margin: 1rem 4rem -1rem 4rem;
+    .photos {
+      .photo2 {
+        left: 15rem;
+      }
     }
     .text {
-      width: 580px;
-      h2 {
-        font-size: 2.7rem;
+      p {
+        font-size: 1.9rem;
       }
     }
   }
 }
 @include desctop {
   .details {
-    margin: 6rem 60px -15px 100px;
-    img {
-      width: 29rem;
-      right: 4.5rem;
-    }
-    .text {
-      width: 560px;
-      h2 {
-        font-size: 2.5rem;
+    margin: 1rem 2rem -1rem 2rem;
+    .photos {
+      .photo1 {
+        width: 18rem;
+        bottom: 7rem;
       }
+      .photo2 {
+        width: 17rem;
+        left: 12rem;
+      }
+    }
 
-      button {
-        margin: 45.55px 0px 0rem 0px;
+    .text {
+      width: 480px;
+      h2 {
+        font-size: 2.7rem;
+      }
+      p {
+        font-size: 1.6rem;
       }
     }
   }
 }
 @include leptop {
   .details {
-    margin: 6rem 40px -15px 100px;
-    img {
-      width: 25rem;
-      right: 2rem;
+    .photos {
+      .photo1 {
+        width: 17rem;
+        bottom: 6.5rem;
+      }
+      .photo2 {
+        width: 16rem;
+        left: 12rem;
+      }
     }
+
     .text {
-      width: 500px;
+      width: 400px;
       h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
       }
       p {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
       }
-
+    }
+  }
+}
+@include table {
+  .details {
+    .desctop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      background-color: var(--root-color);
+      margin: -2rem -2rem 0rem -2rem;
       button {
-        margin: 45.55px 0px 0rem 0px;
+        margin: 0rem;
+        position: relative;
+        font-size: 1.6rem;
+        left: 28%;
+        width: 28rem;
+      }
+    }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1.6fr;
+
+    .photos {
+      .photo1 {
+        width: 20rem;
+        bottom: 12rem;
+        left: 11rem;
+      }
+      .photo2 {
+        width: 22rem;
+        left: 25rem;
+      }
+    }
+
+    .text {
+      width:90%;
+      margin: 2rem;
+      text-align: center;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: var(--gray-color);
+      }
+    }
+  }
+}
+@include mobile{
+  .details{
+    .text{
+      h2{
+        
       }
     }
   }

@@ -73,6 +73,9 @@
   }
 }
 @include table {
+  .container{
+    padding-bottom: 1rem;
+  }
   .boxes {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -92,7 +95,7 @@
       font-size: 1.6rem;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
   .desc {
@@ -118,10 +121,10 @@
       width: 6rem;
     }
     h3 {
-      font-size: 2.7rem;
+      font-size: 2rem;
     }
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   .desc {
