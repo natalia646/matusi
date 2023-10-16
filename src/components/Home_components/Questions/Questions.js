@@ -62,7 +62,7 @@ const Questions = () => {
 
   return (
     <section className={style.questions}>
-      <h2 className={style.title}>Питання, які часто задають</h2>
+      <h2 className={style.title}>Поширені запитання</h2>
         {qaList.map((item, id) => {
           return <Question id={id} item={item} key={id} />;
         })}

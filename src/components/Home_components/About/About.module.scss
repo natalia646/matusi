@@ -9,6 +9,10 @@
   color: var(--white-color);
   h2 {
     margin-top: 0;
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.25rem;
   }
 }
 .boxes { 
@@ -25,8 +29,12 @@
     text-align: center;
     padding: 1.7rem;
     margin-bottom: 206px;
+    h3{
+      font-size: 2rem;
+    }
     p {
       color: var(--gray-color);
+      font-size: 1.25rem;
     }
   }
 }
