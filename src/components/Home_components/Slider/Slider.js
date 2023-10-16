@@ -18,7 +18,6 @@ import image2 from "../../assets/corousal/images/img2.png";
 import image3 from "../../assets/corousal/images/img3.png";
 import image4 from "../../assets/corousal/images/img4.png";
 import image5 from "../../assets/corousal/images/img5.png";
-// import image6 from "../../assets/corousal/images/img6.png";
 import image7 from "../../assets/corousal/images/img7.png";
 import image8 from "../../assets/corousal/images/img8.png";
 
@@ -28,7 +27,6 @@ const images = [
   image2,
   image3,
   image4,
-  // image6,
   image8,
   image7,
   image5,
