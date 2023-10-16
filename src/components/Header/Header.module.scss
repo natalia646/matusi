@@ -51,6 +51,7 @@
     position: absolute;
     list-style: none;
     background-color: #6c4eff;
+    // background-color: #0000006e;
     left: 0;
     top: 80px;
     transition: all 0.1s;
@@ -59,9 +60,9 @@
     // border-radius: 0px 0px  0px  100%;
     
     .link {
-      // text-align:end;
+      // text-align: end;
       text-align: center;
-      color: aliceblue;
+      color: var(--white-color);
       width: 90%;
       padding: 3rem;
       transition: all 0.3s ease;

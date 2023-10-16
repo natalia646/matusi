@@ -12,7 +12,7 @@
 }
 .desc {
   margin: 1rem 0rem 11rem 6.25rem;
-  h1 {
+  .h1 {
     font-size: 3rem;
     font-weight: 700;
   }
@@ -78,7 +78,7 @@
 }
 @include max-desctop {
   .desc {
-    h1 {
+    .h1 {
       font-size: 2.6rem;
     }
     h4 {
@@ -118,7 +118,7 @@
 @include desctop {
   .desc {
     margin: 1rem 0rem 11rem 5rem;
-    h1 {
+    .h1 {
       font-size: 2rem;
     }
     h4 {
@@ -159,7 +159,7 @@
 @include leptop {
   .desc {
     margin: 1rem 0rem 11rem 4rem;
-    h1 {
+    .h1 {
       font-size: 2rem;
     }
     h4 {
@@ -186,7 +186,7 @@
 }
 @include table {
   .desc {
-    h1 {
+    .h1 {
       font-size: 1.6rem;
     }
     h4 {
@@ -227,15 +227,15 @@
   }
   .desc {
     text-align: center;
-    margin:  1rem ;
+    margin: 1rem;
+    .h1 {
+      font-size: 3rem;
+    }
     h5 {
       display: block;
       font-size: 0.9rem;
       color: var(--gray-color);
       font-weight: 400;
-    }
-    h1 {
-      font-size: 3rem;
     }
     h4 {
       display: none;
@@ -264,24 +264,23 @@
 
   .phone1 {
     z-index: 1;
-    width: 15rem;
+    width: 20rem;
     position: relative;
-    left: 15rem;
-    top: -19rem;
-
+    left: 10rem;
+    top: -28rem;
   }
   .phone2 {
     z-index: 2;
-    width: 19rem;
+    width: 24rem;
     position: relative;
-    top: -8.5rem;
-    left: 11rem;
+    top: -14.5rem;
+    left: 5rem;
   }
   .google_play {
     z-index: 3;
     position: relative;
-    left: 14rem;
-    top: 26.5rem;
+    left: 13rem;
+    top: 29rem;
     width: 15rem;
     .text {
       p {
@@ -290,78 +289,18 @@
     }
   }
 }
+
 @include min_mobile {
-  .head_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-image: none;
-  }
-  .images {
-    background-color: var(--root-color);
-  }
-  .desc {
-    text-align: center;
-    margin: 1rem;
-    h5 {
-      display: block;
-      font-size: 0.7rem;
-      color: var(--gray-color);
-      font-weight: 400;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-    h4 {
-      display: none;
-    }
-    p {
-      display: none;
-    }
-  }
-
-  .buttons {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 2rem;
-    button {
-      align-self: center;
-      justify-self: center;
-      width: 30rem;
-      font-size: 1.75rem;
-      font-weight: 700;
-      border: 3px solid var(--orange-color);
-      padding: 1rem 2rem;
-      margin-bottom: 1rem;
-    }
-  }
-
   .phone1 {
-    z-index: 1;
-    width: 16rem;
-    position: relative;
-    left: 15rem;
-    top: -17rem;
-
+    left: 10rem;
+    top: -25rem;
   }
   .phone2 {
-    z-index: 2;
-    width: 19rem;
-
-    position: relative;
-    top: -7.5rem;
-    left: 11rem;
+    top: -11.5rem;
+    left: 5rem;
   }
-  .google_play {
-    z-index: 3;
-    position: relative;
+  .google_play{
     left: 13rem;
-    top: 28rem;
-    width: 15rem;
-    .text {
-      p {
-        font-size: 1.5rem;
-      }
-    }
+    top: 32rem;
   }
 }
