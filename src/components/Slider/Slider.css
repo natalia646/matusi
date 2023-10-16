@@ -91,6 +91,9 @@
   background: var(--primary);
 }
 
+
+
+
 @media (max-width: 500px) {
   .swiper-container {
     height: 47rem;
