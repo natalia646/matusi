@@ -1,0 +1,91 @@
+@import "../../scss/variable";
+
+.container {
+  display: flex;
+  margin-left: 6.25rem;
+  justify-content: space-between;
+
+  .text {
+    max-width: 27rem;
+  }
+  .h2 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+  .p {
+    color: var(--gray-color);
+    font-size: 1.25rem;
+  }
+}
+.img {
+  margin-top: -2.4rem;
+  margin-bottom: 5rem;
+  max-width: 50rem;
+}
+
+@include max-desctop {
+  .img {
+    max-width: 43rem;
+  }
+}
+@include desctop {
+  .img {
+    max-width: 36rem;
+  }
+  .container {
+    margin-left: 3rem;
+    .h2 {
+      font-size: 2.4rem;
+    }
+    .p {
+      font-size: 1.1rem;
+    }
+  }
+}
+@include leptop {
+  .container {
+    margin-left: 2rem;
+    .h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    .p {
+      font-size: 1rem;
+    }
+  }
+.img {
+    max-width: 34rem;
+  }
+}
+@include table{
+  .container{
+    margin-left: 1rem;
+    flex-direction: column-reverse;
+
+    .text{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 40rem;
+    }
+    .h2{
+     display: none;
+    }
+    .p{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  .img{
+    max-width: 55rem;
+    margin-top: -2.6rem;
+    margin-bottom: 1rem;
+  }
+}
+@include min_mobile{
+  .container{
+    .p{
+      font-size: 0.9rem ;
+    }
+  }
+}

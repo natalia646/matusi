@@ -1,0 +1,88 @@
+@import "../../scss/variable";
+.container {
+  background-image: url("../../assets/background/background-buttom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.details {
+  margin: 6rem 100px -15px 100px;
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    width: 30rem;
+    position: relative;
+    bottom: 9rem;
+    right: 12rem;
+  }
+
+  .text {
+    width: 602px;
+  }
+  p {
+    font-size: 1.65rem;
+    color: var(--gray-color);
+  }
+  button {
+    width: 260px;
+    height: 60.088px;
+    padding: 14px 20px;
+    margin: 45.55px 0px 9rem 0px;
+  }
+}
+@include max-desctop {
+  .details {
+    margin: 6rem 70px -15px 100px;
+    img {
+      width: 30rem;
+      right: 6rem;
+    }
+    .text {
+      width: 580px;
+      h2 {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}
+@include desctop {
+  .details {
+    margin: 6rem 60px -15px 100px;
+    img {
+      width: 29rem;
+      right: 4.5rem;
+    }
+    .text {
+      width: 560px;
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      button {
+        margin: 45.55px 0px 0rem 0px;
+      }
+    }
+  }
+}
+@include leptop{
+  .details {
+    margin: 6rem 40px -15px 100px;
+    img {
+      width: 25rem;
+      right: 2rem;
+    }
+    .text {
+      width: 500px;
+      h2 {
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.25rem;
+      }
+
+      button {
+        margin: 45.55px 0px 0rem 0px;
+      }
+    }
+  }
+}
