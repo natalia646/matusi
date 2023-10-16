@@ -2,7 +2,7 @@
 
 .container {
   background-color: var(--root-color);
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 .desc {
   text-align: center;
@@ -11,7 +11,7 @@
     margin-top: 0;
   }
 }
-.boxes {
+.boxes { 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 6.25rem;
@@ -71,11 +71,6 @@
       font-size: 0.9rem;
     }
   }
-  .desc {
-    p {
-      font-size: 0.8rem;
-    }
-  }
 }
 @include table {
   .boxes {
@@ -97,12 +92,12 @@
       font-size: 1.6rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
   }
   .desc {
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -120,57 +115,36 @@
     }
 
     img {
-      width: 5rem;
+      width: 6rem;
     }
     h3 {
-      font-size: 2rem;
+      font-size: 2.7rem;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
   .desc {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      br{
+        display: none;
+      }
     }
   }
 }
 @include min_mobile {
-  .boxes {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    .box {
-      margin-bottom: 0rem;
-      max-width: 450px;
-      max-height: 250px;
-      align-items: center;
-      justify-self: center;
-      margin-bottom: 2rem;
-    }
-
-    img {
-      width: 5rem;
-    }
-    h3 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1.3rem;
-    }
-  }
   .desc {
-    margin-left: 6rem;
-    margin-right: 6rem;
     h2 {
-      font-size: 1.5rem;
+      font-size: 3rem;
     }
     p {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
   }
 }

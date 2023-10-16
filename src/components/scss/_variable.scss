@@ -13,7 +13,7 @@
     @media (max-width: 1024px){
         @content 
     }
-};
+}; 
 @mixin table() {
     @media only screen 
     and (max-device-width: 768px) 
