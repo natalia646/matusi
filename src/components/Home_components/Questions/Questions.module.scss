@@ -1,3 +1,4 @@
+@import '../../scss/variable';
 .title {
   text-align: center;
   margin-top: 4rem;
@@ -16,7 +17,7 @@
     border-radius: 15px;
     padding: 8px 18px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
     font-weight: 700;
 
@@ -37,7 +38,7 @@
   transition: max-height 1s ease;
 }
 .a_open {
-  max-height: 160px;
+  max-height: 450px;
 }
 
 .q_open {
@@ -51,4 +52,19 @@
 }
 .item{
   margin-bottom: 1rem;
+}
+@include table{
+.questions{
+  margin: 3rem 5rem 6rem 5rem;
+  .question{
+    font-size: 2rem;
+    .svg{
+      transition: transform 1.4s ease;
+    }
+  }
+}
+.answer{
+  font-size: 1.7rem;
+  transition: max-height 1.5s ease;
+}
 }
