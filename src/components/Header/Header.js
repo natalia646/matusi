@@ -83,7 +83,7 @@ const Header = () => {
             
             {linksMobile.map((item, i) => (
               <Link key={i} className={style.contact} to={item.link}onClick={()=>{setIsMobile(true);}} >
-                {item.label}<hr/>
+                {item.label}
               </Link>
             ))}
           </span>

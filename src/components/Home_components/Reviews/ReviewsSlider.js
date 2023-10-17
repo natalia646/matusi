@@ -21,7 +21,14 @@ import person4 from "../../assets/persone/person4.svg";
 import person5 from "../../assets/persone/person5.svg";
 import person6 from "../../assets/persone/person6.svg";
 
-const people = [person1, person3, person2, person4, person5, person6];
+const people = [
+  person1,
+  person3,
+  person2,
+  person4,
+  person5,
+  person6
+];
 
 const Slider = () => {
   return (
@@ -52,7 +59,7 @@ const Slider = () => {
         {people.map((persone, i) => {
           return (
             <SwiperSlide key={i}>
-                 <Review item={persone} i={i} />;
+              <Review item={persone} i={i} />;
             </SwiperSlide>
           );
         })}

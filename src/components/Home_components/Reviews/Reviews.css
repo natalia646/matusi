@@ -40,7 +40,7 @@ padding-top: 1rem;
 .container-reviews-mobile .swiper-container .swiper-slide .p {
     margin: 2rem 0rem 0rem 2rem;
     font-size: 1.7rem;
-  color: var(--gray-color);
+  color: black;
   margin-top: 2px;
   margin-right: 1.5rem;
   grid-area: 2 / 1 / 3 / 3;

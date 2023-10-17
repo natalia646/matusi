@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import style from "./Reviews.module.scss";
 import Review from "./Review";
@@ -10,7 +10,14 @@ import person4 from "../../assets/persone/person4.svg";
 import person5 from "../../assets/persone/person5.svg";
 import person6 from "../../assets/persone/person6.svg";
 
-const people = [person1, person3, person2, person4, person5, person6];
+const people = [
+  person1,
+  person3,
+  person2,
+  person4,
+  person5,
+  person6
+];
 
 const Reviews = () => {
   const reviewsRef = useRef();
@@ -27,13 +34,7 @@ const Reviews = () => {
       <h2 ref={reviewsRef}>Відгуки користувачів</h2>
       <div className={style.reviews}>
         {people.map((item, i) => {
-          return (
-            <Review
-              key={i}
-              item={item}
-              i={i}
-            />
-          );
+          return <Review key={i} item={item} i={i} />;
         })}
       </div>
       <p className={style.fix}>dd</p>
