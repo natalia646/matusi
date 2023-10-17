@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./Reviews.module.scss";
 
 const h3 = [
   "Інна Денисюк",
