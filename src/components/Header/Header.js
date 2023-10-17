@@ -11,6 +11,16 @@ import Download from "../Home_components/Download/Download";
 
 const links = ["/", "/", "/terms", "/contact"];
 const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
+const linksMobile = [
+  {
+    link: "/refusal",
+    label: "Відмова від відповідальності",
+  },
+  {
+    link: "/privacy",
+    label: "Політика конфіденційності",
+  },
+];
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -65,8 +75,17 @@ const Header = () => {
               </Link>
             );
           })}
+          
           <span className={style.download}>
             <Download />
+          </span>
+          <span className={style.menu_mobile}>
+            
+            {linksMobile.map((item, i) => (
+              <Link key={i} className={style.contact} to={item.link}onClick={()=>{setIsMobile(true);}} >
+                {item.label}<hr/>
+              </Link>
+            ))}
           </span>
         </div>
       </div>

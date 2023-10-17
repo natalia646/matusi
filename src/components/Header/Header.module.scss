@@ -4,6 +4,9 @@
 .menu {
   display: none;
 }
+.menu_mobile{
+  display: none;
+}
 .top_hr {
   display: none;
 }
@@ -50,30 +53,43 @@
     flex-direction: column;
     position: absolute;
     list-style: none;
-    background-color: #6c4eff;
-    // background-color: #0000006e;
+    // background-color: #6c4eff;
+    background-color: #00000099;
+    // left: 30%;
     left: 0;
     top: 80px;
     transition: all 0.1s;
-    width: 100%;
-    z-index: 2;
-    // border-radius: 0px 0px  0px  100%;
-    
+    width:100%;
+    z-index: 4;
+    height: 100%;
+
     .link {
-      // text-align: end;
-      text-align: center;
+      text-align: end;
+      // text-align: center;
       color: var(--white-color);
       width: 90%;
       padding: 3rem;
       transition: all 0.3s ease;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 700;
+    }
+    .menu_mobile {
+      display: grid;
+      text-align: end;
+      margin-top: 4rem;
+      .contact {
+        text-decoration: none;
+        font-size: 2.1rem;
+        color: var(--white-color);
+        // color: var(--orange-color);
+        margin: 1rem;
+      }
     }
     .line {
       display: none;
     }
   }
-  
+
   .open {
     display: none;
   }
@@ -89,6 +105,5 @@
     border-block-end: solid;
     border-color: rgba(224, 223, 223, 0.377);
     padding-bottom: 5px;
-
   }
 }
