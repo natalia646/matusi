@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Reviews.module.scss";
 
-
 const h3 = [
   "Інна Денисюк",
   "Олена Наконечна",
@@ -19,18 +18,12 @@ const p = [
   "Завдяки цьому додатку я швидко знаходжу допомогу для дітей. Він відкрив нові можливості спілкування для матерів.",
 ];
 
-const Review = ({ item, i, activeId, clickIdx}) => {
+const Review = ({ item, i }) => {
   return (
-    <article
-      onClick={() => clickIdx(i)}
-      key={i}
-      className={`${activeId === i ? style.slider : style.slider_hiden}`}
-    >
-      <img src={item} alt="person"></img>
-      <div className={style.text}>
-        <h3>{h3[i]}</h3>
-        <p>{p[i]}</p>
-      </div>
+    <article key={i}>
+      <img className="person-img" src={item} alt="person"></img>
+      <h3 className="h3">{h3[i]}</h3>
+      <p className="p">{p[i]}</p>
     </article>
   );
 };

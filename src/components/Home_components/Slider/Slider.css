@@ -32,7 +32,7 @@
   opacity: 1 !important;
 }
 
-.swiper-slide img {
+.swiper-slide .phone-scroll {
   width: 18.5rem;
   border-radius: 2rem;
   object-fit: cover;
@@ -97,16 +97,20 @@
   }
 
   .swiper-container {
-    max-width: 94rem !important;
-    height: 80rem !important;
+    /* max-width: 94rem !important;
+    height: 80rem !important; */
+    max-width: 94rem ;
+    height: 80rem ;
   }
   .swiper-slide {
     width: 42rem !important;
     opacity: 1;
   }
-  .swiper-slide img {
-    width: 35rem !important;
-    height: 77rem !important;
+  .swiper-slide .phone-scroll{
+    /* width: 35rem !important;
+    height: 77rem !important; */
+    width: 35rem;
+    height: 77rem;
   }
 
     .slider-controler .swiper-button-next {

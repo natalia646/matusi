@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./Slider.css";
+import "./Reviews.css";
 import {
   EffectCoverflow,
   Pagination,
@@ -13,35 +13,26 @@ import {
   FreeMode,
 } from "swiper/modules";
 
-import image1 from "../../assets/corousal/images/img1.png";
-import image2 from "../../assets/corousal/images/img2.png";
-import image3 from "../../assets/corousal/images/img3.png";
-import image4 from "../../assets/corousal/images/img4.png";
-import image5 from "../../assets/corousal/images/img5.png";
-import image7 from "../../assets/corousal/images/img7.png";
-import image8 from "../../assets/corousal/images/img8.png";
+import Review from "./Review";
+import person1 from "../../assets/persone/person1.png";
+import person2 from "../../assets/persone/person2.png";
+import person3 from "../../assets/persone/person3.png";
+import person4 from "../../assets/persone/person4.png";
+import person5 from "../../assets/persone/person5.png";
+import person6 from "../../assets/persone/person6.png";
 
-
-const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image8,
-  image7,
-  image5,
-];
+const people = [person1, person3, person2, person4, person5, person6];
 
 const Slider = () => {
   return (
-    <div className="container">
-      <h2>Інтерфейс застосунку</h2>
+    <div className="container-reviews-mobile">
+      <h2>Відгуки користувачів</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={3}
+        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -56,12 +47,12 @@ const Slider = () => {
         }}
         freeMode={{ enabled: true, momentum: true, minimumVelocity: 0.05 }}
         modules={[EffectCoverflow, Pagination, Navigation, FreeMode]}
-        className="swiper-container">
-
-        {images.map((image, i) => {
+        className="swiper-container"
+      >
+        {people.map((persone, i) => {
           return (
             <SwiperSlide key={i}>
-              <img className="phone-scroll"  src={image} alt="slide_image"/>
+                 <Review item={persone} i={i} />;
             </SwiperSlide>
           );
         })}
