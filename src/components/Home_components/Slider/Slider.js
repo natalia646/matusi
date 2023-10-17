@@ -35,6 +35,7 @@ const images = [
 const Slider = () => {
   return (
     <div className="container">
+      <h2>Інтерфейс застосунку</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
