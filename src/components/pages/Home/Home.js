@@ -4,10 +4,7 @@ import "./Home.css";
 import Main from "../../Home_components/MainPart/Main";
 import About from "../../Home_components/About/About";
 import Details from "../../Home_components/Details/Details";
-// import Slider from "../../Home_components/Slider/Slider";
-// import Reviews from "../../Home_components/Reviews/Reviews";
-// import ReviewsSlidet from "../../Home_components/Reviews/ReviewsSlider";
-// import Questions from "../../Home_components/Questions/Questions";
+
 
 const Slider = React.lazy(() =>
   import("../../Home_components/Slider/Slider"));
