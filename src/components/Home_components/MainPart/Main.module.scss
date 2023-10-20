@@ -223,13 +223,13 @@
   }
   .desc {
     text-align: center;
-    margin: 1rem;
+    margin: 0.5rem;
     .h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     h5 {
       display: block;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: var(--gray-color);
       font-weight: 400;
     }
@@ -249,8 +249,8 @@
     button {
       align-self: center;
       justify-self: center;
-      width: 30rem;
-      font-size: 1.75rem;
+      width: 35rem;
+      font-size: 2rem;
       font-weight: 700;
       border: 3px solid var(--orange-color);
       padding: 1rem 2rem;
