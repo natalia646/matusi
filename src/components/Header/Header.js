@@ -44,7 +44,7 @@ const Header = () => {
     <header>
       <div className={style.container}>
         <Link to="/">
-          <img src={logo} alt="logo"></img>
+          <img className={style.logo} src={logo} alt="logo"></img>
         </Link>
         <img
           onClick={() => setIsMobile(!isMobile)}
@@ -54,7 +54,7 @@ const Header = () => {
         ></img>
 
         <div
-          className={`${style.links} ${isMobile ? style.open : style.close}`}
+          className={`${isMobile ? style.open : style.close}`}
         >
           {links.map((item, i) => {
             return (
