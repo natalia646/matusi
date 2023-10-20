@@ -52,6 +52,10 @@
   .download {
     display: none;
   }
+  .container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 @include table {
   .close {
