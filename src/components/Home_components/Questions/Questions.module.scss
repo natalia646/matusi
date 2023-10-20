@@ -55,16 +55,26 @@
 }
 @include table{
 .questions{
-  margin: 3rem 5rem 6rem 5rem;
+  margin: 3rem 3rem 6rem 3rem;
   .question{
-    font-size: 2rem;
+    font-size: 1.5rem;
     .svg{
-      transition: transform 1.4s ease;
+      transition: transform 1s ease;
     }
   }
 }
 .answer{
-  font-size: 1.7rem;
-  transition: max-height 1.5s ease;
+  font-size: 1.4rem;
+  transition: max-height 1s ease;
 }
 }
+@include mobile{
+  .questions{
+    .question{
+      font-size: 2rem;
+    }
+  }
+  .answer{
+    font-size: 1.7rem;
+  }
+  }

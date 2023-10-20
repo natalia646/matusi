@@ -10,7 +10,7 @@ import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 
 const links = ["/", "/", "/terms", "/contact"];
-const nameLink = ["Про додаток", "Відгуки", "Умови користування", "Контакти"];
+const nameLink = ["Про застосунок", "Відгуки", "Умови користування", "Контакти"];
 const linksMobile = [
   {
     link: "/refusal",

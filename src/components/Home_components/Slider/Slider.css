@@ -112,15 +112,30 @@
     .slider-controler .swiper-button-next {
     width: 3.8rem;
     height: 3.8rem;  
-    left: 80% !important;
+    left: 64% !important;
     transform: translateX(-80%) !important;
   }
 
    .slider-controler .swiper-button-prev {
     width: 3.8rem;
     height: 3.8rem; 
-    left: 20% !important;
+    left: 36% !important;
     transform: translateX(-20%) !important;
   }
 
+}
+@media only screen and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slider-controler .swiper-button-next {
+    width: 2rem;
+    height: 2rem;  
+    left: 70% !important;
+    transform: translateX(-80%) !important;
+  }
+
+   .slider-controler .swiper-button-prev {
+    width: 2rem;
+    height: 2rem; 
+    left: 30% !important;
+    transform: translateX(-20%) !important;
+  }
 }
