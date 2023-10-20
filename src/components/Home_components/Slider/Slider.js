@@ -13,13 +13,20 @@ import {
   FreeMode,
 } from "swiper/modules";
 
-import image1 from "../../assets/corousal/images/img1.png";
-import image2 from "../../assets/corousal/images/img2.png";
-import image3 from "../../assets/corousal/images/img3.png";
-import image4 from "../../assets/corousal/images/img4.png";
-import image5 from "../../assets/corousal/images/img5.png";
-import image7 from "../../assets/corousal/images/img7.png";
-import image8 from "../../assets/corousal/images/img8.png";
+
+
+import image1 from "../../assets/slides/img1.png";
+import image2 from "../../assets/slides/img2.png";
+import image3 from "../../assets/slides/img3.png";
+import image4 from "../../assets/slides/img4.png";
+import image5 from "../../assets/slides/img5.png";
+import image6 from "../../assets/slides/img6.png";
+import image7 from "../../assets/slides/img7.png";
+import image8 from "../../assets/slides/img8.png";
+import image9 from "../../assets/slides/img9.png";
+import image10 from "../../assets/slides/img10.png";
+import image11 from "../../assets/slides/img11.png";
+import image12 from "../../assets/slides/img12.png";
 
 
 const images = [
@@ -27,9 +34,14 @@ const images = [
   image2,
   image3,
   image4,
-  image8,
-  image7,
   image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12
 ];
 
 const Slider = () => {

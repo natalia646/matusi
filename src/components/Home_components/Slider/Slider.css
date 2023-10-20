@@ -97,8 +97,6 @@
   }
 
   .swiper-container {
-    /* max-width: 94rem !important;
-    height: 80rem !important; */
     max-width: 94rem ;
     height: 80rem ;
   }
@@ -107,8 +105,6 @@
     opacity: 1;
   }
   .swiper-slide .phone-scroll{
-    /* width: 35rem !important;
-    height: 77rem !important; */
     width: 35rem;
     height: 77rem;
   }
