@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Footer.module.scss";
-import { Link } from "react-router-dom";
 import baza from "../assets/logo/baza-logo.svg";
+import { Link} from "react-router-dom";
 
 const about = [
   {
@@ -32,10 +32,10 @@ const contacts = [
   },
 ];
 
-
 const Footer = () => {
+
   return (
-    <footer className={style.footer}>
+    <footer className={style.footer}> 
       <div className={style.container}>
         <div className={style.links}>
           <Link to="https://baza-trainee.tech/ua">
@@ -44,11 +44,19 @@ const Footer = () => {
           <div className={style.desc}>
             <div className={style.about}>
               <h3> Про нас</h3>
-             {about.map((item, i) =><Link key={i} className={style.contact} to = {item.link}>{item.label}</Link>)}
+              {about.map((item, i) => (
+                <Link key={i} className={style.contact} to={item.link}>
+                  {item.label}
+                </Link>
+              ))}
             </div>
             <nav className={style.contacts}>
               <h3>Контакти</h3>
-             {contacts.map((item, i) =><Link key={i} className={style.contact} to = {item.link}>{item.label}</Link>)}
+              {contacts.map((item, i) => (
+                <Link key={i} className={style.contact} to={item.link}>
+                  {item.label}
+                </Link>
+              ))}
             </nav>
           </div>
         </div>

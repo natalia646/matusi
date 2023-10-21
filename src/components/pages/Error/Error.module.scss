@@ -1,12 +1,12 @@
 @import "../../scss/variable";
 .error {
   img {
-    height: 31.4rem;
     display: block;
     margin: -1.5rem auto;
-    width: 50%;
+    width: 52.9rem;
+    height: 31.4rem;
   }
-  button {
+  .bt_desctop {
     position: relative;
     left: 45%;
     font-size: 1.5rem;
@@ -18,5 +18,50 @@
     margin-top: 2.5rem;
     margin-bottom: 4rem;
     cursor: pointer;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@include mobile {
+  .error {
+    .bt_desctop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+      background-image: url("../../assets/background/backdround-error.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      // background-position: bottom;
+      padding-bottom: 25rem;
+      margin-bottom: -1rem;
+      h2 {
+        text-align: center;
+        position: relative;
+        top: 22rem;
+        color: var(--white-color);
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .bt_mobile {
+        position: relative;
+        top: 27rem;
+        width: 25rem;
+        height: 5rem;
+        background-color: var(--root-color);
+        border: 3px solid var(--white-color);
+        border-radius: 3rem;
+        margin-left: 30%;
+        font-size: 3rem;
+        color: var(--white-color);
+      }
+      .fix {
+        height: 60rem;
+        background-color: var(--root-color);
+        margin-bottom: -25rem;
+      }
+    }
   }
 }
