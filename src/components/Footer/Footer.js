@@ -23,7 +23,7 @@ const contacts = [
     label: "Baza Trainee",
   },
   {
-    link: "",
+    link: "/contact",
     label: "Gmail",
   },
   {
