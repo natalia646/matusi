@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   activeIndex: 0,
   details: false,
+  path: true,
 };
 
 const activeSlice = createSlice({
@@ -15,10 +16,13 @@ const activeSlice = createSlice({
     setDetails(state, action) {
       state.details = action.payload;
     },
+    setPath(state,action){
+      state.details = action.payload;
+    }
   },
 });
 export const selectIndex = (state) => state.index;
 
-export const { setActiveIndex, setDetails } = activeSlice.actions;
+export const { setActiveIndex, setDetails, setPath } = activeSlice.actions;
 
 export default activeSlice.reducer;
