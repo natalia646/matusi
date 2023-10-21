@@ -78,14 +78,25 @@
   }
   .img{
     max-width: 55rem;
-    margin-top: -2.6rem;
+    margin-top: -4.6rem;
     margin-bottom: 1rem;
   }
 }
-@include min_mobile{
+@include mobile{
   .container{
-    .p{
-      font-size: 0.9rem ;
+    margin-left: 0rem;
+    .text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 55rem;
     }
+    .p{
+      font-size: 1.05rem;
+    }
+  }
+  .img{
+    max-width: 62rem;
   }
 }
