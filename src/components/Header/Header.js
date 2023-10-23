@@ -36,8 +36,8 @@ const Header = () => {
   });
 
   const getActiveID = (i) => {
-    setIsMobile(true);
     dispatch(setActiveIndex(i));
+    setIsMobile(true);
   };
 
   return (
