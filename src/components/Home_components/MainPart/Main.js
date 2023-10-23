@@ -44,7 +44,6 @@ const MainPart = () => {
           </div>
         </div>
       </div>
-
       <div className={style.images}>
         <div className={style.google_play}>
           <img src={google} alt="Google Play"></img>
