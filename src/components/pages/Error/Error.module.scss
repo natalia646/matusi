@@ -18,49 +18,15 @@
     margin-top: 2.5rem;
     margin-bottom: 4rem;
     cursor: pointer;
-  }
-  .mobile {
-    display: none;
+    border: 2px solid white;
   }
 }
-@include mobile {
+@include table {
   .error {
     .bt_desctop {
-      display: none;
-    }
-
-    .mobile {
-      display: block;
-      background-image: url("../../assets/background/backdround-error.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding-bottom: 25rem;
-      margin-bottom: -1rem;
-      h2 {
-        text-align: center;
-        position: relative;
-        top: 22rem;
-        color: var(--white-color);
-        font-size: 2rem;
-        font-weight: 700;
-      }
-      .bt_mobile {
-        position: relative;
-        top: 27rem;
-        width: 25rem;
-        height: 5rem;
-        background-color: var(--root-color);
-        border: 3px solid var(--white-color);
-        border-radius: 3rem;
-        margin-left: 30%;
-        font-size: 3rem;
-        color: var(--white-color);
-      }
-      .fix {
-        height: 60rem;
-        background-color: var(--root-color);
-        margin-bottom: -25rem;
-      }
+      font-size: 2rem;
+      left: 40%;
+      padding: 1.5rem 4rem;
     }
   }
 }
