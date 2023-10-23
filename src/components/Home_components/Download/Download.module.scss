@@ -10,7 +10,13 @@
   border: none;
   font-family: Nunito Sans;
   cursor: pointer;
+
+  &:hover{
+  background-color: var(--hover);
+
 }
+}
+
 @include desctop{
   .download{
     font-size: 1rem;

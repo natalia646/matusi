@@ -38,6 +38,10 @@
     padding: 0.3rem;
     font-weight: 700;
     margin-bottom: 0rem;
+    &:hover{
+    background-color: var(--hover);
+
+    }
   }
 }
 
