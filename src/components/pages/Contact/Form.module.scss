@@ -40,6 +40,7 @@
     margin-bottom: 0rem;
     &:hover {
       background-color: var(--hover);
+      cursor: pointer;
     }
     &:active{
       background-color: var(--active-click);
