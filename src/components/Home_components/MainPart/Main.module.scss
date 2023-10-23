@@ -30,10 +30,6 @@
   }
 }
 .buttons {
-  .more:hover{
-    border: 2px solid var(--hover);
-    color: var(--hover)
-  }
   button {
     margin-top: 2.3rem;
     margin-right: 2rem;
@@ -50,6 +46,14 @@
   border: 2px solid var(--orange-color);
   background: var(--white-color);
   color: var(--orange-color);
+  &:hover {
+    border: 2px solid var(--hover);
+    color: var(--hover);
+  }
+  &:active {
+    border: 2px solid var(--active-click);
+    color: var(--active-click);
+  }
 }
 
 .phone1 {

@@ -4,12 +4,13 @@
   box-sizing: border-box;
   --root-color: #6b4eff;
   --gray-color: #4f5665;
-  --orange-color: #F89500;
+  --orange-color: #f89500;
   --white-color: #ffffff;
-  --hover: #FF8B03;
+  --hover: #ff8b03;
+  --active-click: #f17400;
   font-family: "Nunito Sans", sans-serif;
 }
-.App{
+.App {
   min-width: 100%;
   flex-grow: 1;
 }
