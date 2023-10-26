@@ -62,10 +62,13 @@
 }
 @include leptop{
   .reviews{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 @include table {
-
+  .reviews{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
