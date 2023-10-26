@@ -16,6 +16,10 @@
   position: relative;
   margin-bottom: 2rem;
 }
+.container-reviews-mobile .swiper-container .swiper-slide{
+  width: 38rem !important;
+  margin-left: 18%;
+}
 .container-reviews-mobile .swiper-container .swiper-slide article {
   background-color: var(--white-color);
   border-radius: 16px;

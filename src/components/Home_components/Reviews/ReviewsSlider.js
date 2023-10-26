@@ -22,12 +22,12 @@ import person5 from "../../assets/persone/person5.svg";
 import person6 from "../../assets/persone/person6.svg";
 
 const people = [
-  person1,
   person3,
   person2,
   person4,
   person5,
-  person6
+  person6,
+  person1,
 ];
 
 const Slider = () => {
