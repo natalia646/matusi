@@ -53,7 +53,7 @@ const images = [
 const Slider = () => {
   return (
     <div className="container">
-      <h2 style={{'font-size':'4rem'}}>Інтерфейс застосунку</h2>
+      <h2 style={{fontSize:'4rem'}}>Інтерфейс застосунку</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
