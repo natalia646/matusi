@@ -1,17 +1,16 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./Slider.css";
 import {
   EffectCoverflow,
   Pagination,
   Navigation,
   FreeMode,
 } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./Slider.css";
 
 import image1 from "../../assets/slides/img1.png";
 import image2 from "../../assets/slides/img2.png";
@@ -28,6 +27,9 @@ import image12 from "../../assets/slides/img12.png";
 import image13 from "../../assets/slides/img13.png";
 import image14 from "../../assets/slides/img14.png";
 import image15 from "../../assets/slides/img15.png";
+
+import left from "../../assets/icons/arrow-left.svg";
+import right from "../../assets/icons/arrow-right.svg";
 
 const images = [
   image13,
@@ -66,24 +68,29 @@ const Slider = () => {
         }}
         freeMode={{ enabled: true, momentum: true, minimumVelocity: 0.05 }}
         modules={[EffectCoverflow, Pagination, Navigation, FreeMode]}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          clickable: true,
+        }}
       >
-
-
-          {images.map((image, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <img className="image" src={image} alt="slide_image" />
-              </SwiperSlide>
-            );
-          })}
-
+        {images.map((image, i) => {
+          return (
+            <SwiperSlide key={i}>
+              <img className="image" src={image} alt="slide_image" />
+            </SwiperSlide>
+          );
+        })}
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
+            {/* <img className="arrow  arrow-right" src={right} alt="right"></img> */}
           </div>
           <div className="swiper-button-next slider-arrow">
             <ion-icon name="arrow-forward-outline"></ion-icon>
+            {/* <img className="arrow  arrow-left" src={left} alt="left"></img> */}
           </div>
           <div className="swiper-pagination"></div>
         </div>
@@ -93,54 +100,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-// const Slider = () => {
-//   return (
-//     <div className="container">
-//   //    <h2 style={{fontSize:'4rem'}}>Інтерфейс застосунку</h2>
-//       <Swiper
-//   // effect={"coverflow"}
-//      //   grabCursor={true}
-//        // centeredSlides={true}
-//         centeredSlidesBounds={true}
-//       //  loop={true}
-//     //    slidesPerView={3}
-//     //  /  coverflowEffect={{
-//         //  rotate: 0,
-//         //  stretch: 0,
-//       //    depth: 100,
-//       //    modifier: 2.5,
-//      //   }}
-//         pagination={{ el: ".swiper-pagination", clickable: true }}
-//         navigation={{
-//           nextEl: ".swiper-button-next",
-//           prevEl: ".swiper-button-prev",
-//           clickable: true,
-//         }}
-//        // freeMode={{ enabled: true, momentum: true, minimumVelocity: 0.05 }}
-//      //   modules={[EffectCoverflow, Pagination, Navigation, FreeMode]}
-//       //  className="swiper-container">
-
-//    //     {images.map((image, i) => {
-//     //      return (
-//      //       <SwiperSlide key={i}>
-//       //        <img className="phone-scroll"  src={image} alt="slide_image"/>
-//        //     </SwiperSlide>
-//       //    );
-//     //    })}
-
-//         <div className="slider-controler">
-//           <div className="swiper-button-prev slider-arrow">
-//             <ion-icon name="arrow-back-outline"></ion-icon>
-//           </div>
-//           <div className="swiper-button-next slider-arrow">
-//             <ion-icon name="arrow-forward-outline"></ion-icon>
-//           </div>
-//           <div className="swiper-pagination"></div>
-//         </div>
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default Slider;
