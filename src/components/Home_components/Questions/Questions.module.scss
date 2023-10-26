@@ -70,6 +70,9 @@
 }
 @include mobile{
   .questions{
+    h2{
+      font-size: 4rem;
+    }
     .question{
       font-size: 2rem;
     }
