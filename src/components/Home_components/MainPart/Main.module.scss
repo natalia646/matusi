@@ -88,39 +88,9 @@
   }
 }
 
-@include max-desctop {
-  .desc {
-    .h1 {
-      font-size: 2.8rem;
-    }
-    h4 {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  }
-  .buttons button {
-    margin-right: 1rem;
-    width: 15rem;
-  }
-
-  .google_play {
-    top: 33rem;
-    right: 22rem;
-  }
-  .phone1 {
-    right: 280px;
-    width: 11.9rem;
-  }
-  .phone2 {
-    right: 83px;
-    width: 15rem;
-  }
-}
 @include desctop {
   .desc {
-    margin: 1rem 0rem 11rem 5rem;
+    margin: 1rem 0rem 11rem 4rem;
     .h1 {
       font-size: 2.5rem;
     }
@@ -163,31 +133,41 @@
 }
 @include leptop {
   .desc {
-    margin: 1rem 0rem 11rem 4rem;
+    margin: 1rem 0rem 11rem 3rem;
     .h1 {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
     h4 {
       font-size: 0.9rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
       width: 28rem;
     }
   }
 
+  .phone1 {
+    right: 200px;
+    width: 9.9rem;
+  }
+  .phone2 {
+    top: 148px;
+    right: 3rem;
+    width: 12rem;
+  }
+
   .google_play {
-    right: 15rem;
+    right: 13rem;
   }
 }
 @include table {
   .desc {
-    margin-left: 3rem;
+    margin-left: 2rem;
     .h1 {
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
     h4 {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
     p {
       font-size: 1rem;
@@ -204,16 +184,16 @@
     }
   }
   .phone1 {
-    right: 210px;
-    width: 9.9rem;
+    right: 190px;
+    width: 10.5rem;
   }
   .phone2 {
-    right: 45px;
-    width: 12rem;
+    right: 2rem;
+    width: 12.5rem;
   }
   .google_play {
-    top: 29rem;
-    right: 13.5rem;
+    top: 30rem;
+    right: 13rem;
   }
 }
 @include mobile {
