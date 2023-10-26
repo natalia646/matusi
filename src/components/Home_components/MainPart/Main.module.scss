@@ -32,7 +32,7 @@
 .buttons {
   button {
     margin-top: 2.3rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     width: 16rem;
     padding: 1rem 2rem;
     font-size: 1.25rem;
@@ -57,14 +57,14 @@
 }
 
 .phone1 {
-  right: 320px;
-  top: 120px;
+  right: 19.69rem;
+  top: 6.25rem + 0.94rem;
   width: 13rem;
   position: absolute;
 }
 .phone2 {
-  right: 101px;
-  top: 156px;
+  right: 6.31rem;
+  top: 6.25rem + 3.19rem;
   width: 16rem;
   position: absolute;
 }
@@ -74,8 +74,8 @@
   background-color: var(--white-color);
   display: flex;
   position: absolute;
-  top: 35rem;
-  right: 25rem;
+  top: 6.25rem + 29.1rem;
+  right: 24.19rem;
   border-radius: 1rem;
   padding-left: 1rem;
   box-shadow: 2px 8px 13px 2px rgba(0, 0, 0, 0.282);
