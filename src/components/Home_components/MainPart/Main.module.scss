@@ -214,13 +214,13 @@
   }
   .desc {
     text-align: center;
-    margin: 0.5rem;
+    margin: 0.3rem;
     .h1 {
       font-size: 4rem;
     }
     h5 {
       display: block;
-      font-size: 1rem;
+      font-size: 1.25rem;
       color: var(--gray-color);
       font-weight: 400;
     }
@@ -240,53 +240,45 @@
     button {
       align-self: center;
       justify-self: center;
-      width: 35rem;
-      font-size: 2rem;
+      width: 40rem;
+      font-size: 2.5rem;
       font-weight: 700;
       border: 3px solid var(--orange-color);
       padding: 1rem 2rem;
       margin-bottom: 1rem;
+      border-radius: 30rem;
     }
   }
 
   .phone1 {
     z-index: 1;
-    width: 20rem;
+    width: 23rem;
     position: relative;
-    left: 10rem;
-    top: -28rem;
+    left: 9rem;
+    top: -25rem;
   }
   .phone2 {
     z-index: 2;
-    width: 24rem;
+    width: 26rem;
     position: relative;
-    top: -14.5rem;
-    left: 5rem;
+    top: -13rem;
+    left: 4rem;
   }
   .google_play {
     z-index: 3;
     position: relative;
-    left: 13rem;
-    top: 29rem;
-    width: 15rem;
+    left: 5.5rem;
+    top: 37.5rem;
+    width: 19rem;
+    padding: 0.5rem 3rem ;
+    border-radius: 2rem;
+    img{
+      width: 4rem;
+    }
     .text {
       p {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     }
-  }
-}
-@include min_mobile {
-  .phone1 {
-    left: 10rem;
-    top: -25rem;
-  }
-  .phone2 {
-    top: -11.5rem;
-    left: 5rem;
-  }
-  .google_play {
-    left: 13rem;
-    top: 32rem;
   }
 }
