@@ -33,6 +33,9 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 2fr;
+    &:hover{
+      box-shadow: inset 1rem 1rem 1rem 1rem rgba(95, 93, 93, 0.121);
+    }
 
     img {
       width: 80px;
