@@ -12,9 +12,8 @@
 .container h2 {
   display: none;
 }
-
 .swiper-container {
-  max-width: 80rem;
+  max-width: 93%;
   height: 43rem;
   padding: 1rem 0;
   position: relative;
@@ -23,6 +22,7 @@
 .swiper-slide {
   position: relative;
   opacity: 0.6;
+
 }
 .swiper-slide-active {
   opacity: 1 !important;
@@ -34,7 +34,7 @@
 
 .swiper-slide .phone-scroll {
   width: 18.5rem;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   object-fit: cover;
 }
 
@@ -52,8 +52,14 @@
 }
 
 .slider-controler .swiper-button-next {
-  left: 60% !important;
+  left: 63% !important;
   transform: translateX(-58%) !important;
+  position: absolute;
+}
+.slider-controler .swiper-button-prev {
+  left: 37% !important;
+  /* transform: translateX(-58%) !important;
+  position: absolute; */
 }
 
 .slider-controler .slider-arrow {
@@ -81,6 +87,7 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet {
+  
   filter: drop-shadow(0px 8px 24px rgba(255, 255, 255, 0.807));
 }
 
@@ -97,44 +104,43 @@
   }
 
   .swiper-container {
-    max-width: 94rem ;
-    height: 80rem ;
+    max-width: 94rem;
+    height: 80rem;
   }
   .swiper-slide {
     width: 42rem !important;
     opacity: 1;
   }
-  .swiper-slide .phone-scroll{
+  .swiper-slide .phone-scroll {
     width: 35rem;
     height: 77rem;
   }
 
-    .slider-controler .swiper-button-next {
+  .slider-controler .swiper-button-next {
     width: 3.8rem;
-    height: 3.8rem;  
+    height: 3.8rem;
     left: 64% !important;
     transform: translateX(-80%) !important;
   }
 
-   .slider-controler .swiper-button-prev {
+  .slider-controler .swiper-button-prev {
     width: 3.8rem;
-    height: 3.8rem; 
+    height: 3.8rem;
     left: 36% !important;
     transform: translateX(-20%) !important;
   }
-
 }
 @media only screen and (max-device-width: 1300px) and (-webkit-min-device-pixel-ratio: 1) {
   .slider-controler .swiper-button-next {
     width: 2rem;
-    height: 2rem;  
+    height: 2rem;
     left: 70% !important;
     transform: translateX(-80%) !important;
   }
 
-   .slider-controler .swiper-button-prev {
+  .slider-controler .swiper-button-prev {
     width: 2rem;
-    height: 2rem; 
+    height: 2rem;
     left: 30% !important;
     transform: translateX(-20%) !important;
   }

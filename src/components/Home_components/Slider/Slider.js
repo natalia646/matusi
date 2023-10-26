@@ -27,21 +27,27 @@ import image9 from "../../assets/slides/img9.png";
 import image10 from "../../assets/slides/img10.png";
 import image11 from "../../assets/slides/img11.png";
 import image12 from "../../assets/slides/img12.png";
+import image13 from "../../assets/slides/img13.png";
+import image14 from "../../assets/slides/img14.png";
+import image15 from "../../assets/slides/img15.png";
 
 
 const images = [
   image1,
+  image13,
   image4,
+  image15,
   image2,
   image3,
   image6,
   image7,
-  image8,
   image9,
   image10,
   image11,
   image12,
   image5,
+  image14,
+  image8,
 ];
 
 const Slider = () => {
