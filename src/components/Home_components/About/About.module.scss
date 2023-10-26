@@ -40,30 +40,16 @@
   }
 }
 
-@include max-desctop {
-  .boxes {
-    grid-column-gap: 6rem;
-    margin: 3rem 6rem;
-  }
-  .box {
-    h3 {
-      font-size: 1.8rem;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-  }
-}
 @include desctop {
   .boxes {
-    grid-column-gap: 5rem;
-    margin: 3rem 5rem;
+    grid-column-gap: 3rem;
+    margin: 3rem 4rem;
     .box {
       h3 {
         font-size: 1.8rem;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -106,7 +92,10 @@
       font-size: 2.7rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
+    }
+    br{
+      display: none;
     }
   }
 }
@@ -137,24 +126,13 @@
   .desc {
     margin: 0 2rem;
     h2 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       br {
         display: none;
       }
-    }
-  }
-}
-@include min_mobile {
-  .desc {
-    margin: 0 3rem;
-    h2 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 0.8rem;
     }
   }
 }
