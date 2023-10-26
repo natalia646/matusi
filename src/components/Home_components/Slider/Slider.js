@@ -28,8 +28,6 @@ import image13 from "../../assets/slides/img13.png";
 import image14 from "../../assets/slides/img14.png";
 import image15 from "../../assets/slides/img15.png";
 
-import left from "../../assets/icons/arrow-left.svg";
-import right from "../../assets/icons/arrow-right.svg";
 
 const images = [
   image13,
@@ -54,26 +52,26 @@ const Slider = () => {
     <div className="container">
       <h2>Інтерфейс застосунку</h2>
       <Swiper
-        effect={"coverflow"}
-        className="swiper-container"
-        loop={true}
-        slidesPerView={3}
-        grabCursor={true}
-        centeredSlides={true}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        freeMode={{ enabled: true, momentum: true, minimumVelocity: 0.05 }}
-        modules={[EffectCoverflow, Pagination, Navigation, FreeMode]}
-        pagination={{ el: ".swiper-pagination", clickable: true }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          clickable: true,
-        }}
+         effect={"coverflow"}
+         grabCursor={true}
+         centeredSlides={true}
+         loop={true}
+         slidesPerView={3}
+         coverflowEffect={{
+           rotate: 0,
+           stretch: 0,
+           depth: 100,
+           modifier: 2.5,
+         }}
+         pagination={{ el: ".swiper-pagination", clickable: true }}
+         navigation={{
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+           clickable: true,
+         }}
+         freeMode={{ enabled: true, momentum: true, minimumVelocity: 0.05 }}
+         modules={[EffectCoverflow, Pagination, Navigation, FreeMode]}
+         className="swiper-container"
       >
         {images.map((image, i) => {
           return (
@@ -86,11 +84,9 @@ const Slider = () => {
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
-            {/* <img className="arrow  arrow-right" src={right} alt="right"></img> */}
           </div>
           <div className="swiper-button-next slider-arrow">
             <ion-icon name="arrow-forward-outline"></ion-icon>
-            {/* <img className="arrow  arrow-left" src={left} alt="left"></img> */}
           </div>
           <div className="swiper-pagination"></div>
         </div>
