@@ -26,8 +26,22 @@
       color: var(--orange-color);
       font-size: 1rem;
       align-items: flex-end;
+      margin-top: 0rem;
     }
   }
+  .span {
+    position: relative;
+    top: -2.1rem;
+    left: 25rem;
+    font-size: 0.7rem;
+  }
+  .gray_span {
+    color: var(--gray-color);
+  }
+  .red_span {
+    color: red;
+  }
+
   .button {
     width: 13rem;
     border-radius: 1rem;
@@ -37,7 +51,7 @@
     color: var(--white-color);
     padding: 0.3rem;
     font-weight: 700;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     &:hover {
       background-color: var(--hover);
       cursor: pointer;
@@ -53,6 +67,10 @@
     input,
     textarea {
       width: 23rem;
+    }
+    .span {
+      left: -2.4rem;
+      top: -1rem;
     }
   }
 }
@@ -74,7 +92,7 @@
   .form {
     input,
     textarea {
-      width: 38rem;
+      width: 43rem;
       font-size: 1.25rem;
       margin-bottom: 1rem;
     }
@@ -87,6 +105,9 @@
       padding: 0.5rem;
       border-radius: 2.1rem;
       margin-bottom: 3rem;
+    }
+    .span {
+      top: -1.5rem;
     }
     .sending {
       flex-direction: column;
@@ -101,7 +122,11 @@
   .form {
     margin-left: 10%;
     margin-right: 10%;
-
+    .span {
+      left: 42rem;
+      font-size: 0.9rem;
+      top: -3rem;
+    }
     input,
     textarea {
       width: 43rem;
