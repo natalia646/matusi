@@ -27,7 +27,7 @@
   padding: 20px 32px;
   text-decoration: none;
   font-size: 1.25rem;
-  color: black
+  color: black;
 }
 
 .active {
@@ -44,8 +44,8 @@
 }
 
 @include desctop {
-  .container{
-   margin-left: 6.1rem;
+  .container {
+    margin-left: 6.1rem;
   }
   .link {
     font-size: 1rem;
@@ -56,12 +56,17 @@
   .download {
     display: none;
   }
-  .container{
+  .container {
     margin-left: 4rem;
     margin-right: 4rem;
   }
 }
 @include table {
+  .container {
+    .logo {
+      width: 3.5rem;
+    }
+  }
   .close {
     display: flex;
     flex-direction: column;
@@ -74,6 +79,7 @@
     width: 100%;
     z-index: 4;
     height: 100%;
+    margin-top: 1rem;
 
     .link {
       text-align: end;
@@ -106,7 +112,7 @@
 
   .menu {
     display: block;
-    width: 2.6rem;
+    width: 3.5rem;
   }
 }
 @include mobile {
@@ -116,8 +122,8 @@
     border-color: rgba(224, 223, 223, 0.377);
     padding-bottom: 5px;
   }
-  .close{
-    margin-top: 1.1rem;
+  .close {
+    margin-top: 1.8rem;
   }
   .logo {
     width: 5rem;
