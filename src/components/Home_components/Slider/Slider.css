@@ -1,7 +1,7 @@
 .container {
   max-width: 100%;
   padding: 2rem 0rem 3rem 0rem;
-  margin: -1rem auto 1rem auto;
+  margin: -1rem auto 3rem auto;
   background-color: var(--root-color);
   min-width: 0;
 }
@@ -10,7 +10,7 @@
 }
 .swiper-container {
   max-width: 87%;
-  height: 43rem;
+  height: 42rem;
 }
 .swiper-container .image {
   width: 18.5rem;
@@ -60,11 +60,10 @@
 
   .swiper-container {
     max-width: 100%;
-    height: 89rem;
+    height: 86rem;
   }
   .swiper-slide {
     opacity: 1;
-    /* width: 26rem !important; */
     width: 41rem !important;
     margin-left: 10%;
   }
