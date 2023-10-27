@@ -1,18 +1,12 @@
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 
-import "./Home.css";
 import Main from "../../Home_components/MainPart/Main";
 import About from "../../Home_components/About/About";
 import Details from "../../Home_components/Details/Details";
 
-
-const Slider = React.lazy(() =>
-  import("../../Home_components/Slider/Slider"));
+const Slider = React.lazy(() => import("../../Home_components/Slider/Slider"));
 const Reviews = React.lazy(() =>
   import("../../Home_components/Reviews/Reviews")
-);
-const ReviewsSlidet = React.lazy(() =>
-  import("../../Home_components/Reviews/ReviewsSlider")
 );
 const Questions = React.lazy(() =>
   import("../../Home_components/Questions/Questions")
@@ -27,12 +21,7 @@ const Home = () => {
       <Suspense fallback={<div>Завантаження...</div>}>
         <section>
           <Slider />
-          <span className="home-desctop">
-            <Reviews />
-          </span>
-          <span className="home-mobile">
-            <ReviewsSlidet />
-          </span>
+          <Reviews />
           <Questions />
         </section>
       </Suspense>

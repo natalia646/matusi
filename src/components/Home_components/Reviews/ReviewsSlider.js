@@ -33,7 +33,6 @@ const people = [
 const Slider = () => {
   return (
     <div className="container-reviews-mobile">
-      <h2>Відгуки користувачів</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
