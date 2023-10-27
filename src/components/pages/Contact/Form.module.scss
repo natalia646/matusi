@@ -12,7 +12,11 @@
     font-family: Nunito Sans;
     font-size: 1rem;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.282);
+    &:focus{
+      background-color: white;
+    }
   }
+
 
   .textarea {
     height: 4rem;
