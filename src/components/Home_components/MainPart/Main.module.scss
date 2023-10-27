@@ -47,12 +47,12 @@
   background: var(--white-color);
   color: var(--orange-color);
   &:hover {
-    border: 2px solid var(--hover);
-    color: var(--hover);
+    border: 2px solid #f46600;
+    color: #f46600;
   }
   &:active {
-    border: 2px solid var(--active-click);
-    color: var(--active-click);
+    border: 2px solid #CE4A00;
+    color: #CE4A00;
   }
 }
 
@@ -270,9 +270,9 @@
     left: 5.5rem;
     top: 35.5rem;
     width: 19rem;
-    padding: 0.5rem 3rem ;
+    padding: 0.5rem 3rem;
     border-radius: 2rem;
-    img{
+    img {
       width: 4rem;
     }
     .text {
