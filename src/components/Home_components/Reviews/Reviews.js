@@ -26,20 +26,18 @@ const Reviews = () => {
   return (
     <div className={style.container}>
       <h2 ref={reviewsRef}>Відгуки користувачів</h2>
-
-      <div className={style.desctop}>
+      
         <div className={style.reviews}>
           {people.map((item, i) => {
             return <Review key={i} item={item} i={i} />;
           })}
         </div>
-      </div>
 
       <div className={style.mobile}>
         <ReviewsSlider />
       </div>
 
-      <p className={style.fix}>dd</p>
+      <p className={style.fix}>d</p>
     </div>
   );
 };
