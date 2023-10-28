@@ -12,11 +12,10 @@
     font-family: Nunito Sans;
     font-size: 1rem;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.282);
-    &:focus{
+    &:focus {
       background-color: white;
     }
   }
-
 
   .textarea {
     height: 4rem;
@@ -45,7 +44,9 @@
   .red_span {
     color: red;
   }
-
+  input[type="submit"]:focus {
+    background-color: var(--orange-color);
+  }
   .button {
     width: 13rem;
     border-radius: 1rem;

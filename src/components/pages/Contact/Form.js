@@ -53,6 +53,7 @@ export const Form = () => {
         placeholder="Ім'я*"
         type="text"
         name="user_name"
+        maxLength="100"
         required
         value={name}
         onChange={(e) => {
@@ -73,6 +74,7 @@ export const Form = () => {
         placeholder="Тема"
         type="text"
         name="user_tema"
+        maxLength="200"
         value={tema}
         onChange={(e) => {
           setTema(e.target.value);
