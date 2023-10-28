@@ -121,13 +121,14 @@
     border-block-end: solid;
     border-color: rgba(224, 223, 223, 0.377);
     padding-bottom: 5px;
+    .logo {
+      width: 4.5rem;
+    }
   }
   .close {
     margin-top: 1.8rem;
   }
-  .logo {
-    width: 5rem;
-  }
+
   .menu {
     width: 5rem;
   }

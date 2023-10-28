@@ -16,7 +16,7 @@ export const Form = () => {
     setCount(message.length);
     if (message.length === 500) {
       setColorCount(false);
-    }else{
+    } else {
       setColorCount(true);
     }
   }, [message]);
@@ -89,8 +89,20 @@ export const Form = () => {
           setMessage(e.target.value);
         }}
       />
-      <span className={`${style.span} ${colorCount ? style.gray_span: style.red_span}`}>{count}</span>
-      <span className={`${style.span} ${colorCount ? style.gray_span: style.red_span}`}>/500</span>
+      <span
+        className={`${style.span} ${
+          colorCount ? style.gray_span : style.red_span
+        }`}
+      >
+        {count}
+      </span>
+      <span
+        className={`${style.span} ${
+          colorCount ? style.gray_span : style.red_span
+        }`}
+      >
+        /500
+      </span>
       <div className={style.sending}>
         <h6 className={style.send}>{isSend}</h6>
         <input className={style.button} type="submit" value="Надіслати" />
