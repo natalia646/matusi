@@ -80,11 +80,15 @@
   padding-left: 1rem;
   box-shadow: 2px 8px 13px 2px rgba(0, 0, 0, 0.282);
   z-index: 1;
+  cursor: pointer;
   .text {
     margin: 0.4rem;
     p {
       margin: 0rem;
     }
+  }
+  &:active{
+    transform: translateY(4px);
   }
 }
 
