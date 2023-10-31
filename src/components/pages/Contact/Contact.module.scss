@@ -23,6 +23,7 @@
   bottom: 5rem;
   max-width: 55rem;
   max-height: 41rem;
+  z-index: -1;
 }
 
 @include max-desctop {
@@ -83,7 +84,7 @@
   .img {
     max-width: 55rem;
     top: -5.6rem;
-   margin-bottom: -5.5rem;
+    margin-bottom: -5.5rem;
   }
 }
 @include mobile {
