@@ -6,6 +6,7 @@ import phone1 from "../../assets/phones/phone1.png";
 import phone2 from "../../assets/phones/phone2.png";
 import google from "../../assets/icons/google_play.svg";
 import style from "./Main.module.scss";
+import { Link } from "react-router-dom";
 
 const MainPart = () => {
   const dispatch = useDispatch();
@@ -45,15 +46,17 @@ const MainPart = () => {
         </div>
       </div>
       <div className={style.images}>
-        <div className={style.google_play}>
-          <img src={google} alt="Google Play"></img>
-          <div className={style.text}>
-            <p>Get it on</p>
-            <p>
-              <b>Google Play</b>
-            </p>
+        <Link target="_blank" to="https://play.google.com/store/apps/details?id=tech.baza_trainee.mama_ne_vdoma">
+          <div className={style.google_play}>
+            <img src={google} alt="Google Play"></img>
+            <div className={style.text}>
+              <p>Get it on</p>
+              <p>
+                <b>Google Play</b>
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
         <img className={style.phone1} src={phone1} alt="phone"></img>
         <img className={style.phone2} src={phone2} alt="phone"></img>
       </div>

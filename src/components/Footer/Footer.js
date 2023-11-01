@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import style from "./Footer.module.scss";
 import baza from "../assets/logo/baza-logo.svg";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import facebook from "../assets/logo/facebook.svg";
+import instagram from "../assets/logo/instagram.svg";
+import linkedin from "../assets/logo/linkedin.svg";
 
 const about = [
   {
@@ -31,14 +34,30 @@ const contacts = [
     label: "Linkedin",
   },
 ];
+const networks = [
+  {
+    network: "facebook",
+    link: "https://www.facebook.com/profile.php?id=61553049146070",
+    icon: facebook,
+  },
+  {
+    network: "instagram",
+    link: "https://www.instagram.com/mama.ne.vdoma/",
+    icon: instagram,
+  },
+  {
+    network: "linkedin",
+    link: "https://www.linkedin.com/in/mama-ne-vdoma-mobileapp-1a3485299/",
+    icon: linkedin,
+  },
+];
 
 const Footer = () => {
-
   return (
-    <footer className={style.footer}> 
+    <footer className={style.footer}>
       <div className={style.container}>
         <div className={style.links}>
-          <Link to="https://baza-trainee.tech/ua">
+          <Link to="https://baza-trainee.tech/ua" target="_blank">
             <img src={baza} alt="Baza Trainee"></img>
           </Link>
           <div className={style.desc}>
@@ -53,10 +72,26 @@ const Footer = () => {
             <nav className={style.contacts}>
               <h3>Контакти</h3>
               {contacts.map((item, i) => (
-                <Link key={i} className={style.contact} to={item.link}>
+                <Link
+                  key={i}
+                  className={style.contact}
+                  to={item.link}
+                  target="_blank"
+                >
                   {item.label}
                 </Link>
               ))}
+              <nav className={style.networks}>
+                {networks.map((item, i) => (
+                  <Link key={i} to={item.link} target="_blank">
+                    <img
+                      src={item.icon}
+                      alt={item.network}
+                      className={style.network_icon}
+                    ></img>
+                  </Link>
+                ))}
+              </nav>
             </nav>
           </div>
         </div>
