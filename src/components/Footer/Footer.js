@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import style from "./Footer.module.scss";
 import baza from "../assets/logo/baza-logo.svg";
 import { Link } from "react-router-dom";
@@ -18,20 +18,6 @@ const about = [
   {
     link: "/privacy",
     label: "Політика конфіденційності",
-  },
-];
-const contacts = [
-  {
-    link: "https://baza-trainee.tech/ua",
-    label: "Baza Trainee",
-  },
-  {
-    link: "/contact",
-    label: "Gmail",
-  },
-  {
-    link: "https://www.linkedin.com/company/baza-trainee-ukraine/",
-    label: "Linkedin",
   },
 ];
 const networks = [
@@ -61,27 +47,19 @@ const Footer = () => {
             <img src={baza} alt="Baza Trainee"></img>
           </Link>
           <div className={style.desc}>
-            <div className={style.about}>
+            <nav className={style.about}>
               <h3> Про нас</h3>
               {about.map((item, i) => (
                 <Link key={i} className={style.contact} to={item.link}>
                   {item.label}
                 </Link>
               ))}
-            </div>
+            </nav>
             <nav className={style.contacts}>
               <h3>Контакти</h3>
-              {contacts.map((item, i) => (
-                <Link
-                  key={i}
-                  className={style.contact}
-                  to={item.link}
-                  target="_blank"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <nav className={style.networks}>
+              <Link className={style.contact} to="/contact">
+                app.mama.ne.vdoma@gmail.com
+              </Link>
                 {networks.map((item, i) => (
                   <Link key={i} to={item.link} target="_blank">
                     <img
@@ -92,7 +70,6 @@ const Footer = () => {
                   </Link>
                 ))}
               </nav>
-            </nav>
           </div>
         </div>
         <hr />

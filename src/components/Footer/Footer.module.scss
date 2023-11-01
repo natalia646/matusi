@@ -40,12 +40,9 @@
       }
       .contacts {
         display: grid;
-        .networks {
-          display: flex;
-          .network_icon {
-            width: 2.2rem;
-            padding: 0.5rem;
-          }
+        .network_icon {
+          width: 2.2rem;
+          padding: 0.5rem;
         }
       }
     }
@@ -81,10 +78,8 @@
         display: grid;
         grid-template-columns: 1fr;
         .contacts {
-          .networks {
-            .network_icon {
-              width: 4rem;
-            }
+          .network_icon {
+            width: 4rem;
           }
         }
 
