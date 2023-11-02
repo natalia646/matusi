@@ -60,6 +60,8 @@ const Footer = () => {
               <Link className={style.contact} to="/contact">
                 app.mama.ne.vdoma@gmail.com
               </Link>
+
+              <div className={style.networks}>
                 {networks.map((item, i) => (
                   <Link key={i} to={item.link} target="_blank">
                     <img
@@ -69,7 +71,8 @@ const Footer = () => {
                     ></img>
                   </Link>
                 ))}
-              </nav>
+              </div>
+            </nav>
           </div>
         </div>
         <hr />

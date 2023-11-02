@@ -40,9 +40,15 @@
       }
       .contacts {
         display: grid;
+        .networks {
+          display: flex;
+          justify-content: space-between;
+        }
         .network_icon {
-          width: 2.2rem;
-          padding: 0.5rem;
+          width: 2.6rem;
+          padding-top: auto;
+          padding-left: 0rem;
+          padding-right: 0rem;
         }
       }
     }
@@ -77,17 +83,17 @@
       .desc {
         display: grid;
         grid-template-columns: 1fr;
-        .contacts {
-          .network_icon {
-            width: 4rem;
-          }
-        }
-
         h3 {
           font-size: 3rem;
         }
-        .contact {
-          font-size: 1.8rem;
+        .contacts {
+          .networks {
+            justify-content: flex-start;
+            .network_icon {
+              width: 4rem;
+              padding-right: 4rem;
+            }
+          }
         }
       }
     }
