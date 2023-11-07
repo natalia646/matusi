@@ -47,7 +47,6 @@ const MainPart = () => {
       </div>
       <div className={style.images}>
         <Link className={style.google_play} target="_blank" to="https://play.google.com/store/apps/details?id=tech.baza_trainee.mama_ne_vdoma">
-          {/* <div className={style.google_play}> */}
             <img src={google} alt="Google Play"></img>
             <div className={style.text}>
               <p>Get it on</p>
@@ -55,7 +54,6 @@ const MainPart = () => {
                 <b>Google Play</b>
               </p>
             </div>
-          {/* </div> */}
         </Link>
         <img className={style.phone1} src={phone1} alt="phone"></img>
         <img className={style.phone2} src={phone2} alt="phone"></img>
