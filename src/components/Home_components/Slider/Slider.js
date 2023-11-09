@@ -32,20 +32,20 @@ import "./Slider.css";
 // ];
 
 const images = [
-  "https://i.ibb.co/JxpvvqF/img15.png",
-  "https://i.ibb.co/mNN5qfY/img14.png",
   "https://i.ibb.co/9s1yPSG/img13.png",
-  "https://i.ibb.co/NycbzSj/img12.png",
-  "https://i.ibb.co/f1rmwQ6/img11.png",
-  "https://i.ibb.co/VNmhMwg/img10.png",
-  "https://i.ibb.co/fC2trfK/img9.png",
-  "https://i.ibb.co/qpWkRH3/img8.png",
-  "https://i.ibb.co/n0c2fqX/img7.png",
-  "https://i.ibb.co/s3RGz90/img6.png",
-  "https://i.ibb.co/tB0hk5b/img5.png",
   "https://i.ibb.co/PjW8wG1/img4.png",
-  "https://i.ibb.co/8NjrtRz/img3.png",
+  "https://i.ibb.co/JxpvvqF/img15.png",
   "https://i.ibb.co/RjrpBL4/img2.png",
+  "https://i.ibb.co/8NjrtRz/img3.png",
+  "https://i.ibb.co/s3RGz90/img6.png",
+  "https://i.ibb.co/n0c2fqX/img7.png",
+  "https://i.ibb.co/fC2trfK/img9.png",
+  "https://i.ibb.co/VNmhMwg/img10.png",
+  "https://i.ibb.co/f1rmwQ6/img11.png",
+  "https://i.ibb.co/NycbzSj/img12.png",
+  "https://i.ibb.co/tB0hk5b/img5.png",
+  "https://i.ibb.co/mNN5qfY/img14.png",
+  "https://i.ibb.co/qpWkRH3/img8.png",
   "https://i.ibb.co/QJV9RHG/img1.png",
 ];
 
