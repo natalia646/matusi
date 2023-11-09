@@ -1,7 +1,6 @@
 import React from "react";
-import error from "../../assets/pages/error.svg";
-// import style from "./Error.module.scss";
 import { Link } from "react-router-dom";
+import error from "../../assets/pages/error.svg";
 import styled from "styled-components";
 
 const Error = () => {
@@ -17,7 +16,7 @@ const Error = () => {
 
 export default Error;
 
-const ErrorStyled = styled.main`
+const ErrorStyled = styled.div`
   @import "../../scss/variable";
   img {
     display: block;
