@@ -49,6 +49,7 @@ const MainPart = () => {
             <img src={google} alt="Google Play"></img>
             <div className={style.text}>
               <p>Get it on</p>
+              <></>
               <p>
                 <b>Google Play</b>
               </p>
