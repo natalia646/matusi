@@ -1,9 +1,9 @@
 import "./App.css";
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/pages/Home/Home";
+import Home from "./components/pages/Home";
 
-const Error = React.lazy(() => import("./components/pages/Error/Error"));
+const Error = React.lazy(() => import("./components/pages/Error"));
 const TermsUse = React.lazy(() =>
   import("./components/pages/Protocol/TermsUse")
 );
