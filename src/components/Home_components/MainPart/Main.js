@@ -2,8 +2,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { setDetails } from "../../redux/slices/activeSlice";
 import Download from "../../Home_components/Download/Download";
-import phone1 from "../../assets/phones/phone1.png";
-import phone2 from "../../assets/phones/phone2.png";
 import google from "../../assets/icons/google_play.svg";
 import style from "./Main.module.scss";
 import { Link } from "react-router-dom";
@@ -12,6 +10,7 @@ const MainPart = () => {
   const dispatch = useDispatch();
 
   return (
+
     <div className={style.head_container}>
       <div className={style.back_mobile}>
         <div className={style.desc}>
@@ -55,8 +54,8 @@ const MainPart = () => {
               </p>
             </div>
         </Link>
-        <img className={style.phone1} src={phone1} alt="phone"></img>
-        <img className={style.phone2} src={phone2} alt="phone"></img>
+        <img className={style.phone1} src="https://i.ibb.co/QJV9RHG/img1.png" alt="img1" ></img>
+        <img className={style.phone2}  src="https://i.ibb.co/HndNqGQ/phone2.png" alt="phone2"></img>
       </div>
     </div>
   );

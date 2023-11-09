@@ -1,6 +1,4 @@
 import React from "react";
-import phone3 from "../../assets/phones/phone3.png";
-import phone4 from "../../assets/phones/phone4.png";
 import Download from "../Download/Download";
 import style from "./Details.module.scss";
 
@@ -12,8 +10,8 @@ const Details = () => {
           <Download />
         </span>
         <div className={style.photos}>
-          <img src={phone4} alt="phone" className={style.photo1}></img>
-          <img src={phone3} alt="phone" className={style.photo2}></img>
+          <img className={style.photo1} src="https://i.ibb.co/z8qY2xb/phone4.png" alt="phone4" border="0"></img>
+          <img className={style.photo2} src="https://i.ibb.co/dm1t7LH/phone3.png" alt="phone3" border="0"></img>
         </div>
         <div className={style.text}>
           <h2>Яку користь це дає?</h2>
