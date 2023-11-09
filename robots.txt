@@ -1,0 +1,8 @@
+Host: https://mama-ne-vdoma.online
+
+User-agent: *
+Allow: /
+Disallow: /terms
+Disallow: /privacy
+Disallow: /refusal
+Disallow: /contact
