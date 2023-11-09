@@ -54,8 +54,8 @@ const MainPart = () => {
               </p>
             </div>
         </Link>
-        <img className={style.phone1} src="https://i.ibb.co/QJV9RHG/img1.png" alt="img1" ></img>
-        <img className={style.phone2}  src="https://i.ibb.co/HndNqGQ/phone2.png" alt="phone2"></img>
+        <img className={style.phone1} src="https://i.ibb.co/n8dgy4d/img1.webp" alt="img1" ></img>
+        <img className={style.phone2}  src="https://i.ibb.co/rmvsZb1/img01.webp" alt="phone2"></img>
       </div>
     </div>
   );

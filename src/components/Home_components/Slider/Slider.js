@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   EffectCoverflow,
@@ -11,61 +11,25 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Slider.css";
-// import axios from "axios";
-
-// const images = [
-//   image13,
-//   image4,
-//   image15,
-//   image2,
-//   image3,
-//   image6,
-//   image7,
-//   image9,
-//   image10,
-//   image11,
-//   image12,
-//   image5,
-//   image14,
-//   image8,
-//   image1,
-// ];
 
 const images = [
-  "https://i.ibb.co/9s1yPSG/img13.png",
-  "https://i.ibb.co/PjW8wG1/img4.png",
-  "https://i.ibb.co/JxpvvqF/img15.png",
-  "https://i.ibb.co/RjrpBL4/img2.png",
-  "https://i.ibb.co/8NjrtRz/img3.png",
-  "https://i.ibb.co/s3RGz90/img6.png",
-  "https://i.ibb.co/n0c2fqX/img7.png",
-  "https://i.ibb.co/fC2trfK/img9.png",
-  "https://i.ibb.co/VNmhMwg/img10.png",
-  "https://i.ibb.co/f1rmwQ6/img11.png",
-  "https://i.ibb.co/NycbzSj/img12.png",
-  "https://i.ibb.co/tB0hk5b/img5.png",
-  "https://i.ibb.co/mNN5qfY/img14.png",
-  "https://i.ibb.co/qpWkRH3/img8.png",
-  "https://i.ibb.co/QJV9RHG/img1.png",
+  "https://i.ibb.co/n8dgy4d/img1.webp",
+  "https://i.ibb.co/fq63wTm/img2.webp",
+  "https://i.ibb.co/HYyFSrt/img3.webp",
+  "https://i.ibb.co/PhSBrGn/img4.webp",
+  "https://i.ibb.co/S0Xxh8b/img5.webp",
+  "https://i.ibb.co/PQ4CQf8/img6.webp",
+  "https://i.ibb.co/4V75Q75/img7.webp",
+  "https://i.ibb.co/DzZKS4X/img8.webp",
+  "https://i.ibb.co/239Jsfk/img9.webp",
+  "https://i.ibb.co/m0jN2Wr/img10.webp",
+  "https://i.ibb.co/ym923Z5/img11.webp",
+  "https://i.ibb.co/MnTHXSz/img12.webp",
+  "https://i.ibb.co/30hxY9v/img13.webp",
+  "https://i.ibb.co/YfyPJP0/img14.webp",
+  "https://i.ibb.co/Vxy2sgG/img15.webp",
 ];
-
-
 const Slider = () => {
-  // const [images, setImages] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // useEffect(() => {
-  //   setIsLoading(false);
-  //   axios
-  //     .get("https://64ca66e8700d50e3c704da5c.mockapi.io/api/va/posts")
-  //     .then(({ data }) => setImages(data))
-  //     .catch((error) => console.log(error))
-  //     .finally(setIsLoading(true));
-  // }, []);
-
-  // if (!isLoading) {
-  //   return <div>Загрузка...</div>;
-  // }
   return (
     <div className="container">
       <h2>Інтерфейс застосунку</h2>
