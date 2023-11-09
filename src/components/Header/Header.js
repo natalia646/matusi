@@ -9,6 +9,7 @@ import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 
+
 const links = ["/", "/", "/terms", "/contact"];
 const nameLink = ["Про застосунок", "Відгуки", "Умови користування", "Контакти"];
 const linksMobile = [
