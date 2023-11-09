@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-
 import Main from "../../Home_components/MainPart/Main";
 import About from "../../Home_components/About/About";
 import Details from "../../Home_components/Details/Details";
