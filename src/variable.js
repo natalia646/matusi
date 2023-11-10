@@ -17,3 +17,12 @@ export const device = {
   laptopL: `(min-width: ${size.laptopL})`,
   desktop: `(min-width: ${size.desktop})`,
 };
+
+export const colors = {
+  root: "#6b4eff",
+  gray: "#4f5665",
+  orange: "#f89500",
+  white: " #ffffff",
+  hover: "#ff8b03",
+  activeClick: "#f17400",
+};
