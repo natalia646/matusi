@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useRef, useContext } from "react";
+import { Context } from "../../../context";
 import style from "./Reviews.module.scss";
 import Review from "./Review";
 import ReviewsSlider from "./ReviewsSlider";
@@ -15,7 +15,7 @@ const people = [person1, person3, person2, person4, person5, person6];
 
 const Reviews = () => {
   const reviewsRef = useRef();
-  const { activeIndex } = useSelector((state) => state.activeIndex);
+  const {activeIndex} = useContext(Context)
 
   useEffect(() => {
     if (activeIndex === 1) {

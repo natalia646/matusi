@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
+import { Context } from "../../../context";
 import style from "./About.module.scss";
 import location from "../../assets/about_icons/location.svg";
 import group from "../../assets/about_icons/group.svg";
 import purse from "../../assets/about_icons/purse.svg";
-import { useDispatch, useSelector } from "react-redux";
-import { setDetails } from "../../redux/slices/activeSlice";
 
 const img = [location, group, purse];
 const h3 = ["Обирай локацію", "Створюй групи", "Працюй спокійно"];
@@ -17,14 +16,13 @@ const p = [
 
 
 const About = () => {
-  const dispatch = useDispatch();
   const detailsRef = useRef();
-  const { details } = useSelector((state) => state.activeIndex);
+  const {details, setDetails} = useContext(Context)
 
   useEffect(() => {
     if (details) {
       detailsRef.current.scrollIntoView({ behavior: "smooth" });
-      dispatch(setDetails(false));
+      setDetails(false)
     }
   }, [details]);
 

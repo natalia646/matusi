@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { Context } from "../../context";
 import { Link, useLocation } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { setActiveIndex } from "../redux/slices/activeSlice";
 import line from "../assets/icons/line.svg";
 import logo from "../assets/logo/logo.svg";
 import open from "../assets/icons/open-menu.svg";
@@ -9,9 +8,13 @@ import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 
-
 const links = ["/", "/", "/terms", "/contact"];
-const nameLink = ["Про застосунок", "Відгуки", "Умови користування", "Контакти"];
+const nameLink = [
+  "Про застосунок",
+  "Відгуки",
+  "Умови користування",
+  "Контакти",
+];
 const linksMobile = [
   {
     link: "/refusal",
@@ -24,20 +27,19 @@ const linksMobile = [
 ];
 
 const Header = () => {
-  const dispatch = useDispatch();
   const location = useLocation();
-  const { activeIndex } = useSelector((state) => state.activeIndex);
   const [isMobile, setIsMobile] = useState(true);
+  const { activeIndex, setActiveIndex } = useContext(Context);
 
   useEffect(() => {
     if (location.pathname) {
       const url = links.find((link) => link === location.pathname);
-      dispatch(setActiveIndex(links.indexOf(url)));
+      setActiveIndex(links.indexOf(url));
     }
   });
 
   const getActiveID = (i) => {
-    dispatch(setActiveIndex(i));
+    setActiveIndex(i);
     setIsMobile(true);
   };
 
@@ -54,9 +56,7 @@ const Header = () => {
           alt="menu"
         ></img>
 
-        <div
-          className={`${isMobile ? style.open : style.close}`}
-        >
+        <div className={`${isMobile ? style.open : style.close}`}>
           {links.map((item, i) => {
             return (
               <Link
@@ -76,14 +76,20 @@ const Header = () => {
               </Link>
             );
           })}
-          
+
           <span className={style.download}>
             <Download />
           </span>
           <span className={style.menu_mobile}>
-            
             {linksMobile.map((item, i) => (
-              <Link key={i} className={style.contact} to={item.link}onClick={()=>{setIsMobile(true);}} >
+              <Link
+                key={i}
+                className={style.contact}
+                to={item.link}
+                onClick={() => {
+                  setIsMobile(true);
+                }}
+              >
                 {item.label}
               </Link>
             ))}

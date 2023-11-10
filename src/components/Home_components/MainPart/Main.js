@@ -1,13 +1,12 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { setDetails } from "../../redux/slices/activeSlice";
+import React, {useContext} from "react";
+import { Context } from "../../../context";
 import Download from "../../Home_components/Download/Download";
 import google from "../../assets/icons/google_play.svg";
 import style from "./Main.module.scss";
 import { Link } from "react-router-dom";
 
 const MainPart = () => {
-  const dispatch = useDispatch();
+  const {setDetails} = useContext(Context)
 
   return (
 
@@ -37,7 +36,7 @@ const MainPart = () => {
             <Download />
             <button
               className={style.more}
-              onClick={() => dispatch(setDetails(true))}
+              onClick={() => setDetails(true)}
             >
               Дивитися більше
             </button>
