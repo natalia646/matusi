@@ -7,14 +7,27 @@ import open from "../assets/icons/open-menu.svg";
 import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
+import styled from "styled-components";
 
-const links = ["/", "/", "/terms", "/contact"];
-const nameLink = [
-  "Про застосунок",
-  "Відгуки",
-  "Умови користування",
-  "Контакти",
+const links = [
+  {
+    link: "/",
+    nameLink: "Про застосунок",
+  },
+  {
+    link: "/",
+    nameLink: "Відгуки",
+  },
+  {
+    link: "/terms",
+    nameLink: "Умови користування",
+  },
+  {
+    link: "/contact",
+    nameLink: "Контакти",
+  },
 ];
+
 const linksMobile = [
   {
     link: "/refusal",
@@ -37,18 +50,18 @@ const Header = () => {
       setActiveIndex(links.indexOf(url));
     }
   });
-
   const getActiveID = (i) => {
     setActiveIndex(i);
     setIsMobile(true);
   };
 
   return (
-    <header>
-      <div className={style.container}>
+    <HeaderContainer>
+      <div className="container">
         <Link to="/">
           <img className={style.logo} src={logo} alt="logo"></img>
         </Link>
+
         <img
           onClick={() => setIsMobile(!isMobile)}
           className={style.menu}
@@ -60,7 +73,7 @@ const Header = () => {
           {links.map((item, i) => {
             return (
               <Link
-                to={item}
+                to={item.link}
                 key={i}
                 onClick={() => getActiveID(i)}
                 className={`${style.link} ${
@@ -72,7 +85,7 @@ const Header = () => {
                   alt="line"
                   className={i === activeIndex ? style.line : style.not_line}
                 ></img>
-                {nameLink[i]}
+                {item.nameLink}
               </Link>
             );
           })}
@@ -96,8 +109,23 @@ const Header = () => {
           </span>
         </div>
       </div>
-    </header>
+    </HeaderContainer>
   );
 };
 
 export default Header;
+
+const HeaderContainer = styled.header`
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  background-color: #fff;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+`;
