@@ -1,23 +1,11 @@
-@import "../scss/container";
+
 @import "../scss/variable";
-.menu {
-  display: none;
-}
+
 .menu_mobile {
   display: none;
 }
 .top_hr {
   display: none;
-}
-.container {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  width: 2.75rem;
 }
 .link {
   padding: 20px 32px;

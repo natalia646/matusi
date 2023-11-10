@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Context } from "../../context";
 import { Link, useLocation } from "react-router-dom";
-import line from "../assets/icons/line.svg";
+// import line from "../assets/icons/line.svg";
 import logo from "../assets/logo/logo.svg";
 import open from "../assets/icons/open-menu.svg";
 import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 import styled from "styled-components";
+import { device } from "../../device";
 
 const links = [
   {
@@ -56,18 +57,16 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer>
-      <div className="container">
+    <HeaderBlock>
+      <Container>
         <Link to="/">
-          <img className={style.logo} src={logo} alt="logo"></img>
+          <Logo src={logo} alt="logo"></Logo>
         </Link>
-
-        <img
+        <BurgerMenu
           onClick={() => setIsMobile(!isMobile)}
-          className={style.menu}
           src={isMobile ? open : close}
           alt="menu"
-        ></img>
+        ></BurgerMenu>
 
         <div className={`${isMobile ? style.open : style.close}`}>
           {links.map((item, i) => {
@@ -80,11 +79,11 @@ const Header = () => {
                   i === activeIndex ? style.active : ""
                 } `}
               >
-                <img
+                {/* <img
                   src={line}
                   alt="line"
                   className={i === activeIndex ? style.line : style.not_line}
-                ></img>
+                ></img> */}
                 {item.nameLink}
               </Link>
             );
@@ -93,6 +92,7 @@ const Header = () => {
           <span className={style.download}>
             <Download />
           </span>
+
           <span className={style.menu_mobile}>
             {linksMobile.map((item, i) => (
               <Link
@@ -108,24 +108,29 @@ const Header = () => {
             ))}
           </span>
         </div>
-      </div>
-    </HeaderContainer>
+      </Container>
+    </HeaderBlock>
   );
 };
 
 export default Header;
 
-const HeaderContainer = styled.header`
+const HeaderBlock = styled.header`
   margin-left: 6.25rem;
   margin-right: 6.25rem;
-  background-color: #fff;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo {
-    width: 2.75rem;
-    height: 2.75rem;
-  }
 `;
+const Container = styled.div`
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Logo = styled.img`
+  width: 2.75rem;
+  height: 2.75rem;
+`;
+const BurgerMenu = styled.img`
+  display: none;
+`;
+
