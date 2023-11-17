@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import facebook from "../assets/logo/facebook.svg";
 import instagram from "../assets/logo/instagram.svg";
 import linkedin from "../assets/logo/linkedin.svg";
-import styled from "styled-components";
-import { colors } from "../../variable";
 
 const about = [
   {
@@ -42,8 +40,8 @@ const networks = [
 
 const Footer = () => {
   return (
-    <FooterBlock>
-      <div className='container'>
+    <footer className={style.footer}>
+      <div className={style.container}>
         <div className={style.links}>
           <Link to="https://baza-trainee.tech/ua" target="_blank">
             <img src={baza} alt="Baza Trainee"></img>
@@ -85,17 +83,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </FooterBlock>
+    </footer>
   );
 };
 
 export default Footer;
-
-const FooterBlock = styled.footer`
-  background-color: ${colors.root};
-  color: ${colors.white};
-  .container {
-    margin-left: 6.25rem;
-    margin-right: 6.26rem;
-  }
-`;

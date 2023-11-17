@@ -8,6 +8,7 @@ import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 import styled from "styled-components";
+import { device } from "../../device";
 
 const links = [
   {
