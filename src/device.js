@@ -17,3 +17,4 @@ export const device = {
   laptopL: `(max-width: ${size.laptopL})`,
   desktop: `(max-width: ${size.desktop})`,
 };
+ 

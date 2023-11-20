@@ -1,13 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Context } from "../../context";
 import { Link, useLocation } from "react-router-dom";
-import line from "../assets/icons/line.svg";
 import logo from "../assets/logo/logo.svg";
 import open from "../assets/icons/open-menu.svg";
 import close from "../assets/icons/close.svg";
-import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
 import styled from "styled-components";
+import { device } from "../../device";
 
 const links = [
   {
@@ -40,7 +39,7 @@ const linksMobile = [
 
 const Header = () => {
   const location = useLocation();
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const { activeIndex, setActiveIndex } = useContext(Context);
 
   useEffect(() => {
@@ -52,7 +51,7 @@ const Header = () => {
 
   const getActiveId = (index) => {
     setActiveIndex(index);
-    setIsMobile(true);
+    setIsMobile(false);
   };
 
   return (
@@ -61,19 +60,26 @@ const Header = () => {
         <Link to={"/"}>
           <Logo src={logo} alt="logo"></Logo>
         </Link>
+        <Burger
+          src={isMobile ? close : open}
+          alt="menu"
+          onClick={() => setIsMobile(!isMobile)}
+        />
 
         <DescLinks>
-          {links.map((item, i) => (
-            <Link
-              key={i}
-              to={item.link}
-              onClick={() => getActiveId(i)}
-              className={i === activeIndex ? "activeLink" : ""}
-            >
-              <span className={i === activeIndex ? "activeSpan" : ""}></span>
-              {item.nameLink}
-            </Link>
-          ))}
+   
+              {links.map((item, i) => (
+                <Link
+                  key={i}
+                  to={item.link}
+                  onClick={() => getActiveId(i)}
+                  className={i === activeIndex ? "activeLink" : ""}
+                >
+                  <span className={i === activeIndex ? "activeSpan" : ""}></span>
+                  {item.nameLink}
+                </Link>
+              ))}
+      
           <Download />
         </DescLinks>
       </Container>
@@ -92,11 +98,25 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media ${device.laptopL} {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  @media ${device.laptop} {
+    margin-left: 3rem;
+    margin-right: 1rem;
+  }
+  @media ${device.tablet} {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 `;
 const Logo = styled.img`
   width: 2.75rem;
   height: 2.75rem;
 `;
+
 const DescLinks = styled.div`
   a {
     text-decoration: none;
@@ -104,6 +124,9 @@ const DescLinks = styled.div`
     font-size: 1.25rem;
     font-weight: 400;
     margin-left: 2.63rem;
+  }
+  span {
+    display: none;
   }
   .activeLink {
     font-weight: 700;
@@ -118,7 +141,83 @@ const DescLinks = styled.div`
     top: 0.65rem;
     left: 2.4rem;
   }
-  span {
+
+  @media ${device.laptopL} {
+    a {
+      font-size: 1.1rem;
+    }
+  }
+  @media ${device.laptop} {
+    a {
+      font-size: 1rem;
+    }
+    button {
+      display: none;
+    }
+  }
+  @media ${device.tablet} {
     display: none;
+    /* display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    background-color: #000000bc;
+    left: 0;
+    top: 80px;
+    transition: all 0.1s;
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    margin-top: 1rem;
+    a {
+      text-align: end;
+      color: var(--white-color);
+      width: 90%;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .activeSpan {
+      display: none;
+    } */
+  }
+`;
+const Burger = styled.img`
+  display: none;
+
+  @media ${device.tablet} {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+`;
+const OpenMenu = styled.div`
+  display: none;
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    background-color: #000000bc;
+    left: 0;
+    top: 80px;
+    transition: all 0.1s;
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    margin-top: 1rem;
+    a {
+      text-align: end;
+      color: var(--white-color);
+      width: 90%;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .activeSpan {
+      display: none;
+    }
   }
 `;
