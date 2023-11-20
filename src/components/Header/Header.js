@@ -7,6 +7,7 @@ import open from "../assets/icons/open-menu.svg";
 import close from "../assets/icons/close.svg";
 import style from "./Header.module.scss";
 import Download from "../Home_components/Download/Download";
+import styled from "styled-components";
 
 const links = ["/", "/", "/terms", "/contact"];
 const nameLink = [
@@ -44,10 +45,31 @@ const Header = () => {
   };
 
   return (
-  <></>
+    <HeaderBlock>
+      <Container>
+        <Link to={"/"}>
+          <Logo src={logo} alt="logo"></Logo>
+
+
+        </Link>
+      </Container>
+    </HeaderBlock>
   );
 };
 
-
 export default Header;
 
+const HeaderBlock = styled.header`
+  margin: 2rem 0;
+`;
+const Container = styled.div`
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+`;
+const Logo = styled.img`
+  width: 2.75rem;
+  height: 2.75rem;
+`;
+const DescLinks = styled.div`
+
+`
