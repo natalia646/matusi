@@ -139,31 +139,41 @@
 }
 @include leptop {
   .desc {
-    margin: 1rem 0rem 11rem 3rem;
+    margin: 1rem 0rem 11rem 2rem;
     .h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     h4 {
       font-size: 0.9rem;
     }
     p {
       font-size: 1rem;
-      width: 28rem;
+      width: 26rem;
     }
   }
-
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    button {
+      align-self: center;
+      width: 23rem;
+      font-size: 1rem;
+    }
+  }
   .phone1 {
-    right: 200px;
-    width: 9.9rem;
+    right: 8.6rem;
+    width: 9rem;
+    top: 8rem;
   }
   .phone2 {
-    top: 148px;
-    right: 3rem;
-    width: 12rem;
+    top: 180px;
+    right: 0.5rem;
+    width: 11rem;
   }
 
   .google_play {
-    right: 13rem;
+    right: 9rem;
   }
 }
 @include table {
