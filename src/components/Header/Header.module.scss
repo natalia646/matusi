@@ -1,130 +1,130 @@
 
-@import "../scss/variable";
+// @import "../scss/variable";
 
-.menu_mobile {
-  display: none;
-}
-.top_hr {
-  display: none;
-}
-.link {
-  padding: 20px 32px;
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: black;
-}
+// .menu_mobile {
+//   display: none;
+// }
+// .top_hr {
+//   display: none;
+// }
+// .link {
+//   padding: 20px 32px;
+//   text-decoration: none;
+//   font-size: 1.25rem;
+//   color: black;
+// }
 
-.active {
-  font-weight: 700;
-}
-.line {
-  width: 2rem;
-  position: relative;
-  top: 1.5rem;
-  left: 1.8rem;
-}
-.not_line {
-  display: none;
-}
+// .active {
+//   font-weight: 700;
+// }
+// .line {
+//   width: 2rem;
+//   position: relative;
+//   top: 1.5rem;
+//   left: 1.8rem;
+// }
+// .not_line {
+//   display: none;
+// }
 
-@include desctop {
-  .container {
-    margin-left: 6.1rem;
-  }
-  .link {
-    font-size: 1rem;
-    padding: 20px 25px;
-  }
-}
-@include leptop {
-  .download {
-    display: none;
-  }
-  .container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-}
-@include table {
-  .container {
-    .logo {
-      width: 3.5rem;
-    }
-  }
-  .close {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    list-style: none;
-    background-color: #000000bc;
-    left: 0;
-    top: 80px;
-    transition: all 0.1s;
-    width: 100%;
-    z-index: 4;
-    height: 100%;
-    margin-top: 1rem;
+// @include desctop {
+//   .container {
+//     margin-left: 6.1rem;
+//   }
+//   .link {
+//     font-size: 1rem;
+//     padding: 20px 25px;
+//   }
+// }
+// @include leptop {
+//   .download {
+//     display: none;
+//   }
+//   .container {
+//     margin-left: 4rem;
+//     margin-right: 4rem;
+//   }
+// }
+// @include table {
+//   .container {
+//     .logo {
+//       width: 3.5rem;
+//     }
+//   }
+//   .close {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     list-style: none;
+//     background-color: #000000bc;
+//     left: 0;
+//     top: 80px;
+//     transition: all 0.1s;
+//     width: 100%;
+//     z-index: 4;
+//     height: 100%;
+//     margin-top: 1rem;
 
-    .link {
-      text-align: end;
-      color: var(--white-color);
-      width: 90%;
-      padding: 2rem;
-      transition: all 0.3s ease;
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    .menu_mobile {
-      display: grid;
-      text-align: end;
-      margin-top: 4rem;
-      .contact {
-        text-decoration: none;
-        font-size: 1.75rem;
-        color: var(--white-color);
-        margin: 1rem;
-      }
-    }
-    .line {
-      display: none;
-    }
-  }
+//     .link {
+//       text-align: end;
+//       color: var(--white-color);
+//       width: 90%;
+//       padding: 2rem;
+//       transition: all 0.3s ease;
+//       font-size: 2rem;
+//       font-weight: 700;
+//     }
+//     .menu_mobile {
+//       display: grid;
+//       text-align: end;
+//       margin-top: 4rem;
+//       .contact {
+//         text-decoration: none;
+//         font-size: 1.75rem;
+//         color: var(--white-color);
+//         margin: 1rem;
+//       }
+//     }
+//     .line {
+//       display: none;
+//     }
+//   }
 
-  .open {
-    display: none;
-  }
+//   .open {
+//     display: none;
+//   }
 
-  .menu {
-    display: block;
-    width: 3.5rem;
-  }
-}
-@include mobile {
-  .container {
-    border-width: 0.5rem;
-    border-block-end: solid;
-    border-color: rgba(224, 223, 223, 0.377);
-    padding-bottom: 5px;
-    .logo {
-      width: 4.5rem;
-    }
-  }
-  .close {
-    margin-top: 1.8rem;
-  }
+//   .menu {
+//     display: block;
+//     width: 3.5rem;
+//   }
+// }
+// @include mobile {
+//   .container {
+//     border-width: 0.5rem;
+//     border-block-end: solid;
+//     border-color: rgba(224, 223, 223, 0.377);
+//     padding-bottom: 5px;
+//     .logo {
+//       width: 4.5rem;
+//     }
+//   }
+//   .close {
+//     margin-top: 1.8rem;
+//   }
 
-  .menu {
-    width: 5rem;
-  }
-  .close {
-    .link {
-      font-size: 2.5rem;
-      padding: 2.5rem;
-    }
-    .menu_mobile {
-      .contact {
-        font-size: 2rem;
-      }
-    }
-  }
-}
+//   .menu {
+//     width: 5rem;
+//   }
+//   .close {
+//     .link {
+//       font-size: 2.5rem;
+//       padding: 2.5rem;
+//     }
+//     .menu_mobile {
+//       .contact {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
