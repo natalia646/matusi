@@ -44,63 +44,10 @@ const Header = () => {
   };
 
   return (
-
-    <header>
-      <div className={style.container}>
-        <Link to="/">
-          <img src={logo} alt="logo"></img>
-        </Link>
-
-        <img
-          onClick={() => setIsMobile(!isMobile)}
-          src={isMobile ? open : close}
-          alt="menu"></img>
-
-
-        <div className={`${isMobile ? style.open : style.close}`}>
-          {links.map((item, i) => {
-            return (
-              <Link
-                to={item}
-                key={i}
-                onClick={() => getActiveID(i)}
-                className={`${style.link} ${
-                  i === activeIndex ? style.active : ""
-                } `}
-              >
-                <img
-                  src={line}
-                  alt="line"
-                  className={i === activeIndex ? style.line : style.not_line}
-                ></img>
-                {item.nameLink}
-                {nameLink[i]}
-              </Link>
-            );
-          })}
-
-          <span className={style.download}>
-            <Download />
-          </span>
-
-          <span className={style.menu_mobile}>
-            {linksMobile.map((item, i) => (
-              <Link
-                key={i}
-                className={style.contact}
-                to={item.link}
-                onClick={() => {
-                  setIsMobile(true);
-                }}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </span>
-        </div>
-      </div>
-    </header>
+  <></>
   );
 };
 
+
 export default Header;
+
