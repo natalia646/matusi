@@ -68,6 +68,9 @@ const Container = styled.div`
   background-position: bottom;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
+  @media ${device.laptopL} {
+    grid-template-columns: 1.4fr 1fr;
+  }
 `;
 const Description = styled.article`
   margin: 1rem 0rem 11rem ${margin.desktop};
@@ -88,7 +91,7 @@ const Description = styled.article`
     display: none;
   }
   @media ${device.laptopL} {
-    margin-left: ${margin.laptop};
+    margin-left: ${margin.laptopL};
     h1 {
       font-size: 2.6rem;
     }
@@ -97,6 +100,20 @@ const Description = styled.article`
       width: 34rem;
     }
   }
+  @media ${device.laptop} {
+    margin-left: ${margin.laptop};
+    h1 {
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 1rem;
+      width: 30rem;
+    }
+    .h4 {
+      font-size: 1.1rem;
+    }
+  }
+  
 `;
 const Buttons = styled.div`
   button {
@@ -124,6 +141,22 @@ const Buttons = styled.div`
     }
   }
   @media ${device.laptopL} {
+    button {
+      width: 14rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media ${device.laptop} {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    button {
+      align-self: center;
+      width: 23rem;
+      font-size: 1.2rem;
+      margin-top: 0.7rem;
+      padding: 0.7rem 2rem;
+    }
   }
 `;
 const Phone1 = styled.img`
@@ -136,6 +169,14 @@ const Phone1 = styled.img`
     top: 7.5rem;
     right: 15.44rem;
   }
+  @media ${device.laptop} {
+    width: 10rem;
+    top: 7.5rem;
+    right: 13rem;
+  }
+  @media ${device.laptopS} {
+    display:none
+  }
 `;
 const Phone2 = styled.img`
   right: 6.31rem;
@@ -145,6 +186,10 @@ const Phone2 = styled.img`
   @media ${device.laptopL} {
     width: 15rem;
     right: 3rem;
+  }
+  @media ${device.laptop} {
+    width: 13rem;
+    right: 2rem;
   }
 `;
 const GooglePlay = styled.div`
@@ -173,6 +218,19 @@ const GooglePlay = styled.div`
     .google-play {
       right: 19rem;
       top: 34rem;
+    }
+  }
+  @media ${device.laptop} {
+    .google-play {
+      right: 16rem;
+      top: 30rem;
+    }
+  }
+  @media ${device.laptopS} {
+    .google-play {
+      width: 9rem;
+      right: 12.5rem;
+      top: 30.5rem;
     }
   }
 `;
