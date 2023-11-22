@@ -12,7 +12,7 @@ const MainPart = () => {
 
   return (
     <Container>
-      {/* <div className={style.back_mobile}> */}
+      <div className='back-mobile'>
       <Description>
         <p className="h4">Долучайся до спільноти</p>
         <h1>
@@ -36,7 +36,7 @@ const MainPart = () => {
           </button>
         </Buttons>
       </Description>
-      {/* </div> */}
+      </div>
       <GooglePlay>
         <Link
           className="google-play"
@@ -113,7 +113,10 @@ const Description = styled.article`
       font-size: 1.1rem;
     }
   }
-  
+  @media ${device.tablet} {
+    margin-left: ${margin.tablet};
+ 
+  }
 `;
 const Buttons = styled.div`
   button {
