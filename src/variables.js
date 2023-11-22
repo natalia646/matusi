@@ -3,6 +3,7 @@ export const device = {
   mobileM: `(max-width: 375px)`,
   mobileL: `(max-width: 579px)`,
   tablet: `(max-width: 768px)`,
+  laptopS: `(max-width: 889px)`,
   laptop: `(max-width: 1024px)`,
   laptopL: `(max-width: 1280px)`,
   desktop: `(max-width: 1405px)`,
@@ -19,7 +20,8 @@ export const colors = {
 
 export const margin = {
   desktop: `6.25rem`,
-  laptop: `3rem`,
-  tablet: `2rem`,
-  mobile: `1rem`
+  laptopL: `3rem`,
+  laptop: `2rem`,
+  tablet: `1rem`,
+  mobile: `0.5rem`
 }
