@@ -5,7 +5,7 @@ import facebook from "./assets/logo/facebook.svg";
 import instagram from "./assets/logo/instagram.svg";
 import linkedin from "./assets/logo/linkedin.svg";
 import styled from "styled-components";
-import { device, colors } from "../device";
+import { device, colors, margin } from "../variables";
 
 const about = [
   {
@@ -86,7 +86,7 @@ const FooterBlock = styled.footer`
   background-color: ${colors.root};
   color: ${colors.white};
   .container {
-    margin: 0rem 6.25rem;
+    margin: 0rem ${margin.desktop};
   }
   .contact {
     text-decoration: none;
@@ -97,7 +97,7 @@ const FooterBlock = styled.footer`
   }
   @media ${device.laptop} {
     .container {
-      margin: 0rem 2rem;
+      margin: 0rem ${margin.laptop};
     }
   }
   @media ${device.tablet} {

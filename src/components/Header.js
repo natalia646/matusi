@@ -6,7 +6,7 @@ import open from "./assets/icons/open-menu.svg";
 import close from "./assets/icons/close.svg";
 import Download from "./Home_components/Download/Download";
 import styled from "styled-components";
-import { device } from "../device";
+import { device, margin } from "../variables";
 
 const links = [
   {
@@ -103,24 +103,24 @@ const HeaderBlock = styled.header`
   margin: 2.12rem 0 2.44rem 0;
 `;
 const Container = styled.div`
-  margin-left: 6.25rem;
-  margin-right: 6.25rem;
+  margin-left: ${margin.desktop};
+  margin-right: ${margin.desktop};
   display: flex;
   align-items: center;
   justify-content: space-between;
 
 
   @media ${device.laptopL} {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: ${margin.laptopL};
+    margin-right: ${margin.laptopL};
   }
   @media ${device.laptop} {
-    margin-left: 3rem;
+    margin-left: ${margin.laptop};
     margin-right: 1rem;
   }
   @media ${device.tablet} {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: ${margin.tablet};
+    margin-right: ${margin.tablet};
   }
 `;
 const Logo = styled.img`
@@ -195,7 +195,7 @@ const MobileLinks = styled.div`
     margin-top: 1rem;
     a {
       text-align: end;
-      color: var(--white-color);
+      color: #fff;
       width: 90%;
       padding: 2rem;
       transition: all 0.3s ease;
