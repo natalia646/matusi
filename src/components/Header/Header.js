@@ -91,6 +91,7 @@ const Header = () => {
             </Link>
           ))}
         </MobileLinks>: ''}
+
       </Container>
     </HeaderBlock>
   );
@@ -176,7 +177,6 @@ const Burger = styled.img`
     height: 2.75rem;
   }
 `;
-
 const MobileLinks = styled.div`
   display: none;
 
