@@ -65,23 +65,32 @@ const Header = () => {
           alt="menu"
           onClick={() => setIsMobile(!isMobile)}
         />
-
         <DescLinks>
-   
-              {links.map((item, i) => (
-                <Link
-                  key={i}
-                  to={item.link}
-                  onClick={() => getActiveId(i)}
-                  className={i === activeIndex ? "activeLink" : ""}
-                >
-                  <span className={i === activeIndex ? "activeSpan" : ""}></span>
-                  {item.nameLink}
-                </Link>
-              ))}
-      
+          {links.map((item, i) => (
+            <Link
+              key={i}
+              to={item.link}
+              onClick={() => getActiveId(i)}
+              className={i === activeIndex ? "activeLink" : ""}
+            >
+              <span className={i === activeIndex ? "activeSpan" : ""}></span>
+              {item.nameLink}
+            </Link>
+          ))}
           <Download />
         </DescLinks>
+
+        {isMobile ? <MobileLinks>
+        {[...links, ...linksMobile].map((item, i) => (
+            <Link
+              key={i}
+              to={item.link}
+              onClick={() => getActiveId(i)}
+            >
+              {item.nameLink}
+            </Link>
+          ))}
+        </MobileLinks>: ''}
       </Container>
     </HeaderBlock>
   );
@@ -99,6 +108,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
+
   @media ${device.laptopL} {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -108,15 +118,14 @@ const Container = styled.div`
     margin-right: 1rem;
   }
   @media ${device.tablet} {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 `;
 const Logo = styled.img`
   width: 2.75rem;
   height: 2.75rem;
 `;
-
 const DescLinks = styled.div`
   a {
     text-decoration: none;
@@ -157,43 +166,20 @@ const DescLinks = styled.div`
   }
   @media ${device.tablet} {
     display: none;
-    /* display: flex;
-    flex-direction: column;
-    position: absolute;
-    list-style: none;
-    background-color: #000000bc;
-    left: 0;
-    top: 80px;
-    transition: all 0.1s;
-    width: 100%;
-    z-index: 4;
-    height: 100%;
-    margin-top: 1rem;
-    a {
-      text-align: end;
-      color: var(--white-color);
-      width: 90%;
-      padding: 2rem;
-      transition: all 0.3s ease;
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    .activeSpan {
-      display: none;
-    } */
   }
 `;
 const Burger = styled.img`
   display: none;
-
   @media ${device.tablet} {
     display: block;
     width: 2.75rem;
     height: 2.75rem;
   }
 `;
-const OpenMenu = styled.div`
+
+const MobileLinks = styled.div`
   display: none;
+
   @media ${device.tablet} {
     display: flex;
     flex-direction: column;
@@ -214,7 +200,8 @@ const OpenMenu = styled.div`
       padding: 2rem;
       transition: all 0.3s ease;
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 600;
+      text-decoration: none;
     }
     .activeSpan {
       display: none;
