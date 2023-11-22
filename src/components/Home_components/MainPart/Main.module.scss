@@ -29,45 +29,45 @@
 //     width: 40rem;
 //   }
 // }
-.buttons {
-  button {
-    margin-top: 2.3rem;
-    margin-right: 1.5rem;
-    width: 16rem;
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    text-align: center;
-    border-radius: 30px;
-    font-family: Nunito Sans;
-    cursor: pointer;
-  }
-}
-.more {
-  border: 2px solid var(--orange-color);
-  background: var(--white-color);
-  color: var(--orange-color);
-  &:hover {
-    border: 2px solid #f46600;
-    color: #f46600;
-  }
-  &:active {
-    border: 2px solid #CE4A00;
-    color: #CE4A00;
-  }
-}
+// .buttons {
+//   button {
+//     margin-top: 2.3rem;
+//     margin-right: 1.5rem;
+//     width: 16rem;
+//     padding: 1rem 2rem;
+//     font-size: 1.25rem;
+//     text-align: center;
+//     border-radius: 30px;
+//     font-family: Nunito Sans;
+//     cursor: pointer;
+//   }
+// }
+// .more {
+//   border: 2px solid var(--orange-color);
+//   background: var(--white-color);
+//   color: var(--orange-color);
+//   &:hover {
+//     border: 2px solid #f46600;
+//     color: #f46600;
+//   }
+//   &:active {
+//     border: 2px solid #CE4A00;
+//     color: #CE4A00;
+//   }
+// }
 
-.phone1 {
-  right: 19.69rem;
-  top: 6.25rem + 0.94rem;
-  width: 13rem;
-  position: absolute;
-}
-.phone2 {
-  right: 6.31rem;
-  top: 6.25rem + 3.19rem;
-  width: 16rem;
-  position: absolute;
-}
+// .phone1 {
+//   right: 19.69rem;
+//   top: 6.25rem + 0.94rem;
+//   width: 13rem;
+//   position: absolute;
+// }
+// .phone2 {
+//   right: 6.31rem;
+//   top: 6.25rem + 3.19rem;
+//   width: 16rem;
+//   position: absolute;
+// }
 
 .google_play {
   width: 10rem;

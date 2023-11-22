@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Context } from "../../../context";
 import Download from "../../Home_components/Download/Download";
 import google from "../../assets/icons/google_play.svg";
-import style from "./Main.module.scss";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device, colors, margin } from "../../../variables";
 import background from "../../assets/background/background-top.svg";
 
 const MainPart = () => {
@@ -31,40 +31,30 @@ const MainPart = () => {
         </p>
         <Buttons>
           <Download />
-          <button className='more' onClick={() => setDetails(true)}>
+          <button className="more" onClick={() => setDetails(true)}>
             Дивитися більше
           </button>
         </Buttons>
       </Description>
       {/* </div> */}
-
-
-      <div className={style.images}>
+      <GooglePlay>
         <Link
-          className={style.google_play}
+          className="google-play"
           target="_blank"
           to="https://play.google.com/store/apps/details?id=tech.baza_trainee.mama_ne_vdoma"
         >
           <img src={google} alt="Google Play"></img>
-          <div className={style.text}>
-            <p>Get it on</p>
+          <div className="text">
             <p>
+              Get it on
+              <br />
               <b>Google Play</b>
             </p>
           </div>
         </Link>
-        
-        <img
-          className={style.phone1}
-          src="https://i.ibb.co/n8dgy4d/img1.webp"
-          alt="img1"
-        ></img>
-        <img
-          className={style.phone2}
-          src="https://i.ibb.co/rmvsZb1/img01.webp"
-          alt="phone2"
-        ></img>
-      </div>
+      </GooglePlay>
+      <Phone1 src="https://i.ibb.co/n8dgy4d/img1.webp" alt="img1" />
+      <Phone2 src="https://i.ibb.co/rmvsZb1/img01.webp" alt="phone2" />
     </Container>
   );
 };
@@ -80,13 +70,10 @@ const Container = styled.div`
   grid-template-columns: 1.3fr 1fr;
 `;
 const Description = styled.article`
-  margin: 1rem 0rem 11rem 6.25rem;
+  margin: 1rem 0rem 11rem ${margin.desktop};
   h1 {
     font-size: 3rem;
     font-weight: 700;
-  }
-  .h5 {
-    display: none;
   }
   .h4 {
     font-size: 1.25rem;
@@ -97,9 +84,22 @@ const Description = styled.article`
     font-weight: 400;
     width: 40rem;
   }
+  .h5 {
+    display: none;
+  }
+  @media ${device.laptopL} {
+    margin-left: ${margin.laptop};
+    h1 {
+      font-size: 2.6rem;
+    }
+    p {
+      font-size: 1.1rem;
+      width: 34rem;
+    }
+  }
 `;
 const Buttons = styled.div`
-button {
+  button {
     margin-top: 2.3rem;
     margin-right: 1.5rem;
     width: 16rem;
@@ -110,17 +110,69 @@ button {
     font-family: Nunito Sans;
     cursor: pointer;
   }
-.more {
-  border: 2px solid var(--orange-color);
-  background: var(--white-color);
-  color: var(--orange-color);
-  &:hover {
-    border: 2px solid #f46600;
-    color: #f46600;
+  .more {
+    border: 2px solid ${colors.orange};
+    background: ${colors.white};
+    color: ${colors.orange};
+    &:hover {
+      border: 2px solid #f46600;
+      color: #f46600;
+    }
+    &:active {
+      border: 2px solid #ce4a00;
+      color: #ce4a00;
+    }
   }
-  &:active {
-    border: 2px solid #CE4A00;
-    color: #CE4A00;
+  @media ${device.laptopL} {
   }
-}
+`;
+const Phone1 = styled.img`
+  right: 19.69rem;
+  top: 7.2rem;
+  width: 13rem;
+  position: absolute;
+  @media ${device.laptopL} {
+    width: 12rem;
+    top: 7.5rem;
+    right: 15.44rem;
+  }
+`;
+const Phone2 = styled.img`
+  right: 6.31rem;
+  top: 9.45rem;
+  width: 16rem;
+  position: absolute;
+  @media ${device.laptopL} {
+    width: 15rem;
+    right: 3rem;
+  }
+`;
+const GooglePlay = styled.div`
+  .google-play {
+    width: 10rem;
+    background-color: ${colors.white};
+    display: flex;
+    position: absolute;
+    top: 35.26rem;
+    right: 24.19rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    box-shadow: 2px 8px 13px 2px rgba(0, 0, 0, 0.282);
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .text {
+    margin: 0.4rem;
+    p {
+      margin: 0rem;
+      color: black;
+    }
+  }
+  @media ${device.laptopL} {
+    .google-play {
+      right: 19rem;
+      top: 34rem;
+    }
+  }
 `;
