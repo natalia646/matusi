@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import baza from "../assets/logo/baza-logo.svg";
-import facebook from "../assets/logo/facebook.svg";
-import instagram from "../assets/logo/instagram.svg";
-import linkedin from "../assets/logo/linkedin.svg";
+import baza from "./assets/logo/baza-logo.svg";
+import facebook from "./assets/logo/facebook.svg";
+import instagram from "./assets/logo/instagram.svg";
+import linkedin from "./assets/logo/linkedin.svg";
 import styled from "styled-components";
-import { device, colors } from "../../device";
+import { device, colors } from "../device";
 
 const about = [
   {

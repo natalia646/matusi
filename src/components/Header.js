@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Context } from "../../context";
+import { Context } from "../context";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo/logo.svg";
-import open from "../assets/icons/open-menu.svg";
-import close from "../assets/icons/close.svg";
-import Download from "../Home_components/Download/Download";
+import logo from "./assets/logo/logo.svg";
+import open from "./assets/icons/open-menu.svg";
+import close from "./assets/icons/close.svg";
+import Download from "./Home_components/Download/Download";
 import styled from "styled-components";
-import { device } from "../../device";
+import { device } from "../device";
 
 const links = [
   {
