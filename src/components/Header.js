@@ -111,11 +111,10 @@ const Container = styled.div`
 
 
   @media ${device.laptopL} {
-    margin-left: ${margin.laptopL};
-    margin-right: ${margin.laptopL};
+    margin-left: ${margin.laptop};
+    margin-right: ${margin.laptop};
   }
   @media ${device.laptop} {
-    margin-left: ${margin.laptop};
     margin-right: 1rem;
   }
   @media ${device.tablet} {

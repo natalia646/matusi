@@ -19,7 +19,6 @@ export const colors = {
 
 export const margin = {
   desktop: `6.25rem`,
-  laptopL: `4rem`,
   laptop: `3rem`,
   tablet: `2rem`,
   mobile: `1rem`
