@@ -6,55 +6,59 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { device, colors, margin } from "../../../variables";
 import background from "../../assets/background/background-top.svg";
+import backgroundM from "../../assets/background/background-mobile.svg";
 
 const MainPart = () => {
   const { setDetails } = useContext(Context);
 
   return (
     <Container>
-      <div className='back-mobile'>
-      <Description>
-        <p className="h4">Долучайся до спільноти</p>
-        <h1>
-          Отримай можливість <br />
-          працювати, в той час, як
-          <span style={{ color: "#2000C1" }}>
-            <br />
-            діти щасливі та у безпеці!
-          </span>
-        </h1>
-        <p className="h5">Долучайся до спільноти</p>
-        <p>
-          Ми допоможемо тобі знайти поруч мам, з якими можна разом доглядати за
-          вашими дітьми. Об’єднайте дітей у дитячі групи та доглядайте за ними
-          по черзі у вільний час.
-        </p>
-        <Buttons>
-          <Download />
-          <button className="more" onClick={() => setDetails(true)}>
-            Дивитися більше
-          </button>
-        </Buttons>
-      </Description>
-      </div>
-      <GooglePlay>
-        <Link
-          className="google-play"
-          target="_blank"
-          to="https://play.google.com/store/apps/details?id=tech.baza_trainee.mama_ne_vdoma"
-        >
-          <img src={google} alt="Google Play"></img>
-          <div className="text">
-            <p>
-              Get it on
+      <div className="back-mobile">
+        <Description>
+          <p className="h4">Долучайся до спільноти</p>
+          <h1>
+            Отримай можливість <br />
+            працювати, в той час, як
+            <span style={{ color: "#2000C1" }}>
               <br />
-              <b>Google Play</b>
-            </p>
-          </div>
-        </Link>
-      </GooglePlay>
-      <Phone1 src="https://i.ibb.co/n8dgy4d/img1.webp" alt="img1" />
-      <Phone2 src="https://i.ibb.co/rmvsZb1/img01.webp" alt="phone2" />
+              діти щасливі та у безпеці!
+            </span>
+          </h1>
+          <p className="h5">Долучайся до спільноти</p>
+          <p>
+            Ми допоможемо тобі знайти поруч мам, з якими можна разом доглядати
+            за вашими дітьми. Об’єднайте дітей у дитячі групи та доглядайте за
+            ними по черзі у вільний час.
+          </p>
+          <Buttons>
+            <Download />
+            <button className="more" onClick={() => setDetails(true)}>
+              Дивитися більше
+            </button>
+          </Buttons>
+        </Description>
+      </div>
+
+      <div className="images">
+        <GooglePlay>
+          <Link
+            className="google-play"
+            target="_blank"
+            to="https://play.google.com/store/apps/details?id=tech.baza_trainee.mama_ne_vdoma"
+          >
+            <img src={google} alt="Google Play"></img>
+            <div className="text">
+              <p>
+                Get it on
+                <br />
+                <b>Google Play</b>
+              </p>
+            </div>
+          </Link>
+        </GooglePlay>
+        <Phone1 src="https://i.ibb.co/n8dgy4d/img1.webp" alt="img1" />
+        <Phone2 src="https://i.ibb.co/rmvsZb1/img01.webp" alt="phone2" />
+      </div>
     </Container>
   );
 };
@@ -70,6 +74,25 @@ const Container = styled.div`
   grid-template-columns: 1.3fr 1fr;
   @media ${device.laptopL} {
     grid-template-columns: 1.4fr 1fr;
+  }
+  @media ${device.tablet} {
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr; */
+    display: flex;
+    flex-direction: column;
+
+    background-image: none;
+    .back-mobile {
+      background-image: url(${backgroundM});
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      margin-bottom: -1rem;
+    }
+    .images {
+      background-color: ${colors.root};
+      height: 40rem;
+    }
   }
 `;
 const Description = styled.article`
@@ -114,8 +137,24 @@ const Description = styled.article`
     }
   }
   @media ${device.tablet} {
-    margin-left: ${margin.tablet};
- 
+    margin-left: 0;
+    text-align: center;
+    h1 {
+      font-size: 2.75rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .h4 {
+      display: none;
+    }
+    p {
+      display: none;
+    }
+    .h5 {
+      display: block;
+      width: auto;
+      font-size: 1.25rem;
+    }
   }
 `;
 const Buttons = styled.div`
@@ -161,6 +200,18 @@ const Buttons = styled.div`
       padding: 0.7rem 2rem;
     }
   }
+  @media ${device.tablet} {
+    button {
+      width: 25rem;
+      font-size: 1.8rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .more {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 `;
 const Phone1 = styled.img`
   right: 19.69rem;
@@ -178,7 +229,15 @@ const Phone1 = styled.img`
     right: 13rem;
   }
   @media ${device.laptopS} {
-    display:none
+    display: none;
+  }
+  @media ${device.tablet} {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 16rem;
+    left: 8rem;
+    top: -7rem;
   }
 `;
 const Phone2 = styled.img`
@@ -193,6 +252,13 @@ const Phone2 = styled.img`
   @media ${device.laptop} {
     width: 13rem;
     right: 2rem;
+  }
+  @media ${device.tablet} {
+    position: relative;
+    z-index: 2;
+    left: 19rem;
+    top: -37rem;
+    width: 19rem;
   }
 `;
 const GooglePlay = styled.div`
@@ -234,6 +300,13 @@ const GooglePlay = styled.div`
       width: 9rem;
       right: 12.5rem;
       top: 30.5rem;
+    }
+  }
+  @media ${device.tablet} {
+    .google-play {
+      width:10rem;
+      left: 7rem;
+      top: 72rem;
     }
   }
 `;
