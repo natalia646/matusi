@@ -1,12 +1,12 @@
-@import '../../scss/variable';
+@import "../../scss/variable";
 .title {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 .questions {
-  margin: 25px 100px;
-  h2{
+  margin: 25px 6.25rem;
+  h2 {
     font-size: 3rem;
   }
 
@@ -21,7 +21,6 @@
     margin-bottom: 1rem;
     font-weight: 700;
 
-    
     .svg {
       width: 23px;
       padding: 5px;
@@ -51,34 +50,27 @@
     transform: rotate(180deg);
   }
 }
-.item{
+.item {
   margin-bottom: 1rem;
 }
-@include table{
-.questions{
-  margin: 3rem 3rem 6rem 3rem;
-  .question{
-    font-size: 1.5rem;
-    .svg{
-      transition: transform 1s ease;
-    }
+@include leptop {
+  .questions {
+    margin: 3rem;
   }
 }
-.answer{
-  font-size: 1.4rem;
-  transition: max-height 1s ease;
+@include table {
+  .questions {
+    margin: 3rem 1rem;
+  }
 }
-}
-@include mobile{
-  .questions{
+@include mobile {
+  .questions {
+    margin: 3rem 0.5rem;
     h2{
-      font-size: 4rem;
-    }
-    .question{
       font-size: 2rem;
     }
+    .question{
+      font-size: 1rem;
+    }
   }
-  .answer{
-    font-size: 1.7rem;
-  }
-  }
+}
