@@ -130,6 +130,13 @@ const Links = styled.div`
       margin-bottom: 1.7rem;
     }
   }
+  @media ${device.mobileL}{
+    .about{
+      a{
+        font-size: 1.3rem;
+      }
+    }
+  }
 `;
 const Description = styled.div`
   display: flex;
@@ -147,6 +154,11 @@ const Description = styled.div`
     margin-top: 2rem;
     h3{
       font-size: 2.5rem;
+    }
+  }
+  @media ${device.mobileL}{
+    h3{
+      font-size:2rem;
     }
   }
 `;
