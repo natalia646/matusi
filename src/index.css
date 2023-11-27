@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap");
 html,
 body {
   height: 100%;
@@ -11,4 +12,14 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+:root {
+  box-sizing: border-box;
+  --root-color: #6b4eff;
+  --gray-color: #4f5665;
+  --orange-color: #f89500;
+  --white-color: #ffffff;
+  --hover: #ff8b03;
+  --active-click: #f17400;
+  font-family: "Nunito Sans", sans-serif;
 }
