@@ -1,49 +1,48 @@
 .container-reviews-mobile {
   max-width: 100%;
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
   margin: -2rem auto 1rem auto;
   background-color: var(--root-color);
 }
-.container-reviews-mobile h2 {
-  color: var(--white-color);
-  font-size: 4rem;
-  text-align: center;
+.swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
 }
 .container-reviews-mobile .swiper-container {
   max-width: 100%;
-  height: 30rem;
-  padding: 1rem 0;
+  height: 19rem;
+  padding: 0;
   position: relative;
-  margin-bottom: 2rem;
 }
-.container-reviews-mobile .swiper-container .swiper-slide{
-  width: 38rem !important;
-  margin-left: 18%;
+.container-reviews-mobile .swiper-container .swiper-slide {
+  width: 27rem !important;
+  margin-left: -13%;
 }
 .container-reviews-mobile .swiper-container .swiper-slide article {
   background-color: var(--white-color);
   border-radius: 16px;
-  width: 34rem;
-  height: 26rem;
+  width: 20rem;
+  height: 16rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 3fr;
 }
 .container-reviews-mobile .swiper-container .swiper-slide .person-img {
-  width: 93px;
-  height: 92px;
+  width: 83px;
+  height: 82px;
   margin: 2rem 0rem 1rem 2rem;
   border-radius: 2rem;
   grid-area: 1 / 1 / 2 / 2;
 }
 .container-reviews-mobile .swiper-container .swiper-slide .h3 {
-padding-top: 1rem;
+  /* padding-top: 1rem; */
   grid-area: 1 / 2 / 2 / 3;
-  font-size: 2.3rem;
+  font-size: 1rem;
+  align-items: center;
 }
 .container-reviews-mobile .swiper-container .swiper-slide .p {
-    margin: 2rem 0rem 0rem 2rem;
-    font-size: 2rem;
+  margin: 2rem 0rem 0rem 2rem;
+  font-size: 1rem;
   color: black;
   margin-top: 2px;
   margin-right: 1.5rem;

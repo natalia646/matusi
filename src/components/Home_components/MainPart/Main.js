@@ -236,7 +236,7 @@ const Phone1 = styled.img`
     display: block;
     z-index: 1;
     width: 16rem;
-    left: 8rem;
+    left: 5rem;
     top: -7rem;
   }
 `;
@@ -256,7 +256,7 @@ const Phone2 = styled.img`
   @media ${device.tablet} {
     position: relative;
     z-index: 2;
-    left: 19rem;
+    left: 15rem;
     top: -37rem;
     width: 19rem;
   }
@@ -305,7 +305,7 @@ const GooglePlay = styled.div`
   @media ${device.tablet} {
     .google-play {
       width:10rem;
-      left: 7rem;
+      left: 4rem;
       top: 72rem;
     }
   }
