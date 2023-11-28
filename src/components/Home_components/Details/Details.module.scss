@@ -219,3 +219,38 @@
     }
   }
 }
+@include mobile{
+  .details {
+ 
+    .mobile {
+      margin: -2rem -2rem 0rem -2rem;
+      button {
+        font-size: 2rem;
+        left: 13%;
+        min-width: 27rem;
+        height: 5rem;
+      }
+    }
+
+    .photos {
+      .photo1 {
+        width: 15rem;
+        left: 4rem;
+      }
+      .photo2 {
+        width: 16rem;
+        left: 17rem;
+      }
+    }
+    .text {
+      width: 95%;
+      margin: 0rem 3rem 3rem 1rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

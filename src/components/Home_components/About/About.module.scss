@@ -73,9 +73,12 @@
 }
 @include table {
   .boxes {
-    grid-column-gap: 2rem;
-    margin: 3rem 2rem;
+    grid-column-gap: 1rem;
+    margin: 3rem 1rem -1rem 1rem;
     .box {
+      max-height: 500px;
+    padding: 0.5rem;
+
       img {
         width: 3.5rem;
       }
@@ -94,7 +97,7 @@
     p {
       font-size: 1rem;
     }
-    br{
+    br {
       display: none;
     }
   }
@@ -113,20 +116,20 @@
       justify-self: center;
       margin-bottom: 2rem;
       img {
-        width: 6rem;
+        width: 4rem;
       }
       h3 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 2rem;
+        font-size: 1.25rem;
       }
     }
   }
   .desc {
     margin: 0 2rem;
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     p {
       font-size: 1.5rem;
