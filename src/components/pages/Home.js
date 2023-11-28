@@ -9,7 +9,7 @@ const Questions = lazy(() => import("../Home_components/Questions/Questions"));
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Main />
       <About />
       <Details />
@@ -20,7 +20,7 @@ const Home = () => {
           <Questions />
         </section>
       </Suspense>
-    </div>
+    </>
   );
 };
 
