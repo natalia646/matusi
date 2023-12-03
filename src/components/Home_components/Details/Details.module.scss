@@ -148,15 +148,6 @@
       margin: -0.5rem -2rem 0rem -2rem;
       button {
         display: none;
-        // position: relative;
-        // font-size: 1.75rem;
-        // left: 25%;
-        // min-width: 25rem;
-        // height: 4rem;
-        // border-radius: 3rem;
-        // display: inline-block;
-        // text-align: center;
-        // vertical-align: middle;
       }
     }
 
@@ -187,10 +178,9 @@
 }
 @media only screen and (max-device-width: 678px) and (-webkit-min-device-pixel-ratio: 1) {
   .details {
-
     .mobile {
       button {
-        left: 20%
+        left: 20%;
       }
     }
 
@@ -221,10 +211,16 @@
     .mobile {
       margin: -2rem -2rem 0rem -2rem;
       button {
-        font-size: 2rem;
-        left: 13%;
-        min-width: 27rem;
-        height: 5rem;
+        display: block;
+        position: relative;
+        font-size: 1.75rem;
+        left: 15%;
+        min-width: 25rem;
+        height: 4rem;
+        border-radius: 3rem;
+        display: inline-block;
+        text-align: center;
+
       }
     }
 

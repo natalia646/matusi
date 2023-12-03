@@ -15,13 +15,13 @@
   position: relative;
 }
 .container-reviews-mobile .swiper-container .swiper-slide {
-  width: 27rem !important;
-  margin-left: -13%;
+  width: 29rem !important;
+  margin-left: 2%;
 }
 .container-reviews-mobile .swiper-container .swiper-slide article {
   background-color: var(--white-color);
   border-radius: 16px;
-  width: 20rem;
+  width: 24rem;
   height: 16rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -35,7 +35,7 @@
   grid-area: 1 / 1 / 2 / 2;
 }
 .container-reviews-mobile .swiper-container .swiper-slide .h3 {
-  /* padding-top: 1rem; */
+  padding: 2rem 0 0 1rem;
   grid-area: 1 / 2 / 2 / 3;
   font-size: 1rem;
   align-items: center;
