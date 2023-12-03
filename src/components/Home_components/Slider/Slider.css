@@ -46,8 +46,11 @@
 }
 
 @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .swiper-container .image {
+    width: 15.5rem;
+  }
   .swiper-container {
-    max-width: 94%;
+    height: 36rem;
   }
 }
 @media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
