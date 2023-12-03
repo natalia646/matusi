@@ -21,7 +21,6 @@ export const Container = styled.div`
       background-repeat: no-repeat;
       background-size: contain;
       background-position: bottom;
-      /* margin-bottom: -1rem; */
     }
   }
   @media ${device.mobileL} {
@@ -29,10 +28,6 @@ export const Container = styled.div`
     flex-direction: column;
     background-image: none;
     .back-mobile {
-      background-image: url(${backgroundM});
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: bottom;
       margin-bottom: -1rem;
     }
     .images {
@@ -88,6 +83,9 @@ export const Description = styled.article`
       font-size: 2.75rem;
     }
   }
+  @media ${device.mobileL}{
+
+  }
 `;
 export const Buttons = styled.div`
   button {
@@ -136,7 +134,12 @@ export const Buttons = styled.div`
     display: flex;
     button {
       width: 16rem;
+      font-size: 1.45rem;
     }
+  }
+  @media ${device.mobileL} {
+   
+
   }
 `;
 export const Phone1 = styled.img`
@@ -157,6 +160,10 @@ export const Phone1 = styled.img`
   @media ${device.laptopS} {
     display: none;
   }
+  @media ${device.mobileL} {
+    display: block;
+
+  }
 `;
 export const Phone2 = styled.img`
   right: 6.31rem;
@@ -173,6 +180,10 @@ export const Phone2 = styled.img`
   }
   @media ${device.tablet} {
     display: none;
+  }
+  @media ${device.mobileL} {
+    display: block;
+
   }
 `;
 export const GooglePlay = styled.div`
@@ -219,6 +230,14 @@ export const GooglePlay = styled.div`
   @media ${device.tablet} {
     .google-play {
       display: none;
+    }
+  }
+  @media ${device.mobileL} {
+    .google-play {
+      display: block;
+      width:10rem;
+      left: 7rem;
+      top: 72rem;
     }
   }
 `;

@@ -75,6 +75,9 @@
   }
 }
 @include table {
+  .container {
+    margin-top: -1rem ;
+  }
   .boxes {
     grid-column-gap: 1rem;
     margin: 3rem 1rem -1rem 1rem;
@@ -83,19 +86,19 @@
       padding: 0.5rem;
       margin-bottom: 1rem;
       img {
-        width: 4rem;
+        width: 3rem;
       }
       h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   }
   .desc {
     h2 {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
     }
     p {
       font-size: 1.25rem;
