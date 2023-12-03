@@ -23,5 +23,5 @@ export const margin = {
   laptopL: `3rem`,
   laptop: `2rem`,
   tablet: `1rem`,
-  mobile: `0.5rem`
+  mobile: `0rem`
 }
