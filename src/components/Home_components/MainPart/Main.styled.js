@@ -14,11 +14,19 @@ export const Container = styled.div`
     grid-template-columns: 1.4fr 1fr;
   }
   @media ${device.tablet} {
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr; */
+    grid-template-columns: 1fr;
+    background-image: none;
+    .back-mobile {
+      background-image: url(${backgroundM});
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      /* margin-bottom: -1rem; */
+    }
+  }
+  @media ${device.mobileL} {
     display: flex;
     flex-direction: column;
-
     background-image: none;
     .back-mobile {
       background-image: url(${backgroundM});
@@ -75,23 +83,9 @@ export const Description = styled.article`
     }
   }
   @media ${device.tablet} {
-    margin-left: 0;
-    text-align: center;
+    margin: 1rem 0rem 6rem ${margin.tablet};
     h1 {
       font-size: 2.75rem;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .h4 {
-      display: none;
-    }
-    p {
-      display: none;
-    }
-    .h5 {
-      display: block;
-      width: auto;
-      font-size: 1.25rem;
     }
   }
 `;
@@ -139,15 +133,9 @@ export const Buttons = styled.div`
     }
   }
   @media ${device.tablet} {
+    display: flex;
     button {
-      width: 25rem;
-      font-size: 1.8rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .more {
-      margin-left: auto;
-      margin-right: auto;
+      width: 16rem;
     }
   }
 `;
@@ -169,14 +157,6 @@ export const Phone1 = styled.img`
   @media ${device.laptopS} {
     display: none;
   }
-  @media ${device.tablet} {
-    position: relative;
-    display: block;
-    z-index: 1;
-    width: 16rem;
-    left: 5rem;
-    top: -7rem;
-  }
 `;
 export const Phone2 = styled.img`
   right: 6.31rem;
@@ -192,11 +172,7 @@ export const Phone2 = styled.img`
     right: 2rem;
   }
   @media ${device.tablet} {
-    position: relative;
-    z-index: 2;
-    left: 15rem;
-    top: -37rem;
-    width: 19rem;
+    display: none;
   }
 `;
 export const GooglePlay = styled.div`
@@ -242,9 +218,7 @@ export const GooglePlay = styled.div`
   }
   @media ${device.tablet} {
     .google-play {
-      width:10rem;
-      left: 4rem;
-      top: 72rem;
+      display: none;
     }
   }
 `;

@@ -119,8 +119,8 @@ const Container = styled.div`
     margin-right: 1rem;
   }
   @media ${device.tablet} {
-    margin-left: ${margin.tablet};
-    margin-right: ${margin.tablet};
+    margin-left: ${margin.laptopL};
+    margin-right: ${margin.laptopL};
   }
 `;
 const Logo = styled.img`
@@ -199,7 +199,7 @@ const MobileLinks = styled.div`
       width: 90%;
       padding: 2rem;
       transition: all 0.3s ease;
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-weight: 600;
       text-decoration: none;
     }
