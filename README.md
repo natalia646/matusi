@@ -1,6 +1,7 @@
 # Mama ne vdoma
 
 Deployment: [Mama ne vdoma](https://mama-ne-vdoma.online/)
+Dising: [Figma](https://www.figma.com/design/gLDWqf4pOPmQtlxfnScUrK/mama_ne_vdoma_site?node-id=536-10648&t=OlR1k0BhVkIsP2Tc-0)
 
 ## Project Description
 
